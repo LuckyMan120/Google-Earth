@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Avenir&display=swap');
+th, td, tr {
+  border: 1px solid black;
+  padding: 5px;
+}
+th {
+	font-weight: bold !important;
+}
+p {
+	margin: 0.125em 0;
+	font-size: 15px;
+	font-weight: bold;
+}
+h3 {
+	margin: unset;
+}
+table {
+  border-spacing: 15px;
+}
+table td {
+	font-weight: bold;
+}
+input {
+	border: 1px solid #d1ebd1;
+	border-radius: 10px;
+	padding: 10px;
+}
+button {
+	background: #1C8983;
+	border: 1px solid #1C8983;
+	padding: 10px 30px;
+	border-radius: 10px !important;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 10px 0 !important;
+	box-shadow: 0 0 5px lightgrey;
+	text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+}
+button:active {
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+    border-bottom: none;
+}
+button:focus {
+	outline: none !important;
+}
+table {
+	border-collapse: collapse;
+}
+.ip-btn {
+	background: white;
+	cursor: pointer;
+	border-left: 1px solid #1C8983 !important;
+	padding: 5px 10px !important;
+	color: black !important;
+	margin: 5px 0 !important;
+	text-align: left;
+}
+.details input {
+	text-align: right;
+	border: none !important;
+	padding: unset !important;
+	width: 100px;
+}
+.select-state {
+	border: 1px solid #d1ebd1;
+	padding: 3px;
+	border-radius: 5px;
+}
+.select-state:focus {
+	border: 1px solid #d1ebd1;
+}
+input:focus {
+	outline: none;
+}
+.search-bar span {
+	font-weight: bold;
+}
+.area-search {
+	margin: 10px 0;
+	width: 120px;
+}
+.searched-img {
+	width: 100%;
+	height: 30vh;
+	border-radius: 0 0 15px 15px;
+	background-position: 50%;
+	background-size: cover;
+}
+.search-input {
+	margin-right: 1em;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.search-input span {
+	margin-right: .5em;
+}
+.right-side {
+	width: 30%;
+	height: 100vh;
+	padding: 10px;
+}
+.right-top-bar {
+	display: flex;
+	align-items: center;
+}
+#nav {
+	padding: unset !important;
+}
+.main-body {
+	display: flex;
+	height: 100vh;
+}
+.rate-price {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.border-rate-price {
+	border: 2px solid black;
+	padding: 5px;
+	margin: 10px 0 30px 0;
+}
+.double-boder {
+	border-bottom: 1px solid black;
+	border-bottom-style: double !important;
+}
+.under-boder {
+	border-bottom: 1px solid black;
+}
+.right-side #fc-10 {
+	height: 70vh !important;
+}
+.loading-img {
+	position: absolute;
+	left: 40%;
+	top: 40vh;
+	/*width: 50px;*/
+	/*height: 50px;*/
+}
+.alertify-notifier {
+	color: white;
+	font-family: Avenir;
+}
+.detail-modal {
+	position: absolute;
+    z-index: 10;
+    box-shadow: 0 0 40px black !important;
+    top: 5em;
+    left: 10em;
+    background: white;
+    padding: 2em;
+    border-radius: 25px;
+    width: 80vw;
+    min-height: 70vh;
+}
+.left-side {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #1C8983;
+	padding: 10px 0;
+}
+.left-side span {
+	font-size: 2em;
+	color: black;
+	border-left: 2px solid #1C8983;
+	padding: 5px 10px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+.top-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 1em;
+	background: #e4eccf;
+	box-shadow: 5px 0 10px black;
+}
+.left-top-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.left-top-bar div {
+	margin-right: 2em;
+}
+.v-icon-history {
+	margin-left: 10px;
+	font-size: 15px;
+}
+.v-icon {
+	margin: 0 1em;
+	color: #1C8983;
+	font-size: 1em;
+}
+.v-icon-count {
+	margin-right: 1em;
+	color: #1C8983;
+	font-size: 2em;
+}
+.v-icon-times {
+	margin-right: 10px;
+	color: #1C8983;
+	font-size: 2em; 
+	cursor: pointer;
+}
+.v-icon-p {
+	margin: 0 1em;
+}
+.v-icon-detail {
+	font-size: 20px;
+	margin-left: 1em;
+}
+.count-side {
+	margin-top: 5em;
+}
+.detail-side {
+	padding: 2em 0;
+}
+.detail-side span {
+	font-size: 2em;
+	color: black;
+	margin-right: 1em;
+}
+.history-detail {
+	display: flex;
+}
+.right-detail-section {
+	border-left: 1px solid #1C8983 !important;
+	min-height: 300px;
+	overflow: auto;
+}
+.right-detail-section p {
+	text-align: left;
+	font-size: 1em;
+}
+.left-detail-section {
+	min-height: 300px;
+	overflow: auto;
+}
+.history-btn {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+@media screen and (max-width : 2560px) {
+	.lg-detail-modal {
+		left: 15em !important;
+		top: 10em !important;
+	}
+	.lg-right-detail-section {
+		min-height: 40em !important;
+		max-height: 40em !important;
+	}
+	th, td, tr {
+	  	border: 1px solid black;
+	  	padding: 1em 2em;
+	}
+	.lg-area-search {
+		width: 20em !important;
+	}
+}
+@media screen and (max-width : 1440px) {
+	.md-detail-modal {
+		left: 9em !important;
+		top: 6em !important;
+	}
+	.md-right-detail-section {
+		min-height: 300px !important;
+		max-height: 300px !important;
+	}
+	th, td, tr {
+	  	border: 1px solid black;
+	  	padding: 5px;
+	}
+	.md-area-search {
+		width: 8em !important;
+	}
+}
