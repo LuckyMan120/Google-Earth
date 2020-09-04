@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import store from './store';
 
 library.add(fas);
 Vue.component('v-icon', FontAwesomeIcon);
@@ -33,5 +34,6 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
+  store,
   render: h => h(App)
 }).$mount('#app')

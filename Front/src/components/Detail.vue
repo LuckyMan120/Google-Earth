@@ -34,6 +34,10 @@
 			Statistics
 			<v-icon icon="chart-bar" class="v-icon-history" />
 		</button>
+		<button class="about-btn" @click="showMore">
+			About more
+			<v-icon icon="info-circle" class="v-icon-history" />
+		</button>
 
 		<!-- price section -->
 		<div class="border-rate-price">
@@ -59,13 +63,19 @@
 				</div>
 			</div>
 		</div>
+		<Disclaimer
+			:showFlag="showDetailFlag"
+			@close="closeDetail"
+		/>
 	</div>
 </template>
 
 <script>
 import moment from 'moment'
+import { mapGetters, mapActions } from 'vuex'
 import dialogs from '../services/dialogs.js'
 import stateJson from '../assets/state.json'
+import Disclaimer from './Disclaimer'
 export default {
 	name: 'Detail',
 	data () {
@@ -77,13 +87,25 @@ export default {
 			B4: null,
 			OZ: '',
 			notOZ: '',
-			difference: ''
+			difference: '',
+			showDetailFlag: false
 		}
+	},
+	components: {
+		Disclaimer
+	},
+	computed: {
+		...mapGetters({
+			opened: 'reverse/opened'
+		})
 	},
 	mounted () {
 		this.states = stateJson.states
 	},
 	methods: {
+		...mapActions({
+			setFlag: 'reverse/setOpened'
+		}),
 		statistics: function () {
 			// validate
 			if (this.B1 === null || this.B2 === null || this.B3 === null || this.B4 === null) {
@@ -124,6 +146,15 @@ export default {
 			this.difference = (B8 - B7).toFixed(2)
 			dialogs.message('Statistics Completed.', { duration: 10, state: 'success' });
 			this.$emit('detail', statistics)
+		},
+		showMore: function () {
+			if (!this.opened) {
+				this.showDetailFlag = true
+				this.setFlag(true)
+			}
+		},
+		closeDetail: function () {
+			this.showDetailFlag = false
 		}
 	}
 }

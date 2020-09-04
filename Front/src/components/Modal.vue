@@ -88,6 +88,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
     name: 'Modal',
     data () {
@@ -113,11 +114,15 @@ export default {
         }
     },
     methods: {
+        ...mapActions({
+            setFlag: 'reverse/setOpened'
+        }),
         showAll: function (flag) {
             this.showHistory = flag
         },
         closeModal: function () {
             this.$emit('closeModal', false)
+            this.setFlag(false)
         },
         showDetail: function (ip) {
             this.selectedIp = ip

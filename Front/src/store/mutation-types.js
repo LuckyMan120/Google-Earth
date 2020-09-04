@@ -1,0 +1,1 @@
+export const SET_REVERSE_OPENED = 'SET_REVERSE_OPENED';

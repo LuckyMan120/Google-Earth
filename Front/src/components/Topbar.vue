@@ -44,6 +44,7 @@
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex';
 import Modal from '../components/Modal'
 export default {
     name: 'Topbar',
@@ -80,12 +81,23 @@ export default {
             default: ''
         }
     },
+    computed: {
+        ...mapGetters({
+            opened: 'reverse/opened'
+        })
+    },
     methods: {
+        ...mapActions({
+            setFlag: 'reverse/setOpened'
+        }),
         setFromtownPlace: function (place) {
             this.$emit('search', place)
         },
         showHistory: function () {
-            this.showFlag = true;
+            if (!this.opened) {
+                this.showFlag = true;
+                this.setFlag(true)
+            }
         },
         closeModal: function (flag) {
             this.showFlag = flag;

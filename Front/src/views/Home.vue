@@ -15,7 +15,8 @@
                     :center="center"
                     :zoom="zoom"
                     map-type-id="roadmap"
-                    style="width: 100%; height: 140%"
+                    style="width: 100%"
+                    class="lg-gmap md-gmap"
                     :options="{
                         mapTypeControl: false
                     }"
@@ -108,6 +109,7 @@ import loader from '../assets/loading.gif'
 import Chart from '../components/Chart'
 import Detail from '../components/Detail'
 import Topbar from '../components/Topbar'
+
 export default {
     name: 'Home',
     data () {

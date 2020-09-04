@@ -56,6 +56,9 @@ table {
 	margin: 5px 0 !important;
 	text-align: left;
 }
+.about-btn {
+	margin-left: 1em !important;
+}
 .details input {
 	text-align: right;
 	border: none !important;
@@ -112,6 +115,7 @@ input:focus {
 .main-body {
 	display: flex;
 	height: 100vh;
+	margin-top: 3px;
 }
 .rate-price {
 	display: flex;
@@ -144,6 +148,18 @@ input:focus {
 	color: white;
 	font-family: Avenir;
 }
+.disclaimer-modal {
+	position: absolute;
+	z-index: 12;
+	box-shadow: 0 0 40px black !important;
+    top: 10em;
+    left: 10em;
+    background: white;
+    padding: 2em;
+    border-radius: 25px;
+    width: 80vw;
+    min-height: 50vh;
+}
 .detail-modal {
 	position: absolute;
     z-index: 10;
@@ -165,6 +181,7 @@ input:focus {
 }
 .left-side span {
 	font-size: 2em;
+	font-weight: bold;
 	color: black;
 	border-left: 2px solid #1C8983;
 	padding: 5px 10px;
@@ -177,7 +194,7 @@ input:focus {
 	justify-content: space-between;
 	padding: 0 1em;
 	background: #e4eccf;
-	box-shadow: 5px 0 10px black;
+	box-shadow: 0 0 10px black;
 }
 .left-top-bar {
 	display: flex;
@@ -246,6 +263,15 @@ input:focus {
 	align-items: center;
 	justify-content: space-between;
 }
+.disclaimer-body {
+	padding: 1em .5em;
+	text-align: left;
+}
+.disclaimer-body li {
+	font-size: 2em;
+	font-weight: bold;
+	text-align: left !important;
+}
 @media screen and (max-width : 2560px) {
 	.lg-detail-modal {
 		left: 15em !important;
@@ -261,6 +287,9 @@ input:focus {
 	}
 	.lg-area-search {
 		width: 20em !important;
+	}
+	.lg-gmap {
+		height: 120% !important;
 	}
 }
 @media screen and (max-width : 1440px) {
@@ -278,5 +307,8 @@ input:focus {
 	}
 	.md-area-search {
 		width: 8em !important;
+	}
+	.md-gmap {
+		height: 180% !important;
 	}
 }
