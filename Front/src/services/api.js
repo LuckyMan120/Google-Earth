@@ -11,8 +11,8 @@ Vue.use(VueFlashMessage, {
 });
 
 const vm = new Vue();
-// const baseURL = 'http://localhost:4000/earth';
-const baseURL = 'http://146.71.77.95:4000/earth';
+const baseURL = 'http://localhost:4000/earth';
+// const baseURL = 'http://146.71.77.95:4000/earth';
 // const baseURL = 'https://google-earth.herokuapp.com/earth';
 
 const handleError = fn => (...params) =>

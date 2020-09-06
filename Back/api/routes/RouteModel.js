@@ -41,7 +41,7 @@ router.route('/all').get((req, res) =>{
 		    let data = {};
 
 		    for(var i = 0; i < 100; i++){
-		    // for(var i = 0; i < result.kml.Document.Folder.Placemark.length; i++){
+		    // for(var i = 0; i < totalData.length; i++){
 		    	var points = {
 	         		path: []
 	         	};
@@ -88,6 +88,7 @@ router.route('/all').get((req, res) =>{
 		    		db.visitorDB.find()
 		    			.then(visitorData => {
 		    				data['visitorData'] = visitorData;
+		    				console.log('----length', data.totalPoints.length)
 		    				res.json(data);
 		    			})
 		    			.catch(err => console.log(err));

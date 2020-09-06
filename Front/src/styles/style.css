@@ -247,6 +247,7 @@ input:focus {
 }
 .right-detail-section {
 	border-left: 1px solid #1C8983 !important;
+	padding: 0 1em;
 	min-height: 300px;
 	overflow: auto;
 }
@@ -277,7 +278,7 @@ input:focus {
 		left: 15em !important;
 		top: 10em !important;
 	}
-	.lg-right-detail-section {
+	.lg-detail-section {
 		min-height: 40em !important;
 		max-height: 40em !important;
 	}
@@ -297,7 +298,7 @@ input:focus {
 		left: 9em !important;
 		top: 6em !important;
 	}
-	.md-right-detail-section {
+	.md-detail-section {
 		min-height: 300px !important;
 		max-height: 300px !important;
 	}
