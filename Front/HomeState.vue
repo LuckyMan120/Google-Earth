@@ -32,7 +32,11 @@
                     </gmap-polygon>
 
                     <!-- <GmapMarker v-if="marked" :position="markedPosition" :label="title" /> -->
-                    <GmapMarker :position="markedPosition" />
+                    <GmapMarker
+                        v-for="(statePoint, count) in statePoints"
+                        :position="statePoint"
+                        :key="count"
+                    />
                     <gmap-info-window 
                         @closeclick="window_open=false" 
                         :opened="window_open" 
@@ -129,7 +133,8 @@ export default {
                 degree: ''
             },
             marked: false,
-            markedPosition: { lat:  20.2401578536914, lng: -156.326917860547 },
+            markedPosition: null,
+            statePoints: null,
             title: '',
             visiterIP: '',
             session: 0,
@@ -157,61 +162,58 @@ export default {
         // this.paths = details.totalPoints
         console.log('details', details)
         let paths = []
-        details.kml.Document.Placemark[0].MultiGeometry.MultiGeometry.Polygon.forEach(pol => {
-            let eachPol = []
-            let polys = pol.outerBoundaryIs.LinearRing.coordinates._text
+        let markedPoints = []
+        details.kml.Document.Placemark.forEach(item => {
+            if (Object.keys(item.MultiGeometry)[1] === "MultiGeometry") {
+                item.MultiGeometry.MultiGeometry.Polygon.forEach(pol => {
+                    let eachPol = []
+                    let polys = pol.outerBoundaryIs.LinearRing.coordinates._text
 
-            var coordinates = polys.split(" ");
-            coordinates.forEach(each => {
-                if (each.length > 1) {
-                    var coordinate = each.split(",");
-                    var pointPolys = {
-                        lat: parseFloat(coordinate[1]),
-                        lng: parseFloat(coordinate[0])
+                    var coordinates = polys.split(" ");
+                    coordinates.forEach(each => {
+                        if (each.length > 1) {
+                            var coordinate = each.split(",");
+                            var pointPolys = {
+                                lat: parseFloat(coordinate[1]),
+                                lng: parseFloat(coordinate[0])
+                            };
+                            eachPol.push(pointPolys);
+                        }
+                    });
+                    paths.push(eachPol)
+                });
+            } else {
+                    let polys = item.MultiGeometry.Polygon.outerBoundaryIs.LinearRing.coordinates._text
+                    let eachPol = []
+
+                    var coordinates = polys.split(" ");
+                    coordinates.forEach(each => {
+                        if (each.length > 1) {
+                            var coordinate = each.split(",");
+                            var pointPolys = {
+                                lat: parseFloat(coordinate[1]),
+                                lng: parseFloat(coordinate[0])
+                            };
+                            eachPol.push(pointPolys);
+                        }
+                    });
+                    paths.push(eachPol)
+            }
+            
+            var point = item.MultiGeometry.Point.coordinates._text.split(" ")
+            point.forEach(e => {
+                if (e.length > 1) {
+                    var coord = e.split(",");
+                    var markedPoint = {
+                        lat: parseFloat(coord[1]),
+                        lng: parseFloat(coord[0])
                     };
-                    eachPol.push(pointPolys);
+                    markedPoints.push(markedPoint);
                 }
             });
-            paths.push(eachPol)
         });
-        // details.kml.Document.Placemark.forEach(item => {
-        //     if (Object.keys(item.MultiGeometry)[1] === "MultiGeometry") {
-        //         item.MultiGeometry.MultiGeometry.Polygon.forEach(pol => {
-        //             let eachPol = []
-        //             let polys = pol.outerBoundaryIs.LinearRing.coordinates._text
-
-        //             var coordinates = polys.split(" ");
-        //             coordinates.forEach(each => {
-        //                 if (each.length > 1) {
-        //                     var coordinate = each.split(",");
-        //                     var pointPolys = {
-        //                         lat: parseFloat(coordinate[1]),
-        //                         lng: parseFloat(coordinate[0])
-        //                     };
-        //                     eachPol.push(pointPolys);
-        //                 }
-        //             });
-        //             paths.push(eachPol)
-        //         });
-        //     } else {
-        //             let polys = item.MultiGeometry.Polygon.outerBoundaryIs.LinearRing.coordinates._text
-        //             let eachPol = []
-
-        //             var coordinates = polys.split(" ");
-        //             coordinates.forEach(each => {
-        //                 if (each.length > 1) {
-        //                     var coordinate = each.split(",");
-        //                     var pointPolys = {
-        //                         lat: parseFloat(coordinate[1]),
-        //                         lng: parseFloat(coordinate[0])
-        //                     };
-        //                     eachPol.push(pointPolys);
-        //                 }
-        //             });
-        //             paths.push(eachPol)
-        //     }
-        // });
         this.paths = paths
+        this.statePoints = markedPoints
         // let data = {}
         // data['counts'] = details.counts
         // data['history'] = details.visitorData

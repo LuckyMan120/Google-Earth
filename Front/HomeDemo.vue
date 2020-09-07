@@ -4,28 +4,19 @@
             :visitor_IP="visiterIP"
             :session="time"
             :history="historyData"
+            :preIP="previousIP"
+            @search="searchArea"
         />
         <div class="main-body">
             <!-- left side -->
             <div style="width: 70%">
-                <!-- search bar -->
-                <div class="search-bar">
-                    <div class="search-input">
-                        <span>Search Location</span>
-                        <gmap-autocomplete
-                            @place_changed="setFromtownPlace"
-                            :options="options"
-                            class="area-search lg-area-search md-area-search"
-                        ></gmap-autocomplete>
-                    </div>
-                    <img :src="image_url" class="searched-img" />
-                </div>
                 <GmapMap
                     ref="gmap"
                     :center="center"
                     :zoom="zoom"
                     map-type-id="roadmap"
-                    style="width: 100%; height: 140%"
+                    style="width: 100%"
+                    class="lg-gmap md-gmap"
                     :options="{
                         mapTypeControl: false
                     }"
@@ -43,10 +34,11 @@
                     </gmap-polygon>
 
                     <GmapMarker v-if="marked" :position="markedPosition" :label="title" />
+                    <!-- first infowindow -->
                     <gmap-info-window 
-                        @closeclick="window_open=false" 
-                        :opened="window_open" 
-                        :position="infowindow"
+                        @closeclick="window_open_first=false" 
+                        :opened="window_open_first" 
+                        :position="firstInfowindow"
                         :options="{
                           pixelOffset: {
                             width: 0,
@@ -57,39 +49,91 @@
                         <table>
                             <tr>
                                 <td>Geo ID</td>
-                                <td>{{ infoData.geoid }}</td>
+                                <td>{{ firstInfoData.geoid }}</td>
                             </tr>
                             <tr>
                                 <td>COUNTY NAME</td>
-                                <td>{{ infoData.countyname }}</td>
+                                <td>{{ firstInfoData.countyname }}</td>
                             </tr>
                             <tr>
                                 <td>STATE NAME</td>
-                                <td>{{ infoData.statename }}</td>
+                                <td>{{ firstInfoData.statename }}</td>
                             </tr>
                             <tr>
                                 <td>URBANIZED / TOTAL POPULATION</td>
-                                <td>{{ infoData.population }}</td>
+                                <td>{{ firstInfoData.population }}</td>
                             </tr>
                             <tr>
                                 <td>NUMBER OF PEOPLE WITH COLLEGE DEGREE OR HIGHER / TOTAL POPULATION</td>
-                                <td>{{ infoData.degree }}</td>
+                                <td>{{ firstInfoData.degree }}</td>
                             </tr>
                             <tr>
                                 <td>SINGLE FAMILY UNIT HOUSING STRUCTURES (%)</td>
-                                <td>{{ infoData.single }}</td>
+                                <td>{{ firstInfoData.single }}</td>
                             </tr>
                             <tr>
                                 <td>2-9 UNIT HOUSING STRUCTURES (%)</td>
-                                <td>{{ infoData.medium }}</td>
+                                <td>{{ firstInfoData.medium }}</td>
                             </tr>
                             <tr>
                                 <td>10 OR MORE UNIT HOUSING STRUCTURES (%)</td>
-                                <td>{{ infoData.expand }}</td>
+                                <td>{{ firstInfoData.expand }}</td>
                             </tr>
                             <tr>
                                 <td>MEDIAN HOUSEHOLD INCOME</td>
-                                <td>{{ infoData.income }}</td>
+                                <td>{{ firstInfoData.income }}</td>
+                            </tr>
+                        </table>
+                    </gmap-info-window>
+
+                    <!-- second infowindow -->
+                    <gmap-info-window 
+                        @closeclick="window_open_second=false" 
+                        :opened="window_open_second" 
+                        :position="secondInfowindow"
+                        :options="{
+                          pixelOffset: {
+                            width: 0,
+                            height: -35
+                          }
+                        }"
+                    >
+                        <table>
+                            <tr>
+                                <td>Geo ID</td>
+                                <td>{{ secondInfoData.geoid }}</td>
+                            </tr>
+                            <tr>
+                                <td>COUNTY NAME</td>
+                                <td>{{ secondInfoData.countyname }}</td>
+                            </tr>
+                            <tr>
+                                <td>STATE NAME</td>
+                                <td>{{ secondInfoData.statename }}</td>
+                            </tr>
+                            <tr>
+                                <td>URBANIZED / TOTAL POPULATION</td>
+                                <td>{{ secondInfoData.population }}</td>
+                            </tr>
+                            <tr>
+                                <td>NUMBER OF PEOPLE WITH COLLEGE DEGREE OR HIGHER / TOTAL POPULATION</td>
+                                <td>{{ secondInfoData.degree }}</td>
+                            </tr>
+                            <tr>
+                                <td>SINGLE FAMILY UNIT HOUSING STRUCTURES (%)</td>
+                                <td>{{ secondInfoData.single }}</td>
+                            </tr>
+                            <tr>
+                                <td>2-9 UNIT HOUSING STRUCTURES (%)</td>
+                                <td>{{ secondInfoData.medium }}</td>
+                            </tr>
+                            <tr>
+                                <td>10 OR MORE UNIT HOUSING STRUCTURES (%)</td>
+                                <td>{{ secondInfoData.expand }}</td>
+                            </tr>
+                            <tr>
+                                <td>MEDIAN HOUSEHOLD INCOME</td>
+                                <td>{{ secondInfoData.income }}</td>
                             </tr>
                         </table>
                     </gmap-info-window>
@@ -113,25 +157,35 @@ import { api } from '../services/api'
 import moment from 'moment'
 
 import loader from '../assets/loading.gif'
-import random_bk from '../assets/random_bk.jpg'
 
 // import components
 import Chart from '../components/Chart'
 import Detail from '../components/Detail'
 import Topbar from '../components/Topbar'
+
 export default {
     name: 'Home',
     data () {
         return {
             center: { lat:  37.09024, lng: -95.712891 },
             zoom: 4,
-            options: {
-                componentRestrictions: { country: 'US' }
-            },
             paths: [],
-            window_open: false,
-            infowindow: null,
-            infoData: {
+            window_open_first: false,
+            window_open_second: false,
+            firstInfowindow: null,
+            secondInfowindow: null,
+            firstInfoData: {
+                countyname: '',
+                geoid: '',
+                statename: '',
+                population: '',
+                single: '',
+                medium: '',
+                expand: '',
+                income: '',
+                degree: ''
+            },
+            secondInfoData: {
                 countyname: '',
                 geoid: '',
                 statename: '',
@@ -146,13 +200,13 @@ export default {
             markedPosition: null,
             title: '',
             visiterIP: '',
+            previousIP: '',
             session: 0,
             selectedPolygons: [],
             visit_at: '',
             started: false,
             loading_img: '',
             loading_flag: true,
-            image_url: random_bk,
             statisData: null,
             historyData: null,
             time: ''
@@ -174,7 +228,7 @@ export default {
         data['counts'] = details.counts
         data['history'] = details.visitorData
         this.historyData = data
-        console.log(details)
+        this.previousIP = details.counts[0].previous_visitor
 
         // get ip address
         fetch('https://api.ipify.org?format=json')
@@ -195,12 +249,9 @@ export default {
         this.visit_at = moment(date).format('YYYY-MM-DD hh:mm:ss a')
         this.started = true
         this.loading_flag = false
-        console.log('started', this.started)
     },
     methods: {
-        setFromtownPlace: function (place) {
-            this.image_url = place.photos[0].getUrl()
-            console.log('place', place.photos[0].getUrl())
+        searchArea: function (place) {
             this.center.lat = place.geometry.location.lat()
             this.center.lng = place.geometry.location.lng()
             this.zoom = 8
@@ -244,19 +295,67 @@ export default {
             console.log(doc)
         },
         showDetails: function (detail) {
-            this.infowindow = {
-                lat: detail.path[0].lat,
-                lng: detail.path[0].lng
+            if (!this.window_open_first && !this.window_open_second) {
+                this.firstInfowindow = {
+                    lat: detail.path[0].lat,
+                    lng: detail.path[0].lng
+                }
+                this.firstInfoData.countyname = detail.countyname
+                this.firstInfoData.geoid = detail.geoid
+                this.firstInfoData.statename = detail.statename
+                this.firstInfoData.population = detail.population
+                this.firstInfoData.single = detail.single
+                this.firstInfoData.medium = detail.medium
+                this.firstInfoData.expand = detail.expand
+                this.firstInfoData.income = detail.income
+                this.firstInfoData.degree = detail.degree
+                this.window_open_first = true
+            } else if (!this.window_open_first && this.window_open_second) {
+                this.firstInfowindow = {
+                    lat: detail.path[0].lat,
+                    lng: detail.path[0].lng
+                }
+                this.firstInfoData.countyname = detail.countyname
+                this.firstInfoData.geoid = detail.geoid
+                this.firstInfoData.statename = detail.statename
+                this.firstInfoData.population = detail.population
+                this.firstInfoData.single = detail.single
+                this.firstInfoData.medium = detail.medium
+                this.firstInfoData.expand = detail.expand
+                this.firstInfoData.income = detail.income
+                this.firstInfoData.degree = detail.degree
+                this.window_open_first = true
+            } else if (this.window_open_first && !this.window_open_second) {
+                this.secondInfowindow = {
+                    lat: detail.path[0].lat,
+                    lng: detail.path[0].lng
+                }
+                this.secondInfoData.countyname = detail.countyname
+                this.secondInfoData.geoid = detail.geoid
+                this.secondInfoData.statename = detail.statename
+                this.secondInfoData.population = detail.population
+                this.secondInfoData.single = detail.single
+                this.secondInfoData.medium = detail.medium
+                this.secondInfoData.expand = detail.expand
+                this.secondInfoData.income = detail.income
+                this.secondInfoData.degree = detail.degree
+                this.window_open_second = true
+            } else if (this.window_open_second && this.window_open_first) {
+                this.secondInfowindow = {
+                    lat: detail.path[0].lat,
+                    lng: detail.path[0].lng
+                }
+                this.secondInfoData.countyname = detail.countyname
+                this.secondInfoData.geoid = detail.geoid
+                this.secondInfoData.statename = detail.statename
+                this.secondInfoData.population = detail.population
+                this.secondInfoData.single = detail.single
+                this.secondInfoData.medium = detail.medium
+                this.secondInfoData.expand = detail.expand
+                this.secondInfoData.income = detail.income
+                this.secondInfoData.degree = detail.degree
+                this.window_open_second = true
             }
-            this.infoData.countyname = detail.countyname
-            this.infoData.geoid = detail.geoid
-            this.infoData.statename = detail.statename
-            this.infoData.population = detail.population
-            this.infoData.single = detail.single
-            this.infoData.medium = detail.medium
-            this.infoData.expand = detail.expand
-            this.infoData.income = detail.income
-            this.infoData.degree = detail.degree
             let polygon = {
                 countyname: detail.countyname,
                 geoid: detail.geoid,
@@ -270,7 +369,6 @@ export default {
             }
 
             this.selectedPolygons.push(polygon)
-            this.window_open = true
         },
         detail: function (data) {
             this.statisData = data

@@ -10,6 +10,20 @@
         <div class="main-body">
             <!-- left side -->
             <div style="width: 70%">
+                <!-- select state area -->
+                <div class="select-state-area">
+                    <span>Select State</span>
+                    <select class="select-state" @change="searchState($event)">
+                        <option>Select State</option>
+                        <option
+                            v-for="(state, num) in selectState"
+                            :key="num"
+                            :value="state.name"
+                        >
+                            {{ state.name }}
+                        </option>
+                    </select>
+                </div>
                 <GmapMap
                     ref="gmap"
                     :center="center"
@@ -21,15 +35,26 @@
                         mapTypeControl: false
                     }"
                 >
-                    <gmap-polygon
-                        v-for="(path, index) in paths"
+                    <gmap-polyline
+                        v-for="(path, index) in selectedStatePath"
                         :key="index"
-                        v-bind:path.sync="path.path"
+                        v-bind:path.sync="path"
+                        v-bind:options="{ 
+                            strokeColor:'#d45fa0',
+                            strokeOpacity: 0.5,
+                            clickable: true
+                        }"
+                        >
+                    </gmap-polyline>
+                    <gmap-polygon
+                        v-for="(polygon, count) in paths"
+                        :key="count"
+                        v-bind:path.sync="polygon.path"
                         v-bind:options="{ 
                             strokeColor:'#008000',
                             clickable: true
                         }"
-                        @click="showDetails(path)"
+                        @click="showDetails(polygon)"
                         >
                     </gmap-polygon>
 
@@ -169,7 +194,7 @@ export default {
         return {
             center: { lat:  37.09024, lng: -95.712891 },
             zoom: 4,
-            paths: [],
+            paths: null,
             window_open_first: false,
             window_open_second: false,
             firstInfowindow: null,
@@ -209,7 +234,9 @@ export default {
             loading_flag: true,
             statisData: null,
             historyData: null,
-            time: ''
+            time: '',
+            selectState: null,
+            selectedStatePath: null
         }
     },
     components: {
@@ -223,12 +250,77 @@ export default {
     },
     async mounted() {
         let details = await api.getAllData()
-        this.paths = details.totalPoints
         let data = {}
         data['counts'] = details.counts
         data['history'] = details.visitorData
         this.historyData = data
         this.previousIP = details.counts[0].previous_visitor
+
+        // get select state of the USA
+        let stateDetails = []
+        details.state.kml.Document.Placemark.forEach(item => {
+            let eachStateDetail = {}
+            if (Object.keys(item.MultiGeometry)[1] === "MultiGeometry") {
+                let eachState = []
+                item.MultiGeometry.MultiGeometry.Polygon.forEach(pol => {
+                    let eachPol = []
+                    let polys = pol.outerBoundaryIs.LinearRing.coordinates._text
+
+                    var coordinates = polys.split(" ");
+                    coordinates.forEach(each => {
+                        if (each.length > 1) {
+                            var coordinate = each.split(",");
+                            var pointPolys = {
+                                lat: parseFloat(coordinate[1]),
+                                lng: parseFloat(coordinate[0])
+                            };
+                            eachPol.push(pointPolys);
+                        }
+                    });
+                    eachState.push(eachPol)
+                });
+                eachStateDetail['path'] = eachState
+            } else {
+                    let eachState = []
+                    let polys = item.MultiGeometry.Polygon.outerBoundaryIs.LinearRing.coordinates._text
+                    let eachPol = []
+
+                    var coordinates = polys.split(" ");
+                    coordinates.forEach(each => {
+                        if (each.length > 1) {
+                            var coordinate = each.split(",");
+                            var pointPolys = {
+                                lat: parseFloat(coordinate[1]),
+                                lng: parseFloat(coordinate[0])
+                            };
+                            eachPol.push(pointPolys);
+                        }
+                    });
+                    eachState.push(eachPol)
+                    eachStateDetail['path'] = eachState
+            }
+            
+            var point = item.MultiGeometry.Point.coordinates._text.split(" ")
+            point.forEach(e => {
+                if (e.length > 1) {
+                    var coord = e.split(",");
+                    var markedPoint = {
+                        lat: parseFloat(coord[1]),
+                        lng: parseFloat(coord[0])
+                    };
+                    eachStateDetail['center'] = markedPoint
+                }
+            });
+
+            if (item.name._cdata.split(" ").length > 2) {
+                eachStateDetail['name'] = item.name._cdata.split(" ")[0] + " " + item.name._cdata.split(" ")[1]
+            } else {
+                eachStateDetail['name'] = item.name._cdata.split(" ")[0]
+            }
+
+            stateDetails.push(eachStateDetail)
+        });
+        this.selectState = stateDetails
 
         // get ip address
         fetch('https://api.ipify.org?format=json')
@@ -372,6 +464,29 @@ export default {
         },
         detail: function (data) {
             this.statisData = data
+        },
+        searchState: function (event) {
+            this.loading_flag = true
+            this.paths = null
+            this.selectedStatePath = null
+            this.zoom = 4
+            this.center = {
+                lat:  37.09024,
+                lng: -95.712891
+            }
+            this.selectState.forEach(async item => {
+                if (item.name === event.target.value) {
+                    let data = {}
+                    data['latlng'] = item.center
+                    data['name'] = item.name
+                    let polygons = await api.searchPolygon(data)
+                    this.paths = polygons
+                    this.zoom = 6
+                    this.selectedStatePath = item.path
+                    this.center = item.center
+                    this.loading_flag = false
+                }
+            })
         }
     },
     watch: {

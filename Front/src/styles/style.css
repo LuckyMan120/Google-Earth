@@ -273,6 +273,28 @@ input:focus {
 	font-weight: bold;
 	text-align: left !important;
 }
+.map-polygon:hover {
+	color: red;
+}
+.select-state-area {
+	position: absolute;
+	box-shadow: 0 0 10px black;
+	z-index: 3;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	top: 7em;
+	left: 1em;
+	background: white;
+	border-radius: 10px;
+	padding: 10px;
+}
+.select-state-area select {
+	margin-left: 1em;
+}
+.select-state-area select:active {
+	outline: unset;
+}
 @media screen and (max-width : 2560px) {
 	.lg-detail-modal {
 		left: 15em !important;
