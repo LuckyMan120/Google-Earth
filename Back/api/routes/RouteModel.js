@@ -131,15 +131,6 @@ router.route('/search').post((req, res) => {
 		    let data = [];
 		    // search polygons by each state
 		    totalPoints.forEach(point => {
-    			let R = 6378137;
-	            let first = req.body.latlng;
-	            let second = point.path[0];
-	            let dLat = rad(second.lat - first.lat);
-	            let dLong = rad(second.lng - first.lng);
-	            let a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(rad(first.lat)) * Math.cos(rad(second.lat)) * Math.sin(dLong / 2) * Math.sin(dLong / 2);
-	            let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-	            let d = R * c;
-
 	            if (req.body.name === point.statename) {
 	            	data.push(point);
 	            }

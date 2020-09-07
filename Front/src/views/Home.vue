@@ -268,7 +268,7 @@ export default {
 
                     var coordinates = polys.split(" ");
                     coordinates.forEach(each => {
-                        if (each.length > 1) {
+                        if (each.length > 2) {
                             var coordinate = each.split(",");
                             var pointPolys = {
                                 lat: parseFloat(coordinate[1]),
@@ -281,28 +281,28 @@ export default {
                 });
                 eachStateDetail['path'] = eachState
             } else {
-                    let eachState = []
-                    let polys = item.MultiGeometry.Polygon.outerBoundaryIs.LinearRing.coordinates._text
-                    let eachPol = []
+                let eachState = []
+                let polys = item.MultiGeometry.Polygon.outerBoundaryIs.LinearRing.coordinates._text
+                let eachPol = []
 
-                    var coordinates = polys.split(" ");
-                    coordinates.forEach(each => {
-                        if (each.length > 1) {
-                            var coordinate = each.split(",");
-                            var pointPolys = {
-                                lat: parseFloat(coordinate[1]),
-                                lng: parseFloat(coordinate[0])
-                            };
-                            eachPol.push(pointPolys);
-                        }
-                    });
-                    eachState.push(eachPol)
-                    eachStateDetail['path'] = eachState
+                var coordinates = polys.split(" ");
+                coordinates.forEach(each => {
+                    if (each.length > 2) {
+                        var coordinate = each.split(",");
+                        var pointPolys = {
+                            lat: parseFloat(coordinate[1]),
+                            lng: parseFloat(coordinate[0])
+                        };
+                        eachPol.push(pointPolys);
+                    }
+                });
+                eachState.push(eachPol)
+                eachStateDetail['path'] = eachState
             }
             
             var point = item.MultiGeometry.Point.coordinates._text.split(" ")
             point.forEach(e => {
-                if (e.length > 1) {
+                if (e.length > 2) {
                     var coord = e.split(",");
                     var markedPoint = {
                         lat: parseFloat(coord[1]),
@@ -321,6 +321,7 @@ export default {
             stateDetails.push(eachStateDetail)
         });
         this.selectState = stateDetails
+        console.log(this.selectState)
 
         // get ip address
         fetch('https://api.ipify.org?format=json')
@@ -466,6 +467,8 @@ export default {
             this.statisData = data
         },
         searchState: function (event) {
+            this.window_open_second = false
+            this.window_open_first = false
             this.loading_flag = true
             this.paths = null
             this.selectedStatePath = null
@@ -476,14 +479,14 @@ export default {
             }
             this.selectState.forEach(async item => {
                 if (item.name === event.target.value) {
+                    console.log('item.center', item.center)
                     let data = {}
-                    data['latlng'] = item.center
                     data['name'] = item.name
                     let polygons = await api.searchPolygon(data)
                     this.paths = polygons
+                    this.center = item.center
                     this.zoom = 6
                     this.selectedStatePath = item.path
-                    this.center = item.center
                     this.loading_flag = false
                 }
             })
