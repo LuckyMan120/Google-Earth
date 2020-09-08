@@ -344,10 +344,43 @@ export default {
         this.loading_flag = false
     },
     methods: {
-        searchArea: function (place) {
+        searchArea: async function (place) {
+            this.marked = false
+            this.window_open_second = false
+            this.window_open_first = false
+            this.loading_flag = true
+            this.paths = null
+            this.selectedStatePath = null
+            this.zoom = 4
+            this.center = {
+                lat:  37.09024,
+                lng: -95.712891
+            }
+
+            let nameIndex = 0
+            // get name index for searching polygons from DB
+            place.address_components.forEach((item, index) => {
+                if (item['long_name'] === "United States") {
+                    nameIndex = index - 1
+                }
+            })
+
+            let searchData = {}
+            // get name for search
+            searchData['name'] = place.address_components[nameIndex].long_name
+            let polygons = await api.searchPolygon(searchData)
+            this.paths = polygons
+
+            // get border of searched state
+            this.selectState.forEach(async item => {
+                if (item.name === place.address_components[nameIndex].long_name) {
+                    this.selectedStatePath = item.path
+                }
+            })
+
             this.center.lat = place.geometry.location.lat()
             this.center.lng = place.geometry.location.lng()
-            this.zoom = 8
+            this.zoom = 6
             this.marked = true
             let data = {
                 lat: place.geometry.location.lat(),
@@ -355,6 +388,7 @@ export default {
             }
             this.markedPosition = data
             this.title = place.formatted_address
+            this.loading_flag = false
         },
         confirm_leaving: function (evt) {
             if (this.started) {
@@ -467,6 +501,7 @@ export default {
             this.statisData = data
         },
         searchState: function (event) {
+            this.marked = false
             this.window_open_second = false
             this.window_open_first = false
             this.loading_flag = true
