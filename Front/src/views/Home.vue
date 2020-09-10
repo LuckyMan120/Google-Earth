@@ -321,7 +321,6 @@ export default {
             stateDetails.push(eachStateDetail)
         });
         this.selectState = stateDetails
-        console.log(this.selectState)
 
         // get ip address
         fetch('https://api.ipify.org?format=json')
@@ -514,7 +513,6 @@ export default {
             }
             this.selectState.forEach(async item => {
                 if (item.name === event.target.value) {
-                    console.log('item.center', item.center)
                     let data = {}
                     data['name'] = item.name
                     let polygons = await api.searchPolygon(data)

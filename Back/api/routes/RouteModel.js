@@ -63,7 +63,6 @@ router.route('/all').get((req, res) =>{
 });
 
 router.route('/search').post((req, res) => {
-	console.log('search', req.body);
 	// get all map data
 	db.earthDB.find({ state: req.body.name })
 		.then(mapData => {
@@ -80,7 +79,6 @@ router.route('/search').post((req, res) => {
 });
 
 router.route('/save').post((req, res) => {
-	console.log('-save-', req.body);
 	// search IP , update visitor IP array and visitor number.
 	db.countDB.find()
 		.then(result => {
