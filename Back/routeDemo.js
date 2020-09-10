@@ -10,11 +10,62 @@ var csvFile = path.join(__dirname, './population.csv');
 var convert = require('xml-js');
 var firstKmlFile = path.join(__dirname, './firstKml.kml');
 var secondKmlFile = path.join(__dirname, './secondKml.kml');
+var stateKmlFile = path.join(__dirname, './us_states.kml');
 
 // import models visitorDB
 let db = require('../models');
 
+let rad = function (x) {
+    return x * Math.PI / 180;
+};
+
 router.route('/all').get((req, res) =>{
+
+	xmlReader.readXML(fs.readFileSync(stateKmlFile), function(err, stateData) {
+		if (err) {
+	        console.error(err);
+	    }
+
+	    var stateXml = stateData.content;
+	    var stateResult = JSON.parse(convert.xml2json(stateXml, {compact: true, spaces: 4}));
+
+	    let data = {};
+	    data['state'] = stateResult;
+		
+		// get data from DB
+		db.countDB.find()
+	    	.then(counts => {
+	    		data['counts'] = counts;
+
+	    		// get data from visitorDB
+	    		db.visitorDB.find()
+	    			.then(visitorData => {
+	    				data['visitorData'] = visitorData;
+	    				res.json(data);
+	    			})
+	    			.catch(err => console.log(err));
+	    	})
+	    	.catch(err => console.log(err));
+	});
+
+	// save display count
+	db.countDB.find()
+		.then(res => {
+			db.countDB.updateOne(
+				{ _id: res[0]._id},
+				{ $set: 
+					{
+						"display_count" : parseInt(res[0].display_count) + 1
+					}
+				}
+			).then(res => console.log("ok"))
+			.catch(err => console.log('err', err))
+		})
+		.catch(err => console.log(err));
+});
+
+router.route('/search').post((req, res) => {
+	console.log('search', req.body);
 	// get all map data
 	xmlReader.readXML(fs.readFileSync(firstKmlFile), function(err, firstData) {
 	    if (err) {
@@ -38,10 +89,9 @@ router.route('/all').get((req, res) =>{
 		    var csvs = papa.parse(fs.readFileSync(csvFile, {encoding:'utf-8'}).toString()).data;
 
 		    var totalPoints = [];
-		    let data = {};
 
-		    for(var i = 0; i < 100; i++){
-		    // for(var i = 0; i < totalData.length; i++){
+		    // for(var i = 0; i < 100; i++){
+		    for(var i = 0; i < totalData.length; i++){
 		    	var points = {
 	         		path: []
 	         	};
@@ -78,39 +128,17 @@ router.route('/all').get((req, res) =>{
 		    	}
 		    }
 
-		    data['totalPoints'] = totalPoints;
-		    // get back-end data
-		    db.countDB.find()
-		    	.then(counts => {
-		    		data['counts'] = counts;
+		    let data = [];
+		    // search polygons by each state
+		    totalPoints.forEach(point => {
+	            if (req.body.name === point.statename) {
+	            	data.push(point);
+	            }
+		    });
 
-		    		// get data from visitorDB
-		    		db.visitorDB.find()
-		    			.then(visitorData => {
-		    				data['visitorData'] = visitorData;
-		    				console.log('----length', data.totalPoints.length)
-		    				res.json(data);
-		    			})
-		    			.catch(err => console.log(err));
-		    	})
-		    	.catch(err => console.log(err));
+		    res.json(data);
 	    });
 	});
-
-	// save display count
-	db.countDB.find()
-		.then(res => {
-			db.countDB.updateOne(
-				{ _id: res[0]._id},
-				{ $set: 
-					{
-						"display_count" : parseInt(res[0].display_count) + 1
-					}
-				}
-			).then(res => console.log("ok"))
-			.catch(err => console.log('err', err))
-		})
-		.catch(err => console.log(err));
 });
 
 router.route('/save').post((req, res) => {
@@ -288,6 +316,6 @@ router.route('/save').post((req, res) => {
 			.catch(err => console.log(err));
 	}
 	
-})
+});
 
 module.exports = router;

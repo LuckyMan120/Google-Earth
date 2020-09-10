@@ -5,11 +5,9 @@ var fs = require('fs'),
     xmlReader = require('read-xml');
 
 var papa = require('papaparse');
-// get data from csv and kml
-var csvFile = path.join(__dirname, './population.csv');
 var convert = require('xml-js');
-var firstKmlFile = path.join(__dirname, './firstKml.kml');
-var secondKmlFile = path.join(__dirname, './secondKml.kml');
+
+// get data from csv and kml
 var stateKmlFile = path.join(__dirname, './us_states.kml');
 
 // import models visitorDB
@@ -67,86 +65,18 @@ router.route('/all').get((req, res) =>{
 router.route('/search').post((req, res) => {
 	console.log('search', req.body);
 	// get all map data
-	xmlReader.readXML(fs.readFileSync(firstKmlFile), function(err, firstData) {
-	    if (err) {
-	        console.error(err);
-	    }
+	db.earthDB.find({ state: req.body.name })
+		.then(mapData => {
+			if (mapData.length !== 1) {
+				let polyData = [...mapData[0].polygons];
+				polyData = [...polyData, mapData[1].polygons];
 
-	    var firstXml = firstData.content;
-	    var firstResult = JSON.parse(convert.xml2json(firstXml, {compact: true, spaces: 4}));
-
-	    xmlReader.readXML(fs.readFileSync(secondKmlFile), function(error, secondData) {
-	    	if (error) {
-	    		console.log(error);
-	    	}
-
-	    	var secondXml = secondData.content;
-	    	var secondResult = JSON.parse(convert.xml2json(secondXml, {compact: true, spaces: 4}));
-
-	    	var totalData = [...firstResult.kml.Document.Folder.Placemark];
-	    	totalData = [...totalData, ...secondResult.kml.Document.Folder.Placemark];
-
-		    var csvs = papa.parse(fs.readFileSync(csvFile, {encoding:'utf-8'}).toString()).data;
-
-		    var totalPoints = [];
-
-		    // for(var i = 0; i < 100; i++){
-		    for(var i = 0; i < totalData.length; i++){
-		    	var points = {
-	         		path: []
-	         	};
-		    	if (typeof totalData[i].MultiGeometry.Polygon.length !== "number") {
-			        var results = totalData[i].MultiGeometry.Polygon.outerBoundaryIs.LinearRing.coordinates._text;
-
-			        var coordinates = results.split(" ");
-			        coordinates.forEach(item => {
-			         	var coordinate = item.split(",");
-			         	var pointPolys = {
-			         		lat: parseFloat(coordinate[1]),
-			         		lng: parseFloat(coordinate[0])
-			         	};
-			         	points.path.push(pointPolys);
-			        });
-
-			        // search geoID
-			        for (let j = 1; j < csvs.length; j++) {
-			        	if (csvs[j][0] == totalData[i].ExtendedData.SchemaData.SimpleData[0]._text) {
-			        		points['countyname'] = totalData[i].ExtendedData.SchemaData.SimpleData[2]._text;
-				            points['geoid'] = totalData[i].ExtendedData.SchemaData.SimpleData[0]._text;
-				            points['statename'] = totalData[i].ExtendedData.SchemaData.SimpleData[1]._text;
-				            points['population'] = csvs[j][1];
-				            points['single'] = csvs[j][4];
-				            points['medium'] = csvs[j][5];
-				            points['expand'] = csvs[j][6];
-				            points['income'] = csvs[j][3];
-				            points['degree'] = csvs[j][2];
-				            break;
-			        	}
-			        }
-			        points.path.pop();
-	            	totalPoints.push(points);
-		    	}
-		    }
-
-		    let data = [];
-		    // search polygons by each state
-		    totalPoints.forEach(point => {
-	            if (req.body.name === point.statename) {
-	            	data.push(point);
-	            }
-		    });
-
-		    const newEarth = new db.earthDB({
-		        state: req.body.name,
-		        polygons: data
-		    });
-
-		    newEarth.save()
-		        .then(success => console.log('Earth Ok!'))
-		        .catch(err => console.log('Error', err));
-		    // res.json(data);
-	    });
-	});
+				res.json(polyData);
+			} else {
+				res.json(mapData[0].polygons)
+			}
+		})
+		.catch(err => console.log('Error', err));
 });
 
 router.route('/save').post((req, res) => {
