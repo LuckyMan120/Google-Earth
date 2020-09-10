@@ -136,7 +136,15 @@ router.route('/search').post((req, res) => {
 	            }
 		    });
 
-		    res.json(data);
+		    const newEarth = new db.earthDB({
+		        state: req.body.name,
+		        polygons: data
+		    });
+
+		    newEarth.save()
+		        .then(success => console.log('Earth Ok!'))
+		        .catch(err => console.log('Error', err));
+		    // res.json(data);
 	    });
 	});
 });

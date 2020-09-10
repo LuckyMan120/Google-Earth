@@ -391,29 +391,29 @@ export default {
             this.loading_flag = false
         },
         confirm_leaving: function (evt) {
-            if (this.started) {
-                let visitorData = {}
-                if (this.statisData === null) {
-                    visitorData['IP'] = this.visiterIP
-                    visitorData['session'] = this.time
-                    visitorData['polygons'] = this.selectedPolygons
-                    visitorData['visit_at'] = this.visit_at
-                } else {
-                    visitorData['IP'] = this.visiterIP
-                    visitorData['session'] = this.time
-                    visitorData['polygons'] = this.selectedPolygons
-                    visitorData['visit_at'] = this.visit_at
-                    visitorData['OZ'] = this.statisData.second
-                    visitorData['notOZ'] = this.statisData.first
-                    visitorData['federal'] = this.statisData.federal
-                    visitorData['state'] = this.statisData.state
-                    visitorData['paid'] = this.statisData.paid
-                    visitorData['sold'] = this.statisData.sold
-                    visitorData['rate'] = this.statisData.rate
-                    visitorData['period'] = this.statisData.period
-                }
-                api.saveData(visitorData)
-            }
+            // if (this.started) {
+            //     let visitorData = {}
+            //     if (this.statisData === null) {
+            //         visitorData['IP'] = this.visiterIP
+            //         visitorData['session'] = this.time
+            //         visitorData['polygons'] = this.selectedPolygons
+            //         visitorData['visit_at'] = this.visit_at
+            //     } else {
+            //         visitorData['IP'] = this.visiterIP
+            //         visitorData['session'] = this.time
+            //         visitorData['polygons'] = this.selectedPolygons
+            //         visitorData['visit_at'] = this.visit_at
+            //         visitorData['OZ'] = this.statisData.second
+            //         visitorData['notOZ'] = this.statisData.first
+            //         visitorData['federal'] = this.statisData.federal
+            //         visitorData['state'] = this.statisData.state
+            //         visitorData['paid'] = this.statisData.paid
+            //         visitorData['sold'] = this.statisData.sold
+            //         visitorData['rate'] = this.statisData.rate
+            //         visitorData['period'] = this.statisData.period
+            //     }
+            //     api.saveData(visitorData)
+            // }
             const unsaved_changes_warning = "You have unsaved changes. Are you sure you wish to leave?";
             evt.returnValue = unsaved_changes_warning; 
             return unsaved_changes_warning;
