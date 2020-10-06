@@ -1,0 +1,8004 @@
+[{
+  "company": [
+    {
+      "Title": "Walmart",
+      "Rank": 1,
+      "Employees": 2300000,
+      "Sector": "Retailing",
+      "Latitude": 36.3728538,
+      "Longitude": -94.2088172
+    },
+    {
+      "Title": "Exxon Mobil",
+      "Rank": 2,
+      "Employees": 71200,
+      "Sector": "Energy",
+      "Latitude": 32.8140177,
+      "Longitude": -96.9488945
+    },
+    {
+      "Title": "Berkshire Hathaway",
+      "Rank": 3,
+      "Employees": 377000,
+      "Sector": "Financials",
+      "Latitude": 41.2565369,
+      "Longitude": -95.9345034
+    },
+    {
+      "Title": "Apple",
+      "Rank": 4,
+      "Employees": 123000,
+      "Sector": "Technology",
+      "Latitude": 37.3229978,
+      "Longitude": -122.0321823
+    },
+    {
+      "Title": "UnitedHealth Group",
+      "Rank": 5,
+      "Employees": 260000,
+      "Sector": "Health Care",
+      "Latitude": 44.9211836,
+      "Longitude": -93.4687489
+    },
+    {
+      "Title": "McKesson",
+      "Rank": 6,
+      "Employees": 64500,
+      "Sector": "Wholesalers",
+      "Latitude": 37.7749295,
+      "Longitude": -122.4194155
+    },
+    {
+      "Title": "CVS Health",
+      "Rank": 7,
+      "Employees": 203000,
+      "Sector": "Health Care",
+      "Latitude": 42.0028761,
+      "Longitude": -71.5147839
+    },
+    {
+      "Title": "Amazon.com",
+      "Rank": 8,
+      "Employees": 566000,
+      "Sector": "Retailing",
+      "Latitude": 47.6062095,
+      "Longitude": -122.3320708
+    },
+    {
+      "Title": "AT&T",
+      "Rank": 9,
+      "Employees": 254000,
+      "Sector": "Telecommunications",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "General Motors",
+      "Rank": 10,
+      "Employees": 180000,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 42.331427,
+      "Longitude": -83.0457538
+    },
+    {
+      "Title": "Ford Motor",
+      "Rank": 11,
+      "Employees": 202000,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 42.3222599,
+      "Longitude": -83.1763145
+    },
+    {
+      "Title": "AmerisourceBergen",
+      "Rank": 12,
+      "Employees": 19500,
+      "Sector": "Wholesalers",
+      "Latitude": 40.0756627,
+      "Longitude": -75.4590816
+    },
+    {
+      "Title": "Chevron",
+      "Rank": 13,
+      "Employees": 51900,
+      "Sector": "Energy",
+      "Latitude": 37.7799273,
+      "Longitude": -121.9780153
+    },
+    {
+      "Title": "Cardinal Health",
+      "Rank": 14,
+      "Employees": 40400,
+      "Sector": "Wholesalers",
+      "Latitude": 40.0992294,
+      "Longitude": -83.1140771
+    },
+    {
+      "Title": "Costco",
+      "Rank": 15,
+      "Employees": 182000,
+      "Sector": "Retailing",
+      "Latitude": 47.5301011,
+      "Longitude": -122.0326191
+    },
+    {
+      "Title": "Verizon",
+      "Rank": 16,
+      "Employees": 155400,
+      "Sector": "Telecommunications",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Kroger",
+      "Rank": 17,
+      "Employees": 449000,
+      "Sector": "Food &  Drug Stores",
+      "Latitude": 39.1031182,
+      "Longitude": -84.5120196
+    },
+    {
+      "Title": "General Electric",
+      "Rank": 18,
+      "Employees": 313000,
+      "Sector": "Industrials",
+      "Latitude": 42.3600825,
+      "Longitude": -71.0588801
+    },
+    {
+      "Title": "Walgreens Boots Alliance",
+      "Rank": 19,
+      "Employees": 290000,
+      "Sector": "Food &  Drug Stores",
+      "Latitude": 42.1711365,
+      "Longitude": -87.8445119
+    },
+    {
+      "Title": "JPMorgan Chase",
+      "Rank": 20,
+      "Employees": 252539,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Fannie Mae",
+      "Rank": 21,
+      "Employees": 7200,
+      "Sector": "Financials",
+      "Latitude": 47.7510741,
+      "Longitude": -120.7401385
+    },
+    {
+      "Title": "Alphabet",
+      "Rank": 22,
+      "Employees": 80110,
+      "Sector": "Technology",
+      "Latitude": 37.3860517,
+      "Longitude": -122.0838511
+    },
+    {
+      "Title": "Home Depot",
+      "Rank": 23,
+      "Employees": 413000,
+      "Sector": "Retailing",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Bank of America Corp.",
+      "Rank": 24,
+      "Employees": 209376,
+      "Sector": "Financials",
+      "Latitude": 35.2270869,
+      "Longitude": -80.8431267
+    },
+    {
+      "Title": "Express Scripts Holding",
+      "Rank": 25,
+      "Employees": 26600,
+      "Sector": "Health Care",
+      "Latitude": 38.6270025,
+      "Longitude": -90.1994042
+    },
+    {
+      "Title": "Wells Fargo",
+      "Rank": 26,
+      "Employees": 262700,
+      "Sector": "Financials",
+      "Latitude": 37.7749295,
+      "Longitude": -122.4194155
+    },
+    {
+      "Title": "Boeing",
+      "Rank": 27,
+      "Employees": 140800,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Phillips 66",
+      "Rank": 28,
+      "Employees": 14600,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Anthem",
+      "Rank": 29,
+      "Employees": 56000,
+      "Sector": "Health Care",
+      "Latitude": 39.768403,
+      "Longitude": -86.158068
+    },
+    {
+      "Title": "Microsoft",
+      "Rank": 30,
+      "Employees": 124000,
+      "Sector": "Technology",
+      "Latitude": 47.6739881,
+      "Longitude": -122.121512
+    },
+    {
+      "Title": "Valero Energy",
+      "Rank": 31,
+      "Employees": 10015,
+      "Sector": "Energy",
+      "Latitude": 29.4241219,
+      "Longitude": -98.4936282
+    },
+    {
+      "Title": "Citigroup",
+      "Rank": 32,
+      "Employees": 209000,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Comcast",
+      "Rank": 33,
+      "Employees": 164000,
+      "Sector": "Telecommunications",
+      "Latitude": 39.9525839,
+      "Longitude": -75.1652215
+    },
+    {
+      "Title": "IBM",
+      "Rank": 34,
+      "Employees": 397800,
+      "Sector": "Technology",
+      "Latitude": 41.1264849,
+      "Longitude": -73.7140195
+    },
+    {
+      "Title": "Dell Technologies",
+      "Rank": 35,
+      "Employees": 145000,
+      "Sector": "Technology",
+      "Latitude": 30.5082551,
+      "Longitude": -97.678896
+    },
+    {
+      "Title": "State Farm Insurance Cos.",
+      "Rank": 36,
+      "Employees": 65664,
+      "Sector": "Financials",
+      "Latitude": 40.4842027,
+      "Longitude": -88.9936873
+    },
+    {
+      "Title": "Johnson & Johnson",
+      "Rank": 37,
+      "Employees": 134000,
+      "Sector": "Health Care",
+      "Latitude": 40.4862157,
+      "Longitude": -74.4518188
+    },
+    {
+      "Title": "Freddie Mac",
+      "Rank": 38,
+      "Employees": 6165,
+      "Sector": "Financials",
+      "Latitude": 38.9338676,
+      "Longitude": -77.1772604
+    },
+    {
+      "Title": "Target",
+      "Rank": 39,
+      "Employees": 345000,
+      "Sector": "Retailing",
+      "Latitude": 44.977753,
+      "Longitude": -93.2650108
+    },
+    {
+      "Title": "Lowes",
+      "Rank": 40,
+      "Employees": 255000,
+      "Sector": "Retailing",
+      "Latitude": 35.5848596,
+      "Longitude": -80.8100724
+    },
+    {
+      "Title": "Marathon Petroleum",
+      "Rank": 41,
+      "Employees": 43800,
+      "Sector": "Energy",
+      "Latitude": 41.04422,
+      "Longitude": -83.6499321
+    },
+    {
+      "Title": "Procter & Gamble",
+      "Rank": 42,
+      "Employees": 95000,
+      "Sector": "Household Products",
+      "Latitude": 39.1031182,
+      "Longitude": -84.5120196
+    },
+    {
+      "Title": "MetLife",
+      "Rank": 43,
+      "Employees": 49000,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "UPS",
+      "Rank": 44,
+      "Employees": 346415,
+      "Sector": "Transportation",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "PepsiCo",
+      "Rank": 45,
+      "Employees": 263000,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 41.0400135,
+      "Longitude": -73.7144477
+    },
+    {
+      "Title": "Intel",
+      "Rank": 46,
+      "Employees": 102700,
+      "Sector": "Technology",
+      "Latitude": 37.3541079,
+      "Longitude": -121.9552356
+    },
+    {
+      "Title": "DowDuPont",
+      "Rank": 47,
+      "Employees": 98000,
+      "Sector": "Chemicals",
+      "Latitude": 43.623574,
+      "Longitude": -84.232105
+    },
+    {
+      "Title": "Archer Daniels Midland",
+      "Rank": 48,
+      "Employees": 31300,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Aetna",
+      "Rank": 49,
+      "Employees": 47950,
+      "Sector": "Health Care",
+      "Latitude": 41.7658043,
+      "Longitude": -72.6733723
+    },
+    {
+      "Title": "FedEx",
+      "Rank": 50,
+      "Employees": 357000,
+      "Sector": "Transportation",
+      "Latitude": 35.1495343,
+      "Longitude": -90.0489801
+    },
+    {
+      "Title": "United Technologies",
+      "Rank": 51,
+      "Employees": 204700,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 41.7360305,
+      "Longitude": -72.795027
+    },
+    {
+      "Title": "Prudential Financial",
+      "Rank": 52,
+      "Employees": 49705,
+      "Sector": "Financials",
+      "Latitude": 40.735657,
+      "Longitude": -74.1723667
+    },
+    {
+      "Title": "Albertsons Cos.",
+      "Rank": 53,
+      "Employees": 273000,
+      "Sector": "Food &  Drug Stores",
+      "Latitude": 43.6150186,
+      "Longitude": -116.2023137
+    },
+    {
+      "Title": "Sysco",
+      "Rank": 54,
+      "Employees": 66500,
+      "Sector": "Wholesalers",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Disney",
+      "Rank": 55,
+      "Employees": 199000,
+      "Sector": "Media",
+      "Latitude": 34.1808392,
+      "Longitude": -118.3089661
+    },
+    {
+      "Title": "Humana",
+      "Rank": 56,
+      "Employees": 45900,
+      "Sector": "Health Care",
+      "Latitude": 38.2526647,
+      "Longitude": -85.7584557
+    },
+    {
+      "Title": "Pfizer",
+      "Rank": 57,
+      "Employees": 90200,
+      "Sector": "Health Care",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "HP",
+      "Rank": 58,
+      "Employees": 49000,
+      "Sector": "Technology",
+      "Latitude": 37.4418834,
+      "Longitude": -122.1430195
+    },
+    {
+      "Title": "Lockheed Martin",
+      "Rank": 59,
+      "Employees": 100000,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 38.984652,
+      "Longitude": -77.0947092
+    },
+    {
+      "Title": "AIG",
+      "Rank": 60,
+      "Employees": 49800,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Centene",
+      "Rank": 61,
+      "Employees": 33700,
+      "Sector": "Health Care",
+      "Latitude": 38.6270025,
+      "Longitude": -90.1994042
+    },
+    {
+      "Title": "Cisco Systems",
+      "Rank": 62,
+      "Employees": 72900,
+      "Sector": "Technology",
+      "Latitude": 37.3382082,
+      "Longitude": -121.8863286
+    },
+    {
+      "Title": "HCA Healthcare",
+      "Rank": 63,
+      "Employees": 221491,
+      "Sector": "Health Care",
+      "Latitude": 36.1626638,
+      "Longitude": -86.7816016
+    },
+    {
+      "Title": "Energy Transfer Equity",
+      "Rank": 64,
+      "Employees": 29486,
+      "Sector": "Energy",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "Caterpillar",
+      "Rank": 65,
+      "Employees": 98400,
+      "Sector": "Industrials",
+      "Latitude": 42.1711365,
+      "Longitude": -87.8445119
+    },
+    {
+      "Title": "Nationwide",
+      "Rank": 66,
+      "Employees": 33135,
+      "Sector": "Financials",
+      "Latitude": 39.9611755,
+      "Longitude": -82.9987942
+    },
+    {
+      "Title": "Morgan Stanley",
+      "Rank": 67,
+      "Employees": 57633,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Liberty Mutual Insurance Group",
+      "Rank": 68,
+      "Employees": 50000,
+      "Sector": "Financials",
+      "Latitude": 42.3600825,
+      "Longitude": -71.0588801
+    },
+    {
+      "Title": "New York Life Insurance",
+      "Rank": 69,
+      "Employees": 11114,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Goldman Sachs Group",
+      "Rank": 70,
+      "Employees": 36600,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "American Airlines Group",
+      "Rank": 71,
+      "Employees": 126600,
+      "Sector": "Transportation",
+      "Latitude": 32.7554883,
+      "Longitude": -97.3307658
+    },
+    {
+      "Title": "Best Buy",
+      "Rank": 72,
+      "Employees": 125000,
+      "Sector": "Retailing",
+      "Latitude": 44.8832982,
+      "Longitude": -93.2830021
+    },
+    {
+      "Title": "Cigna",
+      "Rank": 73,
+      "Employees": 46000,
+      "Sector": "Health Care",
+      "Latitude": 41.826488,
+      "Longitude": -72.7300945
+    },
+    {
+      "Title": "Charter Communications",
+      "Rank": 74,
+      "Employees": 94800,
+      "Sector": "Telecommunications",
+      "Latitude": 41.0534302,
+      "Longitude": -73.5387341
+    },
+    {
+      "Title": "Delta Air Lines",
+      "Rank": 75,
+      "Employees": 86564,
+      "Sector": "Transportation",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Facebook",
+      "Rank": 76,
+      "Employees": 25105,
+      "Sector": "Technology",
+      "Latitude": 37.4529598,
+      "Longitude": -122.1817252
+    },
+    {
+      "Title": "Honeywell International",
+      "Rank": 77,
+      "Employees": 131000,
+      "Sector": "Industrials",
+      "Latitude": 40.8395922,
+      "Longitude": -74.4818698
+    },
+    {
+      "Title": "Merck",
+      "Rank": 78,
+      "Employees": 69000,
+      "Sector": "Health Care",
+      "Latitude": 40.6764911,
+      "Longitude": -74.2907032
+    },
+    {
+      "Title": "Allstate",
+      "Rank": 79,
+      "Employees": 42680,
+      "Sector": "Financials",
+      "Latitude": 42.1275267,
+      "Longitude": -87.8289548
+    },
+    {
+      "Title": "Tyson Foods",
+      "Rank": 80,
+      "Employees": 122000,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 36.1867442,
+      "Longitude": -94.1288141
+    },
+    {
+      "Title": "United Continental Holdings",
+      "Rank": 81,
+      "Employees": 89800,
+      "Sector": "Transportation",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Oracle",
+      "Rank": 82,
+      "Employees": 138000,
+      "Sector": "Technology",
+      "Latitude": 37.4852152,
+      "Longitude": -122.2363548
+    },
+    {
+      "Title": "Tech Data",
+      "Rank": 83,
+      "Employees": 14000,
+      "Sector": "Wholesalers",
+      "Latitude": 27.9658533,
+      "Longitude": -82.8001026
+    },
+    {
+      "Title": "TIAA",
+      "Rank": 84,
+      "Employees": 16829,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "TJX",
+      "Rank": 85,
+      "Employees": 249000,
+      "Sector": "Retailing",
+      "Latitude": 42.279286,
+      "Longitude": -71.4161565
+    },
+    {
+      "Title": "American Express",
+      "Rank": 86,
+      "Employees": 55000,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Coca-Cola",
+      "Rank": 87,
+      "Employees": 61800,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Publix Super Markets",
+      "Rank": 88,
+      "Employees": 193000,
+      "Sector": "Food &  Drug Stores",
+      "Latitude": 28.0394654,
+      "Longitude": -81.9498042
+    },
+    {
+      "Title": "Nike",
+      "Rank": 89,
+      "Employees": 74400,
+      "Sector": "Apparel",
+      "Latitude": 45.4887993,
+      "Longitude": -122.8013332
+    },
+    {
+      "Title": "Andeavor",
+      "Rank": 90,
+      "Employees": 14300,
+      "Sector": "Energy",
+      "Latitude": 29.4241219,
+      "Longitude": -98.4936282
+    },
+    {
+      "Title": "World Fuel Services",
+      "Rank": 91,
+      "Employees": 5000,
+      "Sector": "Energy",
+      "Latitude": 25.7616798,
+      "Longitude": -80.1917902
+    },
+    {
+      "Title": "Exelon",
+      "Rank": 92,
+      "Employees": 34621,
+      "Sector": "Energy",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Massachusetts Mutual Life Insurance",
+      "Rank": 93,
+      "Employees": 11811,
+      "Sector": "Financials",
+      "Latitude": 42.1014831,
+      "Longitude": -72.589811
+    },
+    {
+      "Title": "Rite Aid",
+      "Rank": 94,
+      "Employees": 70430,
+      "Sector": "Food &  Drug Stores",
+      "Latitude": 40.2398118,
+      "Longitude": -76.9199742
+    },
+    {
+      "Title": "ConocoPhillips",
+      "Rank": 95,
+      "Employees": 11400,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "CHS",
+      "Rank": 96,
+      "Employees": 11626,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 44.8480218,
+      "Longitude": -93.0427153
+    },
+    {
+      "Title": "3M",
+      "Rank": 97,
+      "Employees": 91536,
+      "Sector": "Industrials",
+      "Latitude": 44.9537029,
+      "Longitude": -93.0899578
+    },
+    {
+      "Title": "Time Warner",
+      "Rank": 98,
+      "Employees": 26000,
+      "Sector": "Media",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "General Dynamics",
+      "Rank": 99,
+      "Employees": 98600,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 38.882334,
+      "Longitude": -77.1710914
+    },
+    {
+      "Title": "USAA",
+      "Rank": 100,
+      "Employees": 32705,
+      "Sector": "Financials",
+      "Latitude": 29.4241219,
+      "Longitude": -98.4936282
+    },
+    {
+      "Title": "Capital One Financial",
+      "Rank": 101,
+      "Employees": 49300,
+      "Sector": "Financials",
+      "Latitude": 38.9338676,
+      "Longitude": -77.1772604
+    },
+    {
+      "Title": "Deere",
+      "Rank": 102,
+      "Employees": 60476,
+      "Sector": "Industrials",
+      "Latitude": 41.5067003,
+      "Longitude": -90.5151342
+    },
+    {
+      "Title": "INTL FCStone",
+      "Rank": 103,
+      "Employees": 1607,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Northwestern Mutual",
+      "Rank": 104,
+      "Employees": 5437,
+      "Sector": "Financials",
+      "Latitude": 43.0389025,
+      "Longitude": -87.9064736
+    },
+    {
+      "Title": "Enterprise Products Partners",
+      "Rank": 105,
+      "Employees": 7000,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Travelers Cos.",
+      "Rank": 106,
+      "Employees": 30800,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Hewlett Packard Enterprise",
+      "Rank": 107,
+      "Employees": 66000,
+      "Sector": "Technology",
+      "Latitude": 37.4418834,
+      "Longitude": -122.1430195
+    },
+    {
+      "Title": "Philip Morris International",
+      "Rank": 108,
+      "Employees": 80600,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Twenty-First Century Fox",
+      "Rank": 109,
+      "Employees": 21700,
+      "Sector": "Media",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "AbbVie",
+      "Rank": 110,
+      "Employees": 29000,
+      "Sector": "Health Care",
+      "Latitude": 42.325578,
+      "Longitude": -87.8411818
+    },
+    {
+      "Title": "Abbott Laboratories",
+      "Rank": 111,
+      "Employees": 99000,
+      "Sector": "Health Care",
+      "Latitude": 42.304505,
+      "Longitude": -87.8960712
+    },
+    {
+      "Title": "Progressive",
+      "Rank": 112,
+      "Employees": 33656,
+      "Sector": "Financials",
+      "Latitude": 41.5519952,
+      "Longitude": -81.4392828
+    },
+    {
+      "Title": "Arrow Electronics",
+      "Rank": 113,
+      "Employees": 18800,
+      "Sector": "Wholesalers",
+      "Latitude": 39.5807452,
+      "Longitude": -104.8771726
+    },
+    {
+      "Title": "Kraft Heinz",
+      "Rank": 114,
+      "Employees": 39000,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 40.4406248,
+      "Longitude": -79.9958864
+    },
+    {
+      "Title": "Plains GP Holdings",
+      "Rank": 115,
+      "Employees": 4850,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Gilead Sciences",
+      "Rank": 116,
+      "Employees": 10000,
+      "Sector": "Health Care",
+      "Latitude": 37.5585465,
+      "Longitude": -122.2710788
+    },
+    {
+      "Title": "Mondelez International",
+      "Rank": 117,
+      "Employees": 83000,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 42.1711365,
+      "Longitude": -87.8445119
+    },
+    {
+      "Title": "Northrop Grumman",
+      "Rank": 118,
+      "Employees": 70000,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 38.882334,
+      "Longitude": -77.1710914
+    },
+    {
+      "Title": "Raytheon",
+      "Rank": 119,
+      "Employees": 64000,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 42.3764852,
+      "Longitude": -71.2356113
+    },
+    {
+      "Title": "Macys",
+      "Rank": 120,
+      "Employees": 130000,
+      "Sector": "Retailing",
+      "Latitude": 39.1031182,
+      "Longitude": -84.5120196
+    },
+    {
+      "Title": "US Foods Holding",
+      "Rank": 121,
+      "Employees": 25204,
+      "Sector": "Wholesalers",
+      "Latitude": 41.9867507,
+      "Longitude": -87.8721602
+    },
+    {
+      "Title": "U.S. Bancorp",
+      "Rank": 122,
+      "Employees": 72402,
+      "Sector": "Financials",
+      "Latitude": 44.977753,
+      "Longitude": -93.2650108
+    },
+    {
+      "Title": "Dollar General",
+      "Rank": 123,
+      "Employees": 129000,
+      "Sector": "Retailing",
+      "Latitude": 36.3231066,
+      "Longitude": -86.7133302
+    },
+    {
+      "Title": "International Paper",
+      "Rank": 124,
+      "Employees": 56000,
+      "Sector": "Materials",
+      "Latitude": 35.1495343,
+      "Longitude": -90.0489801
+    },
+    {
+      "Title": "Duke Energy",
+      "Rank": 125,
+      "Employees": 29060,
+      "Sector": "Energy",
+      "Latitude": 35.2270869,
+      "Longitude": -80.8431267
+    },
+    {
+      "Title": "Southern",
+      "Rank": 126,
+      "Employees": 31344,
+      "Sector": "Energy",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Marriott International",
+      "Rank": 127,
+      "Employees": 177000,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 38.984652,
+      "Longitude": -77.0947092
+    },
+    {
+      "Title": "Avnet",
+      "Rank": 128,
+      "Employees": 15700,
+      "Sector": "Wholesalers",
+      "Latitude": 33.4483771,
+      "Longitude": -112.0740373
+    },
+    {
+      "Title": "Eli Lilly",
+      "Rank": 129,
+      "Employees": 40655,
+      "Sector": "Health Care",
+      "Latitude": 39.768403,
+      "Longitude": -86.158068
+    },
+    {
+      "Title": "Amgen",
+      "Rank": 130,
+      "Employees": 20800,
+      "Sector": "Health Care",
+      "Latitude": 34.1705609,
+      "Longitude": -118.8375937
+    },
+    {
+      "Title": "McDonalds",
+      "Rank": 131,
+      "Employees": 235000,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 41.8397865,
+      "Longitude": -87.9535534
+    },
+    {
+      "Title": "Starbucks",
+      "Rank": 132,
+      "Employees": 277000,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 47.6062095,
+      "Longitude": -122.3320708
+    },
+    {
+      "Title": "Qualcomm",
+      "Rank": 133,
+      "Employees": 33800,
+      "Sector": "Technology",
+      "Latitude": 32.715738,
+      "Longitude": -117.1610838
+    },
+    {
+      "Title": "Dollar Tree",
+      "Rank": 134,
+      "Employees": 116200,
+      "Sector": "Retailing",
+      "Latitude": 36.7682088,
+      "Longitude": -76.2874927
+    },
+    {
+      "Title": "PBF Energy",
+      "Rank": 135,
+      "Employees": 3165,
+      "Sector": "Energy",
+      "Latitude": 40.8652865,
+      "Longitude": -74.4173877
+    },
+    {
+      "Title": "Icahn Enterprises",
+      "Rank": 136,
+      "Employees": 89034,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Aflac",
+      "Rank": 137,
+      "Employees": 11318,
+      "Sector": "Financials",
+      "Latitude": 32.4609764,
+      "Longitude": -84.9877094
+    },
+    {
+      "Title": "AutoNation",
+      "Rank": 138,
+      "Employees": 26000,
+      "Sector": "Retailing",
+      "Latitude": 26.1224386,
+      "Longitude": -80.1373174
+    },
+    {
+      "Title": "Penske Automotive Group",
+      "Rank": 139,
+      "Employees": 26000,
+      "Sector": "Retailing",
+      "Latitude": 42.583645,
+      "Longitude": -83.2454883
+    },
+    {
+      "Title": "Whirlpool",
+      "Rank": 140,
+      "Employees": 92000,
+      "Sector": "Industrials",
+      "Latitude": 42.1167065,
+      "Longitude": -86.4541894
+    },
+    {
+      "Title": "Union Pacific",
+      "Rank": 141,
+      "Employees": 41992,
+      "Sector": "Transportation",
+      "Latitude": 41.2565369,
+      "Longitude": -95.9345034
+    },
+    {
+      "Title": "Southwest Airlines",
+      "Rank": 142,
+      "Employees": 56110,
+      "Sector": "Transportation",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "ManpowerGroup",
+      "Rank": 143,
+      "Employees": 29000,
+      "Sector": "Business Services",
+      "Latitude": 43.0389025,
+      "Longitude": -87.9064736
+    },
+    {
+      "Title": "Thermo Fisher Scientific",
+      "Rank": 144,
+      "Employees": 66100,
+      "Sector": "Technology",
+      "Latitude": 42.3764852,
+      "Longitude": -71.2356113
+    },
+    {
+      "Title": "Bristol-Myers Squibb",
+      "Rank": 145,
+      "Employees": 23700,
+      "Sector": "Health Care",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Halliburton",
+      "Rank": 146,
+      "Employees": 55000,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Tenet Healthcare",
+      "Rank": 147,
+      "Employees": 111980,
+      "Sector": "Health Care",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "Lear",
+      "Rank": 148,
+      "Employees": 165000,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 42.4733688,
+      "Longitude": -83.2218731
+    },
+    {
+      "Title": "Cummins",
+      "Rank": 149,
+      "Employees": 58600,
+      "Sector": "Industrials",
+      "Latitude": 39.2014404,
+      "Longitude": -85.9213796
+    },
+    {
+      "Title": "Micron Technology",
+      "Rank": 150,
+      "Employees": 34100,
+      "Sector": "Technology",
+      "Latitude": 43.6150186,
+      "Longitude": -116.2023137
+    },
+    {
+      "Title": "Nucor",
+      "Rank": 151,
+      "Employees": 25100,
+      "Sector": "Materials",
+      "Latitude": 35.2270869,
+      "Longitude": -80.8431267
+    },
+    {
+      "Title": "Molina Healthcare",
+      "Rank": 152,
+      "Employees": 20000,
+      "Sector": "Health Care",
+      "Latitude": 33.7700504,
+      "Longitude": -118.1937395
+    },
+    {
+      "Title": "Fluor",
+      "Rank": 153,
+      "Employees": 56706,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 32.8140177,
+      "Longitude": -96.9488945
+    },
+    {
+      "Title": "Altria Group",
+      "Rank": 154,
+      "Employees": 8300,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 37.5407246,
+      "Longitude": -77.4360481
+    },
+    {
+      "Title": "Paccar",
+      "Rank": 155,
+      "Employees": 25000,
+      "Sector": "Industrials",
+      "Latitude": 47.6101497,
+      "Longitude": -122.2015159
+    },
+    {
+      "Title": "Hartford Financial Services",
+      "Rank": 156,
+      "Employees": 16400,
+      "Sector": "Financials",
+      "Latitude": 41.7658043,
+      "Longitude": -72.6733723
+    },
+    {
+      "Title": "Kohls",
+      "Rank": 157,
+      "Employees": 85000,
+      "Sector": "Retailing",
+      "Latitude": 43.1788967,
+      "Longitude": -88.1173132
+    },
+    {
+      "Title": "Western Digital",
+      "Rank": 158,
+      "Employees": 67629,
+      "Sector": "Technology",
+      "Latitude": 37.3382082,
+      "Longitude": -121.8863286
+    },
+    {
+      "Title": "Jabil",
+      "Rank": 159,
+      "Employees": 170000,
+      "Sector": "Technology",
+      "Latitude": 27.7676008,
+      "Longitude": -82.6402915
+    },
+    {
+      "Title": "Community Health Systems",
+      "Rank": 160,
+      "Employees": 86000,
+      "Sector": "Health Care",
+      "Latitude": 35.9250637,
+      "Longitude": -86.8688899
+    },
+    {
+      "Title": "Visa",
+      "Rank": 161,
+      "Employees": 15000,
+      "Sector": "Business Services",
+      "Latitude": 37.7749295,
+      "Longitude": -122.4194155
+    },
+    {
+      "Title": "Danaher",
+      "Rank": 162,
+      "Employees": 67000,
+      "Sector": "Health Care",
+      "Latitude": 47.7510741,
+      "Longitude": -120.7401385
+    },
+    {
+      "Title": "Kimberly-Clark",
+      "Rank": 163,
+      "Employees": 42000,
+      "Sector": "Household Products",
+      "Latitude": 32.8140177,
+      "Longitude": -96.9488945
+    },
+    {
+      "Title": "AECOM",
+      "Rank": 164,
+      "Employees": 87000,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 34.0522342,
+      "Longitude": -118.2436849
+    },
+    {
+      "Title": "PNC Financial Services",
+      "Rank": 165,
+      "Employees": 51632,
+      "Sector": "Financials",
+      "Latitude": 40.4406248,
+      "Longitude": -79.9958864
+    },
+    {
+      "Title": "CenturyLink",
+      "Rank": 166,
+      "Employees": 51000,
+      "Sector": "Telecommunications",
+      "Latitude": 32.5093109,
+      "Longitude": -92.1193012
+    },
+    {
+      "Title": "NextEra Energy",
+      "Rank": 167,
+      "Employees": 14000,
+      "Sector": "Energy",
+      "Latitude": 26.8797819,
+      "Longitude": -80.0533743
+    },
+    {
+      "Title": "PG& E Corp.",
+      "Rank": 168,
+      "Employees": 23000,
+      "Sector": "Energy",
+      "Latitude": 37.7749295,
+      "Longitude": -122.4194155
+    },
+    {
+      "Title": "Synnex",
+      "Rank": 169,
+      "Employees": 113600,
+      "Sector": "Wholesalers",
+      "Latitude": 37.5482697,
+      "Longitude": -121.9885719
+    },
+    {
+      "Title": "WellCare Health Plans",
+      "Rank": 170,
+      "Employees": 8900,
+      "Sector": "Health Care",
+      "Latitude": 27.950575,
+      "Longitude": -82.4571776
+    },
+    {
+      "Title": "Performance Food Group",
+      "Rank": 171,
+      "Employees": 14000,
+      "Sector": "Wholesalers",
+      "Latitude": 37.5407246,
+      "Longitude": -77.4360481
+    },
+    {
+      "Title": "Sears Holdings",
+      "Rank": 172,
+      "Employees": 89000,
+      "Sector": "Retailing",
+      "Latitude": 42.0629915,
+      "Longitude": -88.1227199
+    },
+    {
+      "Title": "Synchrony Financial",
+      "Rank": 173,
+      "Employees": 16000,
+      "Sector": "Financials",
+      "Latitude": 41.0534302,
+      "Longitude": -73.5387341
+    },
+    {
+      "Title": "CarMax",
+      "Rank": 174,
+      "Employees": 24344,
+      "Sector": "Retailing",
+      "Latitude": 37.5407246,
+      "Longitude": -77.4360481
+    },
+    {
+      "Title": "Bank of New York Mellon",
+      "Rank": 175,
+      "Employees": 52500,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Freeport-McMoRan",
+      "Rank": 176,
+      "Employees": 25200,
+      "Sector": "Energy",
+      "Latitude": 33.4483771,
+      "Longitude": -112.0740373
+    },
+    {
+      "Title": "Genuine Parts",
+      "Rank": 177,
+      "Employees": 48000,
+      "Sector": "Wholesalers",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Emerson Electric",
+      "Rank": 178,
+      "Employees": 76500,
+      "Sector": "Industrials",
+      "Latitude": 38.6270025,
+      "Longitude": -90.1994042
+    },
+    {
+      "Title": "DaVita",
+      "Rank": 179,
+      "Employees": 74500,
+      "Sector": "Health Care",
+      "Latitude": 39.7392358,
+      "Longitude": -104.990251
+    },
+    {
+      "Title": "Supervalu",
+      "Rank": 180,
+      "Employees": 29000,
+      "Sector": "Food &  Drug Stores",
+      "Latitude": 44.8546856,
+      "Longitude": -93.470786
+    },
+    {
+      "Title": "Gap",
+      "Rank": 181,
+      "Employees": 135000,
+      "Sector": "Retailing",
+      "Latitude": 37.7749295,
+      "Longitude": -122.4194155
+    },
+    {
+      "Title": "General Mills",
+      "Rank": 182,
+      "Employees": 38000,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 44.977753,
+      "Longitude": -93.2650108
+    },
+    {
+      "Title": "Nordstrom",
+      "Rank": 183,
+      "Employees": 76000,
+      "Sector": "Retailing",
+      "Latitude": 47.6062095,
+      "Longitude": -122.3320708
+    },
+    {
+      "Title": "Colgate-Palmolive",
+      "Rank": 184,
+      "Employees": 35900,
+      "Sector": "Household Products",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "American Electric Power",
+      "Rank": 185,
+      "Employees": 17666,
+      "Sector": "Energy",
+      "Latitude": 39.9611755,
+      "Longitude": -82.9987942
+    },
+    {
+      "Title": "XPO Logistics",
+      "Rank": 186,
+      "Employees": 95000,
+      "Sector": "Transportation",
+      "Latitude": 41.0262417,
+      "Longitude": -73.6281964
+    },
+    {
+      "Title": "Goodyear Tire & Rubber",
+      "Rank": 187,
+      "Employees": 64000,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 41.0814447,
+      "Longitude": -81.5190053
+    },
+    {
+      "Title": "Omnicom Group",
+      "Rank": 188,
+      "Employees": 77300,
+      "Sector": "Business Services",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "CDW",
+      "Rank": 189,
+      "Employees": 8726,
+      "Sector": "Technology",
+      "Latitude": 42.1900249,
+      "Longitude": -87.9084039
+    },
+    {
+      "Title": "Sherwin-Williams",
+      "Rank": 190,
+      "Employees": 52695,
+      "Sector": "Chemicals",
+      "Latitude": 41.49932,
+      "Longitude": -81.6943605
+    },
+    {
+      "Title": "PPG Industries",
+      "Rank": 191,
+      "Employees": 47200,
+      "Sector": "Chemicals",
+      "Latitude": 40.4406248,
+      "Longitude": -79.9958864
+    },
+    {
+      "Title": "Texas Instruments",
+      "Rank": 192,
+      "Employees": 29714,
+      "Sector": "Technology",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "C.H. Robinson Worldwide",
+      "Rank": 193,
+      "Employees": 15074,
+      "Sector": "Transportation",
+      "Latitude": 44.8546856,
+      "Longitude": -93.470786
+    },
+    {
+      "Title": "WestRock",
+      "Rank": 194,
+      "Employees": 44800,
+      "Sector": "Materials",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Cognizant Technology Solutions",
+      "Rank": 195,
+      "Employees": 260000,
+      "Sector": "Technology",
+      "Latitude": 40.8932469,
+      "Longitude": -74.0116536
+    },
+    {
+      "Title": "Newell Brands",
+      "Rank": 196,
+      "Employees": 49000,
+      "Sector": "Household Products",
+      "Latitude": 40.7439905,
+      "Longitude": -74.0323626
+    },
+    {
+      "Title": "CBS",
+      "Rank": 197,
+      "Employees": 14715,
+      "Sector": "Media",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Envision Healthcare",
+      "Rank": 198,
+      "Employees": 57750,
+      "Sector": "Health Care",
+      "Latitude": 36.1626638,
+      "Longitude": -86.7816016
+    },
+    {
+      "Title": "Monsanto",
+      "Rank": 199,
+      "Employees": 21900,
+      "Sector": "Chemicals",
+      "Latitude": 38.6270025,
+      "Longitude": -90.1994042
+    },
+    {
+      "Title": "Aramark",
+      "Rank": 200,
+      "Employees": 215000,
+      "Sector": "Business Services",
+      "Latitude": 39.9525839,
+      "Longitude": -75.1652215
+    },
+    {
+      "Title": "Applied Materials",
+      "Rank": 201,
+      "Employees": 18400,
+      "Sector": "Technology",
+      "Latitude": 37.3541079,
+      "Longitude": -121.9552356
+    },
+    {
+      "Title": "Waste Management",
+      "Rank": 202,
+      "Employees": 42300,
+      "Sector": "Business Services",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "DISH Network",
+      "Rank": 203,
+      "Employees": 17000,
+      "Sector": "Telecommunications",
+      "Latitude": 39.6477653,
+      "Longitude": -104.9877597
+    },
+    {
+      "Title": "Illinois Tool Works",
+      "Rank": 204,
+      "Employees": 50000,
+      "Sector": "Industrials",
+      "Latitude": 42.0697509,
+      "Longitude": -87.7878408
+    },
+    {
+      "Title": "Lincoln National",
+      "Rank": 205,
+      "Employees": 9047,
+      "Sector": "Financials",
+      "Latitude": 40.0462208,
+      "Longitude": -75.3599105
+    },
+    {
+      "Title": "HollyFrontier",
+      "Rank": 206,
+      "Employees": 3522,
+      "Sector": "Energy",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "CBRE Group",
+      "Rank": 207,
+      "Employees": 80000,
+      "Sector": "Financials",
+      "Latitude": 34.0522342,
+      "Longitude": -118.2436849
+    },
+    {
+      "Title": "Textron",
+      "Rank": 208,
+      "Employees": 37000,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 41.8239891,
+      "Longitude": -71.4128343
+    },
+    {
+      "Title": "Ross Stores",
+      "Rank": 209,
+      "Employees": 82700,
+      "Sector": "Retailing",
+      "Latitude": 37.7021521,
+      "Longitude": -121.9357918
+    },
+    {
+      "Title": "Principal Financial",
+      "Rank": 210,
+      "Employees": 15378,
+      "Sector": "Financials",
+      "Latitude": 41.6005448,
+      "Longitude": -93.6091064
+    },
+    {
+      "Title": "D.R. Horton",
+      "Rank": 211,
+      "Employees": 7735,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 32.735687,
+      "Longitude": -97.1080656
+    },
+    {
+      "Title": "Marsh & McLennan",
+      "Rank": 212,
+      "Employees": 64000,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Devon Energy",
+      "Rank": 213,
+      "Employees": 3414,
+      "Sector": "Energy",
+      "Latitude": 35.4675602,
+      "Longitude": -97.5164276
+    },
+    {
+      "Title": "AES",
+      "Rank": 214,
+      "Employees": 10500,
+      "Sector": "Energy",
+      "Latitude": 38.8816208,
+      "Longitude": -77.0909809
+    },
+    {
+      "Title": "Ecolab",
+      "Rank": 215,
+      "Employees": 48400,
+      "Sector": "Chemicals",
+      "Latitude": 44.9537029,
+      "Longitude": -93.0899578
+    },
+    {
+      "Title": "Land O'Lakes",
+      "Rank": 216,
+      "Employees": 10000,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 45.0502435,
+      "Longitude": -93.1566112
+    },
+    {
+      "Title": "Loews",
+      "Rank": 217,
+      "Employees": 18100,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Kinder Morgan",
+      "Rank": 218,
+      "Employees": 10897,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "FirstEnergy",
+      "Rank": 219,
+      "Employees": 15617,
+      "Sector": "Energy",
+      "Latitude": 41.0814447,
+      "Longitude": -81.5190053
+    },
+    {
+      "Title": "Occidental Petroleum",
+      "Rank": 220,
+      "Employees": 11000,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Viacom",
+      "Rank": 221,
+      "Employees": 11200,
+      "Sector": "Media",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "PayPal Holdings",
+      "Rank": 222,
+      "Employees": 18700,
+      "Sector": "Business Services",
+      "Latitude": 37.3382082,
+      "Longitude": -121.8863286
+    },
+    {
+      "Title": "NGL Energy Partners",
+      "Rank": 223,
+      "Employees": 2700,
+      "Sector": "Energy",
+      "Latitude": 36.1539816,
+      "Longitude": -95.992775
+    },
+    {
+      "Title": "Celgene",
+      "Rank": 224,
+      "Employees": 7467,
+      "Sector": "Health Care",
+      "Latitude": 40.7146376,
+      "Longitude": -74.3646122
+    },
+    {
+      "Title": "Arconic",
+      "Rank": 225,
+      "Employees": 41500,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Kellogg",
+      "Rank": 226,
+      "Employees": 32944,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 42.3211522,
+      "Longitude": -85.1797142
+    },
+    {
+      "Title": "Las Vegas Sands",
+      "Rank": 227,
+      "Employees": 50500,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 36.1699412,
+      "Longitude": -115.1398296
+    },
+    {
+      "Title": "Stanley Black & Decker",
+      "Rank": 228,
+      "Employees": 57765,
+      "Sector": "Household Products",
+      "Latitude": 41.6612104,
+      "Longitude": -72.7795419
+    },
+    {
+      "Title": "Booking Holdings",
+      "Rank": 229,
+      "Employees": 22900,
+      "Sector": "Technology",
+      "Latitude": 41.117744,
+      "Longitude": -73.4081575
+    },
+    {
+      "Title": "Lennar",
+      "Rank": 230,
+      "Employees": 9111,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 25.7616798,
+      "Longitude": -80.1917902
+    },
+    {
+      "Title": "L Brands",
+      "Rank": 231,
+      "Employees": 59200,
+      "Sector": "Retailing",
+      "Latitude": 39.9611755,
+      "Longitude": -82.9987942
+    },
+    {
+      "Title": "DTE Energy",
+      "Rank": 232,
+      "Employees": 10200,
+      "Sector": "Energy",
+      "Latitude": 42.331427,
+      "Longitude": -83.0457538
+    },
+    {
+      "Title": "Dominion Energy",
+      "Rank": 233,
+      "Employees": 16200,
+      "Sector": "Energy",
+      "Latitude": 37.5407246,
+      "Longitude": -77.4360481
+    },
+    {
+      "Title": "Reinsurance Group of America",
+      "Rank": 234,
+      "Employees": 2640,
+      "Sector": "Financials",
+      "Latitude": 38.6631083,
+      "Longitude": -90.5770675
+    },
+    {
+      "Title": "J.C. Penney",
+      "Rank": 235,
+      "Employees": 98000,
+      "Sector": "Retailing",
+      "Latitude": 33.0198431,
+      "Longitude": -96.6988856
+    },
+    {
+      "Title": "Mastercard",
+      "Rank": 236,
+      "Employees": 13400,
+      "Sector": "Business Services",
+      "Latitude": 41.0400135,
+      "Longitude": -73.7144477
+    },
+    {
+      "Title": "BlackRock",
+      "Rank": 237,
+      "Employees": 13900,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Henry Schein",
+      "Rank": 238,
+      "Employees": 22000,
+      "Sector": "Wholesalers",
+      "Latitude": 40.7934322,
+      "Longitude": -73.4151214
+    },
+    {
+      "Title": "Guardian Life Ins. Co. of America",
+      "Rank": 239,
+      "Employees": 9283,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Stryker",
+      "Rank": 240,
+      "Employees": 33000,
+      "Sector": "Health Care",
+      "Latitude": 42.2917069,
+      "Longitude": -85.5872286
+    },
+    {
+      "Title": "Jefferies Financial Group",
+      "Rank": 241,
+      "Employees": 12700,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "VF",
+      "Rank": 242,
+      "Employees": 69000,
+      "Sector": "Apparel",
+      "Latitude": 36.0726354,
+      "Longitude": -79.7919754
+    },
+    {
+      "Title": "ADP",
+      "Rank": 243,
+      "Employees": 58000,
+      "Sector": "Business Services",
+      "Latitude": 40.8206555,
+      "Longitude": -74.2937594
+    },
+    {
+      "Title": "Edison International",
+      "Rank": 244,
+      "Employees": 12521,
+      "Sector": "Energy",
+      "Latitude": 34.0805651,
+      "Longitude": -118.072846
+    },
+    {
+      "Title": "Biogen",
+      "Rank": 245,
+      "Employees": 7300,
+      "Sector": "Health Care",
+      "Latitude": 42.3736158,
+      "Longitude": -71.1097335
+    },
+    {
+      "Title": "United States Steel",
+      "Rank": 246,
+      "Employees": 29200,
+      "Sector": "Materials",
+      "Latitude": 40.4406248,
+      "Longitude": -79.9958864
+    },
+    {
+      "Title": "Core-Mark Holding",
+      "Rank": 247,
+      "Employees": 8413,
+      "Sector": "Wholesalers",
+      "Latitude": 37.654656,
+      "Longitude": -122.4077498
+    },
+    {
+      "Title": "Bed Bath & Beyond",
+      "Rank": 248,
+      "Employees": 65000,
+      "Sector": "Retailing",
+      "Latitude": 40.6975898,
+      "Longitude": -74.2631635
+    },
+    {
+      "Title": "Oneok",
+      "Rank": 249,
+      "Employees": 2470,
+      "Sector": "Energy",
+      "Latitude": 36.1539816,
+      "Longitude": -95.992775
+    },
+    {
+      "Title": "BB& T Corp.",
+      "Rank": 250,
+      "Employees": 36484,
+      "Sector": "Financials",
+      "Latitude": 36.0998596,
+      "Longitude": -80.244216
+    },
+    {
+      "Title": "Becton Dickinson",
+      "Rank": 251,
+      "Employees": 41933,
+      "Sector": "Health Care",
+      "Latitude": 41.0167639,
+      "Longitude": -74.2057011
+    },
+    {
+      "Title": "Ameriprise Financial",
+      "Rank": 252,
+      "Employees": 13312,
+      "Sector": "Financials",
+      "Latitude": 44.977753,
+      "Longitude": -93.2650108
+    },
+    {
+      "Title": "Farmers Insurance Exchange",
+      "Rank": 253,
+      "Employees": 13015,
+      "Sector": "Financials",
+      "Latitude": 34.165357,
+      "Longitude": -118.6089752
+    },
+    {
+      "Title": "First Data",
+      "Rank": 254,
+      "Employees": 22000,
+      "Sector": "Business Services",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Consolidated Edison",
+      "Rank": 255,
+      "Employees": 15591,
+      "Sector": "Energy",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Parker-Hannifin",
+      "Rank": 256,
+      "Employees": 56690,
+      "Sector": "Industrials",
+      "Latitude": 41.49932,
+      "Longitude": -81.6943605
+    },
+    {
+      "Title": "Anadarko Petroleum",
+      "Rank": 257,
+      "Employees": 4400,
+      "Sector": "Energy",
+      "Latitude": 30.1658207,
+      "Longitude": -95.4612625
+    },
+    {
+      "Title": "Estee Lauder",
+      "Rank": 258,
+      "Employees": 46000,
+      "Sector": "Household Products",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "State Street Corp.",
+      "Rank": 259,
+      "Employees": 36643,
+      "Sector": "Financials",
+      "Latitude": 42.3600825,
+      "Longitude": -71.0588801
+    },
+    {
+      "Title": "Tesla",
+      "Rank": 260,
+      "Employees": 37543,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 37.4418834,
+      "Longitude": -122.1430195
+    },
+    {
+      "Title": "Netflix",
+      "Rank": 261,
+      "Employees": 5100,
+      "Sector": "Technology",
+      "Latitude": 37.2358078,
+      "Longitude": -121.9623751
+    },
+    {
+      "Title": "Alcoa",
+      "Rank": 262,
+      "Employees": 14600,
+      "Sector": "Materials",
+      "Latitude": 40.4406248,
+      "Longitude": -79.9958864
+    },
+    {
+      "Title": "Discover Financial Services",
+      "Rank": 263,
+      "Employees": 16500,
+      "Sector": "Financials",
+      "Latitude": 42.1675254,
+      "Longitude": -87.897014
+    },
+    {
+      "Title": "Praxair",
+      "Rank": 264,
+      "Employees": 26461,
+      "Sector": "Chemicals",
+      "Latitude": 41.394817,
+      "Longitude": -73.4540111
+    },
+    {
+      "Title": "CSX",
+      "Rank": 265,
+      "Employees": 24006,
+      "Sector": "Transportation",
+      "Latitude": 30.3321838,
+      "Longitude": -81.655651
+    },
+    {
+      "Title": "Xcel Energy",
+      "Rank": 266,
+      "Employees": 11105,
+      "Sector": "Energy",
+      "Latitude": 44.977753,
+      "Longitude": -93.2650108
+    },
+    {
+      "Title": "Unum Group",
+      "Rank": 267,
+      "Employees": 9400,
+      "Sector": "Financials",
+      "Latitude": 35.0456297,
+      "Longitude": -85.3096801
+    },
+    {
+      "Title": "Universal Health Services",
+      "Rank": 268,
+      "Employees": 72300,
+      "Sector": "Health Care",
+      "Latitude": 40.1012856,
+      "Longitude": -75.3835525
+    },
+    {
+      "Title": "NRG Energy",
+      "Rank": 269,
+      "Employees": 5940,
+      "Sector": "Energy",
+      "Latitude": 40.3572976,
+      "Longitude": -74.6672226
+    },
+    {
+      "Title": "EOG Resources",
+      "Rank": 270,
+      "Employees": 2664,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Sempra Energy",
+      "Rank": 271,
+      "Employees": 16046,
+      "Sector": "Energy",
+      "Latitude": 32.715738,
+      "Longitude": -117.1610838
+    },
+    {
+      "Title": "Toys 'R' Us",
+      "Rank": 272,
+      "Employees": 65000,
+      "Sector": "Retailing",
+      "Latitude": 40.9253725,
+      "Longitude": -74.2765441
+    },
+    {
+      "Title": "Group 1 Automotive",
+      "Rank": 273,
+      "Employees": 14108,
+      "Sector": "Retailing",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Entergy",
+      "Rank": 274,
+      "Employees": 13504,
+      "Sector": "Energy",
+      "Latitude": 29.9510658,
+      "Longitude": -90.0715323
+    },
+    {
+      "Title": "Molson Coors Brewing",
+      "Rank": 275,
+      "Employees": 17200,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 39.7392358,
+      "Longitude": -104.990251
+    },
+    {
+      "Title": "L3 Technologies",
+      "Rank": 276,
+      "Employees": 38000,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Ball",
+      "Rank": 277,
+      "Employees": 18300,
+      "Sector": "Materials",
+      "Latitude": 39.9205411,
+      "Longitude": -105.0866504
+    },
+    {
+      "Title": "AutoZone",
+      "Rank": 278,
+      "Employees": 70035,
+      "Sector": "Retailing",
+      "Latitude": 35.1495343,
+      "Longitude": -90.0489801
+    },
+    {
+      "Title": "Murphy USA",
+      "Rank": 279,
+      "Employees": 6900,
+      "Sector": "Retailing",
+      "Latitude": 33.20763,
+      "Longitude": -92.6662674
+    },
+    {
+      "Title": "MGM Resorts International",
+      "Rank": 280,
+      "Employees": 68500,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 36.1699412,
+      "Longitude": -115.1398296
+    },
+    {
+      "Title": "Office Depot",
+      "Rank": 281,
+      "Employees": 45000,
+      "Sector": "Retailing",
+      "Latitude": 26.3683064,
+      "Longitude": -80.1289321
+    },
+    {
+      "Title": "Huntsman",
+      "Rank": 282,
+      "Employees": 10000,
+      "Sector": "Chemicals",
+      "Latitude": 30.1658207,
+      "Longitude": -95.4612625
+    },
+    {
+      "Title": "Baxter International",
+      "Rank": 283,
+      "Employees": 47000,
+      "Sector": "Health Care",
+      "Latitude": 42.1711365,
+      "Longitude": -87.8445119
+    },
+    {
+      "Title": "Norfolk Southern",
+      "Rank": 284,
+      "Employees": 27110,
+      "Sector": "Transportation",
+      "Latitude": 36.8507689,
+      "Longitude": -76.2858726
+    },
+    {
+      "Title": "salesforce.com",
+      "Rank": 285,
+      "Employees": 29000,
+      "Sector": "Technology",
+      "Latitude": 37.7749295,
+      "Longitude": -122.4194155
+    },
+    {
+      "Title": "Laboratory Corp. of America",
+      "Rank": 286,
+      "Employees": 60000,
+      "Sector": "Health Care",
+      "Latitude": 36.0956918,
+      "Longitude": -79.4377991
+    },
+    {
+      "Title": "W.W. Grainger",
+      "Rank": 287,
+      "Employees": 25050,
+      "Sector": "Wholesalers",
+      "Latitude": 42.2586342,
+      "Longitude": -87.840625
+    },
+    {
+      "Title": "Qurate Retail",
+      "Rank": 288,
+      "Employees": 28255,
+      "Sector": "Retailing",
+      "Latitude": 39.6477653,
+      "Longitude": -104.9877597
+    },
+    {
+      "Title": "Autoliv",
+      "Rank": 289,
+      "Employees": 67352,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 42.6875323,
+      "Longitude": -83.2341028
+    },
+    {
+      "Title": "Live Nation Entertainment",
+      "Rank": 290,
+      "Employees": 15050,
+      "Sector": "Media",
+      "Latitude": 34.0736204,
+      "Longitude": -118.4003563
+    },
+    {
+      "Title": "Xerox",
+      "Rank": 291,
+      "Employees": 36100,
+      "Sector": "Technology",
+      "Latitude": 41.117744,
+      "Longitude": -73.4081575
+    },
+    {
+      "Title": "Leidos Holdings",
+      "Rank": 292,
+      "Employees": 31000,
+      "Sector": "Technology",
+      "Latitude": 38.9586307,
+      "Longitude": -77.3570028
+    },
+    {
+      "Title": "Corning",
+      "Rank": 293,
+      "Employees": 46200,
+      "Sector": "Industrials",
+      "Latitude": 42.1428521,
+      "Longitude": -77.0546903
+    },
+    {
+      "Title": "Lithia Motors",
+      "Rank": 294,
+      "Employees": 12899,
+      "Sector": "Retailing",
+      "Latitude": 42.3265152,
+      "Longitude": -122.8755949
+    },
+    {
+      "Title": "Expedia Group",
+      "Rank": 295,
+      "Employees": 22615,
+      "Sector": "Retailing",
+      "Latitude": 47.6101497,
+      "Longitude": -122.2015159
+    },
+    {
+      "Title": "Republic Services",
+      "Rank": 296,
+      "Employees": 35000,
+      "Sector": "Business Services",
+      "Latitude": 33.4483771,
+      "Longitude": -112.0740373
+    },
+    {
+      "Title": "Jacobs Engineering Group",
+      "Rank": 297,
+      "Employees": 49750,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "Sonic Automotive",
+      "Rank": 298,
+      "Employees": 9750,
+      "Sector": "Retailing",
+      "Latitude": 35.2270869,
+      "Longitude": -80.8431267
+    },
+    {
+      "Title": "Ally Financial",
+      "Rank": 299,
+      "Employees": 7900,
+      "Sector": "Financials",
+      "Latitude": 42.331427,
+      "Longitude": -83.0457538
+    },
+    {
+      "Title": "LKQ",
+      "Rank": 300,
+      "Employees": 43000,
+      "Sector": "Wholesalers",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "BorgWarner",
+      "Rank": 301,
+      "Employees": 29000,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 42.6875323,
+      "Longitude": -83.2341028
+    },
+    {
+      "Title": "Fidelity National Financial",
+      "Rank": 302,
+      "Employees": 24525,
+      "Sector": "Financials",
+      "Latitude": 30.3321838,
+      "Longitude": -81.655651
+    },
+    {
+      "Title": "SunTrust Banks",
+      "Rank": 303,
+      "Employees": 23785,
+      "Sector": "Financials",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "IQVIA Holdings",
+      "Rank": 304,
+      "Employees": 55000,
+      "Sector": "Health Care",
+      "Latitude": 35.980513,
+      "Longitude": -78.90511
+    },
+    {
+      "Title": "Reliance Steel & Aluminum",
+      "Rank": 305,
+      "Employees": 14900,
+      "Sector": "Materials",
+      "Latitude": 34.0522342,
+      "Longitude": -118.2436849
+    },
+    {
+      "Title": "Nvidia",
+      "Rank": 306,
+      "Employees": 11528,
+      "Sector": "Technology",
+      "Latitude": 37.3541079,
+      "Longitude": -121.9552356
+    },
+    {
+      "Title": "Voya Financial",
+      "Rank": 307,
+      "Employees": 6300,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "CenterPoint Energy",
+      "Rank": 308,
+      "Employees": 7977,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "eBay",
+      "Rank": 309,
+      "Employees": 14100,
+      "Sector": "Technology",
+      "Latitude": 37.3382082,
+      "Longitude": -121.8863286
+    },
+    {
+      "Title": "Eastman Chemical",
+      "Rank": 310,
+      "Employees": 14000,
+      "Sector": "Chemicals",
+      "Latitude": 36.548434,
+      "Longitude": -82.5618186
+    },
+    {
+      "Title": "American Family Insurance Group",
+      "Rank": 311,
+      "Employees": 11307,
+      "Sector": "Financials",
+      "Latitude": 43.0730517,
+      "Longitude": -89.4012302
+    },
+    {
+      "Title": "Steel Dynamics",
+      "Rank": 312,
+      "Employees": 7635,
+      "Sector": "Materials",
+      "Latitude": 41.079273,
+      "Longitude": -85.1393513
+    },
+    {
+      "Title": "Pacific Life",
+      "Rank": 313,
+      "Employees": 3578,
+      "Sector": "Financials",
+      "Latitude": 33.6188829,
+      "Longitude": -117.9298493
+    },
+    {
+      "Title": "Chesapeake Energy",
+      "Rank": 314,
+      "Employees": 3200,
+      "Sector": "Energy",
+      "Latitude": 35.4675602,
+      "Longitude": -97.5164276
+    },
+    {
+      "Title": "Mohawk Industries",
+      "Rank": 315,
+      "Employees": 38800,
+      "Sector": "Household Products",
+      "Latitude": 34.502587,
+      "Longitude": -84.9510542
+    },
+    {
+      "Title": "Quanta Services",
+      "Rank": 316,
+      "Employees": 32800,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Advance Auto Parts",
+      "Rank": 317,
+      "Employees": 55500,
+      "Sector": "Retailing",
+      "Latitude": 37.2709704,
+      "Longitude": -79.9414266
+    },
+    {
+      "Title": "Owens & Minor",
+      "Rank": 318,
+      "Employees": 8600,
+      "Sector": "Wholesalers",
+      "Latitude": 37.6087561,
+      "Longitude": -77.3733139
+    },
+    {
+      "Title": "United Natural Foods",
+      "Rank": 319,
+      "Employees": 9700,
+      "Sector": "Wholesalers",
+      "Latitude": 41.8239891,
+      "Longitude": -71.4128343
+    },
+    {
+      "Title": "Tenneco",
+      "Rank": 320,
+      "Employees": 32000,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 42.2586342,
+      "Longitude": -87.840625
+    },
+    {
+      "Title": "Conagra Brands",
+      "Rank": 321,
+      "Employees": 12600,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "GameStop",
+      "Rank": 322,
+      "Employees": 39500,
+      "Sector": "Retailing",
+      "Latitude": 32.9342919,
+      "Longitude": -97.0780654
+    },
+    {
+      "Title": "Hormel Foods",
+      "Rank": 323,
+      "Employees": 20200,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 43.6666296,
+      "Longitude": -92.9746367
+    },
+    {
+      "Title": "Hilton Worldwide Holdings",
+      "Rank": 324,
+      "Employees": 163000,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 38.9338676,
+      "Longitude": -77.1772604
+    },
+    {
+      "Title": "Frontier Communications",
+      "Rank": 325,
+      "Employees": 22736,
+      "Sector": "Telecommunications",
+      "Latitude": 41.117744,
+      "Longitude": -73.4081575
+    },
+    {
+      "Title": "Fidelity National Information Services",
+      "Rank": 326,
+      "Employees": 53000,
+      "Sector": "Business Services",
+      "Latitude": 30.3321838,
+      "Longitude": -81.655651
+    },
+    {
+      "Title": "Public Service Enterprise Group",
+      "Rank": 327,
+      "Employees": 12945,
+      "Sector": "Energy",
+      "Latitude": 40.735657,
+      "Longitude": -74.1723667
+    },
+    {
+      "Title": "Boston Scientific",
+      "Rank": 328,
+      "Employees": 29000,
+      "Sector": "Health Care",
+      "Latitude": 42.3459271,
+      "Longitude": -71.5522874
+    },
+    {
+      "Title": "OReilly Automotive",
+      "Rank": 329,
+      "Employees": 60365,
+      "Sector": "Retailing",
+      "Latitude": 37.2089572,
+      "Longitude": -93.2922989
+    },
+    {
+      "Title": "Charles Schwab",
+      "Rank": 330,
+      "Employees": 17600,
+      "Sector": "Financials",
+      "Latitude": 37.7749295,
+      "Longitude": -122.4194155
+    },
+    {
+      "Title": "Global Partners",
+      "Rank": 331,
+      "Employees": 2000,
+      "Sector": "Wholesalers",
+      "Latitude": 42.3764852,
+      "Longitude": -71.2356113
+    },
+    {
+      "Title": "PVH",
+      "Rank": 332,
+      "Employees": 28050,
+      "Sector": "Apparel",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Avis Budget Group",
+      "Rank": 333,
+      "Employees": 26300,
+      "Sector": "Retailing",
+      "Latitude": 40.8652865,
+      "Longitude": -74.4173877
+    },
+    {
+      "Title": "Targa Resources",
+      "Rank": 334,
+      "Employees": 2130,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Hertz Global Holdings",
+      "Rank": 335,
+      "Employees": 37000,
+      "Sector": "Retailing",
+      "Latitude": 26.438136,
+      "Longitude": -81.8067523
+    },
+    {
+      "Title": "Calpine",
+      "Rank": 336,
+      "Employees": 2290,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Mutual of Omaha Insurance",
+      "Rank": 337,
+      "Employees": 5896,
+      "Sector": "Financials",
+      "Latitude": 41.2565369,
+      "Longitude": -95.9345034
+    },
+    {
+      "Title": "Crown Holdings",
+      "Rank": 338,
+      "Employees": 24342,
+      "Sector": "Materials",
+      "Latitude": 39.9525839,
+      "Longitude": -75.1652215
+    },
+    {
+      "Title": "Peter Kiewit Sons",
+      "Rank": 339,
+      "Employees": 22000,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 41.2565369,
+      "Longitude": -95.9345034
+    },
+    {
+      "Title": "Dicks Sporting Goods",
+      "Rank": 340,
+      "Employees": 30300,
+      "Sector": "Retailing",
+      "Latitude": 40.5184013,
+      "Longitude": -80.1667247
+    },
+    {
+      "Title": "PulteGroup",
+      "Rank": 341,
+      "Employees": 4810,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Navistar International",
+      "Rank": 342,
+      "Employees": 11400,
+      "Sector": "Industrials",
+      "Latitude": 41.801141,
+      "Longitude": -88.0747875
+    },
+    {
+      "Title": "Thrivent Financial for Lutherans",
+      "Rank": 343,
+      "Employees": 3622,
+      "Sector": "Financials",
+      "Latitude": 44.977753,
+      "Longitude": -93.2650108
+    },
+    {
+      "Title": "DCP Midstream",
+      "Rank": 344,
+      "Employees": 2650,
+      "Sector": "Energy",
+      "Latitude": 39.7392358,
+      "Longitude": -104.990251
+    },
+    {
+      "Title": "Air Products & Chemicals",
+      "Rank": 345,
+      "Employees": 15150,
+      "Sector": "Chemicals",
+      "Latitude": 40.6022939,
+      "Longitude": -75.4714098
+    },
+    {
+      "Title": "Veritiv",
+      "Rank": 346,
+      "Employees": 8900,
+      "Sector": "Wholesalers",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "AGCO",
+      "Rank": 347,
+      "Employees": 20462,
+      "Sector": "Industrials",
+      "Latitude": 34.0028786,
+      "Longitude": -84.1446376
+    },
+    {
+      "Title": "Genworth Financial",
+      "Rank": 348,
+      "Employees": 3500,
+      "Sector": "Financials",
+      "Latitude": 37.5407246,
+      "Longitude": -77.4360481
+    },
+    {
+      "Title": "Univar",
+      "Rank": 349,
+      "Employees": 8600,
+      "Sector": "Wholesalers",
+      "Latitude": 41.8089191,
+      "Longitude": -88.0111746
+    },
+    {
+      "Title": "News Corp.",
+      "Rank": 350,
+      "Employees": 26000,
+      "Sector": "Media",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "SpartanNash",
+      "Rank": 351,
+      "Employees": 11950,
+      "Sector": "Wholesalers",
+      "Latitude": 42.8122508,
+      "Longitude": -85.7228061
+    },
+    {
+      "Title": "Westlake Chemical",
+      "Rank": 352,
+      "Employees": 8799,
+      "Sector": "Chemicals",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Williams",
+      "Rank": 353,
+      "Employees": 5425,
+      "Sector": "Energy",
+      "Latitude": 36.1539816,
+      "Longitude": -95.992775
+    },
+    {
+      "Title": "Lam Research",
+      "Rank": 354,
+      "Employees": 9400,
+      "Sector": "Technology",
+      "Latitude": 37.5482697,
+      "Longitude": -121.9885719
+    },
+    {
+      "Title": "Alaska Air Group",
+      "Rank": 355,
+      "Employees": 23156,
+      "Sector": "Transportation",
+      "Latitude": 47.6062095,
+      "Longitude": -122.3320708
+    },
+    {
+      "Title": "Jones Lang LaSalle",
+      "Rank": 356,
+      "Employees": 81900,
+      "Sector": "Financials",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Anixter International",
+      "Rank": 357,
+      "Employees": 8900,
+      "Sector": "Wholesalers",
+      "Latitude": 42.0697509,
+      "Longitude": -87.7878408
+    },
+    {
+      "Title": "Campbell Soup",
+      "Rank": 358,
+      "Employees": 18000,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 39.9259463,
+      "Longitude": -75.1196199
+    },
+    {
+      "Title": "Interpublic Group",
+      "Rank": 359,
+      "Employees": 50200,
+      "Sector": "Business Services",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Dover",
+      "Rank": 360,
+      "Employees": 29000,
+      "Sector": "Industrials",
+      "Latitude": 41.8089191,
+      "Longitude": -88.0111746
+    },
+    {
+      "Title": "Zimmer Biomet Holdings",
+      "Rank": 361,
+      "Employees": 18200,
+      "Sector": "Health Care",
+      "Latitude": 41.2381,
+      "Longitude": -85.8530469
+    },
+    {
+      "Title": "Dean Foods",
+      "Rank": 362,
+      "Employees": 16000,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "Foot Locker",
+      "Rank": 363,
+      "Employees": 32175,
+      "Sector": "Retailing",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Eversource Energy",
+      "Rank": 364,
+      "Employees": 8084,
+      "Sector": "Energy",
+      "Latitude": 42.1014831,
+      "Longitude": -72.589811
+    },
+    {
+      "Title": "Alliance Data Systems",
+      "Rank": 365,
+      "Employees": 20000,
+      "Sector": "Business Services",
+      "Latitude": 33.0198431,
+      "Longitude": -96.6988856
+    },
+    {
+      "Title": "Fifth Third Bancorp",
+      "Rank": 366,
+      "Employees": 18125,
+      "Sector": "Financials",
+      "Latitude": 39.1031182,
+      "Longitude": -84.5120196
+    },
+    {
+      "Title": "Quest Diagnostics",
+      "Rank": 367,
+      "Employees": 45000,
+      "Sector": "Health Care",
+      "Latitude": 40.7895453,
+      "Longitude": -74.0565298
+    },
+    {
+      "Title": "EMCOR Group",
+      "Rank": 368,
+      "Employees": 32000,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 41.117744,
+      "Longitude": -73.4081575
+    },
+    {
+      "Title": "W.R. Berkley",
+      "Rank": 369,
+      "Employees": 7722,
+      "Sector": "Financials",
+      "Latitude": 41.0262417,
+      "Longitude": -73.6281964
+    },
+    {
+      "Title": "WESCO International",
+      "Rank": 370,
+      "Employees": 9100,
+      "Sector": "Wholesalers",
+      "Latitude": 40.4406248,
+      "Longitude": -79.9958864
+    },
+    {
+      "Title": "Coty",
+      "Rank": 371,
+      "Employees": 22000,
+      "Sector": "Household Products",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "WEC Energy Group",
+      "Rank": 372,
+      "Employees": 8129,
+      "Sector": "Energy",
+      "Latitude": 43.0389025,
+      "Longitude": -87.9064736
+    },
+    {
+      "Title": "Masco",
+      "Rank": 373,
+      "Employees": 26000,
+      "Sector": "Household Products",
+      "Latitude": 42.36837,
+      "Longitude": -83.3527097
+    },
+    {
+      "Title": "DXC Technology",
+      "Rank": 374,
+      "Employees": 60000,
+      "Sector": "Technology",
+      "Latitude": 38.9187222,
+      "Longitude": -77.2310925
+    },
+    {
+      "Title": "Auto-Owners Insurance",
+      "Rank": 375,
+      "Employees": 5227,
+      "Sector": "Financials",
+      "Latitude": 42.732535,
+      "Longitude": -84.5555347
+    },
+    {
+      "Title": "Jones Financial (Edward Jones)",
+      "Rank": 376,
+      "Employees": 45000,
+      "Sector": "Financials",
+      "Latitude": 38.59722,
+      "Longitude": -90.448126
+    },
+    {
+      "Title": "Liberty Media",
+      "Rank": 377,
+      "Employees": 4393,
+      "Sector": "Media",
+      "Latitude": 39.6477653,
+      "Longitude": -104.9877597
+    },
+    {
+      "Title": "Erie Insurance Group",
+      "Rank": 378,
+      "Employees": 5260,
+      "Sector": "Financials",
+      "Latitude": 42.1292241,
+      "Longitude": -80.085059
+    },
+    {
+      "Title": "Hershey",
+      "Rank": 379,
+      "Employees": 16135,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 40.2859239,
+      "Longitude": -76.6502468
+    },
+    {
+      "Title": "PPL",
+      "Rank": 380,
+      "Employees": 12512,
+      "Sector": "Energy",
+      "Latitude": 40.6022939,
+      "Longitude": -75.4714098
+    },
+    {
+      "Title": "Huntington Ingalls Industries",
+      "Rank": 381,
+      "Employees": 38000,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 37.0870821,
+      "Longitude": -76.4730122
+    },
+    {
+      "Title": "Mosaic",
+      "Rank": 382,
+      "Employees": 8500,
+      "Sector": "Chemicals",
+      "Latitude": 45.0105194,
+      "Longitude": -93.4555093
+    },
+    {
+      "Title": "J.M. Smucker",
+      "Rank": 383,
+      "Employees": 7140,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 40.8436663,
+      "Longitude": -81.7640212
+    },
+    {
+      "Title": "Delek US Holdings",
+      "Rank": 384,
+      "Employees": 3941,
+      "Sector": "Energy",
+      "Latitude": 36.0331164,
+      "Longitude": -86.7827772
+    },
+    {
+      "Title": "Newmont Mining",
+      "Rank": 385,
+      "Employees": 12569,
+      "Sector": "Energy",
+      "Latitude": 39.6172101,
+      "Longitude": -104.9508141
+    },
+    {
+      "Title": "Constellation Brands",
+      "Rank": 386,
+      "Employees": 8700,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 42.9825633,
+      "Longitude": -77.4088794
+    },
+    {
+      "Title": "Ryder System",
+      "Rank": 387,
+      "Employees": 36100,
+      "Sector": "Transportation",
+      "Latitude": 25.7616798,
+      "Longitude": -80.1917902
+    },
+    {
+      "Title": "National Oilwell Varco",
+      "Rank": 388,
+      "Employees": 31605,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Adobe Systems",
+      "Rank": 389,
+      "Employees": 17973,
+      "Sector": "Technology",
+      "Latitude": 37.3382082,
+      "Longitude": -121.8863286
+    },
+    {
+      "Title": "LifePoint Health",
+      "Rank": 390,
+      "Employees": 42000,
+      "Sector": "Health Care",
+      "Latitude": 36.0331164,
+      "Longitude": -86.7827772
+    },
+    {
+      "Title": "Tractor Supply",
+      "Rank": 391,
+      "Employees": 21000,
+      "Sector": "Retailing",
+      "Latitude": 36.0331164,
+      "Longitude": -86.7827772
+    },
+    {
+      "Title": "Thor Industries",
+      "Rank": 392,
+      "Employees": 17800,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 41.6819935,
+      "Longitude": -85.9766671
+    },
+    {
+      "Title": "Dana",
+      "Rank": 393,
+      "Employees": 30100,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 41.5628294,
+      "Longitude": -83.6538244
+    },
+    {
+      "Title": "Weyerhaeuser",
+      "Rank": 394,
+      "Employees": 9300,
+      "Sector": "Materials",
+      "Latitude": 47.6062095,
+      "Longitude": -122.3320708
+    },
+    {
+      "Title": "J.B. Hunt Transport Services",
+      "Rank": 395,
+      "Employees": 24681,
+      "Sector": "Transportation",
+      "Latitude": 36.2553543,
+      "Longitude": -94.1307587
+    },
+    {
+      "Title": "Darden Restaurants",
+      "Rank": 396,
+      "Employees": 178729,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 28.5383355,
+      "Longitude": -81.3792365
+    },
+    {
+      "Title": "Yum China Holdings",
+      "Rank": 397,
+      "Employees": 450000,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 33.0198431,
+      "Longitude": -96.6988856
+    },
+    {
+      "Title": "Blackstone Group",
+      "Rank": 398,
+      "Employees": 2360,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Berry Global Group",
+      "Rank": 399,
+      "Employees": 23000,
+      "Sector": "Materials",
+      "Latitude": 37.9715592,
+      "Longitude": -87.5710898
+    },
+    {
+      "Title": "Builders FirstSource",
+      "Rank": 400,
+      "Employees": 15000,
+      "Sector": "Materials",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "Activision Blizzard",
+      "Rank": 401,
+      "Employees": 9800,
+      "Sector": "Technology",
+      "Latitude": 34.0194543,
+      "Longitude": -118.4911912
+    },
+    {
+      "Title": "JetBlue Airways",
+      "Rank": 402,
+      "Employees": 17424,
+      "Sector": "Transportation",
+      "Latitude": 40.744679,
+      "Longitude": -73.9485424
+    },
+    {
+      "Title": "Amphenol",
+      "Rank": 403,
+      "Employees": 70000,
+      "Sector": "Technology",
+      "Latitude": 41.4570108,
+      "Longitude": -72.8230736
+    },
+    {
+      "Title": "A-Mark Precious Metals",
+      "Rank": 404,
+      "Employees": 126,
+      "Sector": "Materials",
+      "Latitude": 33.9191799,
+      "Longitude": -118.4164652
+    },
+    {
+      "Title": "Spirit AeroSystems Holdings",
+      "Rank": 405,
+      "Employees": 15500,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 37.6871761,
+      "Longitude": -97.330053
+    },
+    {
+      "Title": "R.R. Donnelley & Sons",
+      "Rank": 406,
+      "Employees": 42700,
+      "Sector": "Media",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Harris",
+      "Rank": 407,
+      "Employees": 17000,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 28.0836269,
+      "Longitude": -80.6081089
+    },
+    {
+      "Title": "Expeditors Intl. of Washington",
+      "Rank": 408,
+      "Employees": 16500,
+      "Sector": "Transportation",
+      "Latitude": 47.6062095,
+      "Longitude": -122.3320708
+    },
+    {
+      "Title": "Discovery",
+      "Rank": 409,
+      "Employees": 7000,
+      "Sector": "Media",
+      "Latitude": 38.9906657,
+      "Longitude": -77.026088
+    },
+    {
+      "Title": "Owens-Illinois",
+      "Rank": 410,
+      "Employees": 26500,
+      "Sector": "Materials",
+      "Latitude": 41.556996,
+      "Longitude": -83.627157
+    },
+    {
+      "Title": "Sanmina",
+      "Rank": 411,
+      "Employees": 41250,
+      "Sector": "Technology",
+      "Latitude": 37.3382082,
+      "Longitude": -121.8863286
+    },
+    {
+      "Title": "KeyCorp",
+      "Rank": 412,
+      "Employees": 18415,
+      "Sector": "Financials",
+      "Latitude": 41.49932,
+      "Longitude": -81.6943605
+    },
+    {
+      "Title": "American Financial Group",
+      "Rank": 413,
+      "Employees": 7600,
+      "Sector": "Financials",
+      "Latitude": 39.1031182,
+      "Longitude": -84.5120196
+    },
+    {
+      "Title": "Oshkosh",
+      "Rank": 414,
+      "Employees": 14000,
+      "Sector": "Industrials",
+      "Latitude": 44.0247062,
+      "Longitude": -88.5426136
+    },
+    {
+      "Title": "Rockwell Collins",
+      "Rank": 415,
+      "Employees": 29000,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 41.9778795,
+      "Longitude": -91.6656232
+    },
+    {
+      "Title": "Kindred Healthcare",
+      "Rank": 416,
+      "Employees": 64200,
+      "Sector": "Health Care",
+      "Latitude": 38.2526647,
+      "Longitude": -85.7584557
+    },
+    {
+      "Title": "Insight Enterprises",
+      "Rank": 417,
+      "Employees": 6697,
+      "Sector": "Technology",
+      "Latitude": 33.4255104,
+      "Longitude": -111.9400054
+    },
+    {
+      "Title": "Dr Pepper Snapple Group",
+      "Rank": 418,
+      "Employees": 21000,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 33.0198431,
+      "Longitude": -96.6988856
+    },
+    {
+      "Title": "American Tower",
+      "Rank": 419,
+      "Employees": 4752,
+      "Sector": "Financials",
+      "Latitude": 42.3600825,
+      "Longitude": -71.0588801
+    },
+    {
+      "Title": "Fortive",
+      "Rank": 420,
+      "Employees": 26000,
+      "Sector": "Industrials",
+      "Latitude": 47.9789848,
+      "Longitude": -122.2020795
+    },
+    {
+      "Title": "Ralph Lauren",
+      "Rank": 421,
+      "Employees": 18250,
+      "Sector": "Apparel",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "HRG Group",
+      "Rank": 422,
+      "Employees": 17113,
+      "Sector": "Household Products",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Ascena Retail Group",
+      "Rank": 423,
+      "Employees": 40000,
+      "Sector": "Retailing",
+      "Latitude": 41.0886216,
+      "Longitude": -74.1435843
+    },
+    {
+      "Title": "United Rentals",
+      "Rank": 424,
+      "Employees": 14800,
+      "Sector": "Business Services",
+      "Latitude": 41.0534302,
+      "Longitude": -73.5387341
+    },
+    {
+      "Title": "Caseys General Stores",
+      "Rank": 425,
+      "Employees": 25463,
+      "Sector": "Retailing",
+      "Latitude": 41.7317884,
+      "Longitude": -93.6001278
+    },
+    {
+      "Title": "Graybar Electric",
+      "Rank": 426,
+      "Employees": 8500,
+      "Sector": "Wholesalers",
+      "Latitude": 38.6270025,
+      "Longitude": -90.1994042
+    },
+    {
+      "Title": "Avery Dennison",
+      "Rank": 427,
+      "Employees": 30000,
+      "Sector": "Materials",
+      "Latitude": 34.1425078,
+      "Longitude": -118.255075
+    },
+    {
+      "Title": "MasTec",
+      "Rank": 428,
+      "Employees": 17300,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 25.72149,
+      "Longitude": -80.2683838
+    },
+    {
+      "Title": "CMS Energy",
+      "Rank": 429,
+      "Employees": 7887,
+      "Sector": "Energy",
+      "Latitude": 42.245869,
+      "Longitude": -84.4013462
+    },
+    {
+      "Title": "HD Supply Holdings",
+      "Rank": 430,
+      "Employees": 11000,
+      "Sector": "Wholesalers",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Raymond James Financial",
+      "Rank": 431,
+      "Employees": 12700,
+      "Sector": "Financials",
+      "Latitude": 27.7676008,
+      "Longitude": -82.6402915
+    },
+    {
+      "Title": "NCR",
+      "Rank": 432,
+      "Employees": 34000,
+      "Sector": "Technology",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Hanesbrands",
+      "Rank": 433,
+      "Employees": 67200,
+      "Sector": "Apparel",
+      "Latitude": 36.0998596,
+      "Longitude": -80.244216
+    },
+    {
+      "Title": "Asbury Automotive Group",
+      "Rank": 434,
+      "Employees": 8000,
+      "Sector": "Retailing",
+      "Latitude": 34.0028786,
+      "Longitude": -84.1446376
+    },
+    {
+      "Title": "Citizens Financial Group",
+      "Rank": 435,
+      "Employees": 17594,
+      "Sector": "Financials",
+      "Latitude": 41.8239891,
+      "Longitude": -71.4128343
+    },
+    {
+      "Title": "Packaging Corp. of America",
+      "Rank": 436,
+      "Employees": 14600,
+      "Sector": "Materials",
+      "Latitude": 42.2586342,
+      "Longitude": -87.840625
+    },
+    {
+      "Title": "Alleghany",
+      "Rank": 437,
+      "Employees": 4402,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Apache",
+      "Rank": 438,
+      "Employees": 3356,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Dillards",
+      "Rank": 439,
+      "Employees": 31400,
+      "Sector": "Retailing",
+      "Latitude": 34.7464809,
+      "Longitude": -92.2895948
+    },
+    {
+      "Title": "Assurant",
+      "Rank": 440,
+      "Employees": 14175,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Franklin Resources",
+      "Rank": 441,
+      "Employees": 9386,
+      "Sector": "Financials",
+      "Latitude": 37.5629917,
+      "Longitude": -122.3255254
+    },
+    {
+      "Title": "Owens Corning",
+      "Rank": 442,
+      "Employees": 17000,
+      "Sector": "Materials",
+      "Latitude": 41.6528052,
+      "Longitude": -83.5378674
+    },
+    {
+      "Title": "Motorola Solutions",
+      "Rank": 443,
+      "Employees": 15000,
+      "Sector": "Technology",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "NVR",
+      "Rank": 444,
+      "Employees": 5200,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 38.9586307,
+      "Longitude": -77.3570028
+    },
+    {
+      "Title": "Rockwell Automation",
+      "Rank": 445,
+      "Employees": 22000,
+      "Sector": "Industrials",
+      "Latitude": 43.0389025,
+      "Longitude": -87.9064736
+    },
+    {
+      "Title": "TreeHouse Foods",
+      "Rank": 446,
+      "Employees": 13489,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 41.8397865,
+      "Longitude": -87.9535534
+    },
+    {
+      "Title": "Wynn Resorts",
+      "Rank": 447,
+      "Employees": 25200,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 36.1699412,
+      "Longitude": -115.1398296
+    },
+    {
+      "Title": "Olin",
+      "Rank": 448,
+      "Employees": 6400,
+      "Sector": "Chemicals",
+      "Latitude": 38.6425518,
+      "Longitude": -90.3237263
+    },
+    {
+      "Title": "American Axle & Manufacturing",
+      "Rank": 449,
+      "Employees": 25000,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 42.331427,
+      "Longitude": -83.0457538
+    },
+    {
+      "Title": "Old Republic International",
+      "Rank": 450,
+      "Employees": 8700,
+      "Sector": "Financials",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Chemours",
+      "Rank": 451,
+      "Employees": 7000,
+      "Sector": "Chemicals",
+      "Latitude": 39.7390721,
+      "Longitude": -75.5397878
+    },
+    {
+      "Title": "iHeartMedia",
+      "Rank": 452,
+      "Employees": 18700,
+      "Sector": "Media",
+      "Latitude": 29.4241219,
+      "Longitude": -98.4936282
+    },
+    {
+      "Title": "Ameren",
+      "Rank": 453,
+      "Employees": 8615,
+      "Sector": "Energy",
+      "Latitude": 38.6270025,
+      "Longitude": -90.1994042
+    },
+    {
+      "Title": "Arthur J. Gallagher",
+      "Rank": 454,
+      "Employees": 26783,
+      "Sector": "Financials",
+      "Latitude": 42.0841936,
+      "Longitude": -88.0131275
+    },
+    {
+      "Title": "Celanese",
+      "Rank": 455,
+      "Employees": 7592,
+      "Sector": "Chemicals",
+      "Latitude": 32.8140177,
+      "Longitude": -96.9488945
+    },
+    {
+      "Title": "Sealed Air",
+      "Rank": 456,
+      "Employees": 15000,
+      "Sector": "Materials",
+      "Latitude": 35.2270869,
+      "Longitude": -80.8431267
+    },
+    {
+      "Title": "UGI",
+      "Rank": 457,
+      "Employees": 13000,
+      "Sector": "Energy",
+      "Latitude": 40.1012856,
+      "Longitude": -75.3835525
+    },
+    {
+      "Title": "Realogy Holdings",
+      "Rank": 458,
+      "Employees": 11800,
+      "Sector": "Financials",
+      "Latitude": 40.7598227,
+      "Longitude": -74.417097
+    },
+    {
+      "Title": "Burlington Stores",
+      "Rank": 459,
+      "Employees": 40000,
+      "Sector": "Retailing",
+      "Latitude": 40.071222,
+      "Longitude": -74.8648873
+    },
+    {
+      "Title": "Regions Financial",
+      "Rank": 460,
+      "Employees": 21714,
+      "Sector": "Financials",
+      "Latitude": 33.5206608,
+      "Longitude": -86.80249
+    },
+    {
+      "Title": "AK Steel Holding",
+      "Rank": 461,
+      "Employees": 9200,
+      "Sector": "Materials",
+      "Latitude": 39.3321262,
+      "Longitude": -84.4172666
+    },
+    {
+      "Title": "Securian Financial Group",
+      "Rank": 462,
+      "Employees": 5000,
+      "Sector": "Financials",
+      "Latitude": 44.9537029,
+      "Longitude": -93.0899578
+    },
+    {
+      "Title": "S& P Global",
+      "Rank": 463,
+      "Employees": 20400,
+      "Sector": "Business Services",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Markel",
+      "Rank": 464,
+      "Employees": 15600,
+      "Sector": "Financials",
+      "Latitude": 37.665978,
+      "Longitude": -77.5063739
+    },
+    {
+      "Title": "TravelCenters of America",
+      "Rank": 465,
+      "Employees": 19611,
+      "Sector": "Retailing",
+      "Latitude": 41.4553232,
+      "Longitude": -81.9179173
+    },
+    {
+      "Title": "Conduent",
+      "Rank": 466,
+      "Employees": 90000,
+      "Sector": "Business Services",
+      "Latitude": 40.787878,
+      "Longitude": -74.3882072
+    },
+    {
+      "Title": "M& T Bank Corp.",
+      "Rank": 467,
+      "Employees": 16354,
+      "Sector": "Financials",
+      "Latitude": 42.8864468,
+      "Longitude": -78.8783689
+    },
+    {
+      "Title": "Clorox",
+      "Rank": 468,
+      "Employees": 8100,
+      "Sector": "Household Products",
+      "Latitude": 37.8043637,
+      "Longitude": -122.2711137
+    },
+    {
+      "Title": "AmTrust Financial Services",
+      "Rank": 469,
+      "Employees": 9300,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "KKR",
+      "Rank": 470,
+      "Employees": 1184,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Ulta Beauty",
+      "Rank": 471,
+      "Employees": 24200,
+      "Sector": "Retailing",
+      "Latitude": 41.6986416,
+      "Longitude": -88.0683955
+    },
+    {
+      "Title": "Yum Brands",
+      "Rank": 472,
+      "Employees": 60000,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 38.2526647,
+      "Longitude": -85.7584557
+    },
+    {
+      "Title": "Regeneron Pharmaceuticals",
+      "Rank": 473,
+      "Employees": 6200,
+      "Sector": "Health Care",
+      "Latitude": 41.0762077,
+      "Longitude": -73.8587461
+    },
+    {
+      "Title": "Windstream Holdings",
+      "Rank": 474,
+      "Employees": 12979,
+      "Sector": "Telecommunications",
+      "Latitude": 34.7464809,
+      "Longitude": -92.2895948
+    },
+    {
+      "Title": "Magellan Health",
+      "Rank": 475,
+      "Employees": 10700,
+      "Sector": "Health Care",
+      "Latitude": 33.4941704,
+      "Longitude": -111.9260519
+    },
+    {
+      "Title": "Western & Southern Financial",
+      "Rank": 476,
+      "Employees": 2226,
+      "Sector": "Financials",
+      "Latitude": 39.1031182,
+      "Longitude": -84.5120196
+    },
+    {
+      "Title": "Intercontinental Exchange",
+      "Rank": 477,
+      "Employees": 4952,
+      "Sector": "Financials",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Ingredion",
+      "Rank": 478,
+      "Employees": 11000,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 41.8498339,
+      "Longitude": -87.8806738
+    },
+    {
+      "Title": "Wyndham Destinations",
+      "Rank": 479,
+      "Employees": 39200,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 40.8652865,
+      "Longitude": -74.4173877
+    },
+    {
+      "Title": "Toll Brothers",
+      "Rank": 480,
+      "Employees": 4500,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 40.1784422,
+      "Longitude": -75.1285061
+    },
+    {
+      "Title": "Seaboard",
+      "Rank": 481,
+      "Employees": 11800,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 39.0236165,
+      "Longitude": -94.6935701
+    },
+    {
+      "Title": "Booz Allen Hamilton",
+      "Rank": 482,
+      "Employees": 23300,
+      "Sector": "Technology",
+      "Latitude": 38.9338676,
+      "Longitude": -77.1772604
+    },
+    {
+      "Title": "First American Financial",
+      "Rank": 483,
+      "Employees": 18705,
+      "Sector": "Financials",
+      "Latitude": 33.7454725,
+      "Longitude": -117.867653
+    },
+    {
+      "Title": "Cincinnati Financial",
+      "Rank": 484,
+      "Employees": 4925,
+      "Sector": "Financials",
+      "Latitude": 39.3454673,
+      "Longitude": -84.5603187
+    },
+    {
+      "Title": "Avon Products",
+      "Rank": 485,
+      "Employees": 25000,
+      "Sector": "Household Products",
+      "Latitude": 40.9806535,
+      "Longitude": -73.6837399
+    },
+    {
+      "Title": "Northern Trust",
+      "Rank": 486,
+      "Employees": 18100,
+      "Sector": "Financials",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Fiserv",
+      "Rank": 487,
+      "Employees": 24000,
+      "Sector": "Business Services",
+      "Latitude": 43.0605671,
+      "Longitude": -88.1064787
+    },
+    {
+      "Title": "Harley-Davidson",
+      "Rank": 488,
+      "Employees": 5800,
+      "Sector": "Transportation",
+      "Latitude": 43.0389025,
+      "Longitude": -87.9064736
+    },
+    {
+      "Title": "Cheniere Energy",
+      "Rank": 489,
+      "Employees": 1230,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Patterson",
+      "Rank": 490,
+      "Employees": 7500,
+      "Sector": "Wholesalers",
+      "Latitude": 44.9537029,
+      "Longitude": -93.0899578
+    },
+    {
+      "Title": "Peabody Energy",
+      "Rank": 491,
+      "Employees": 7100,
+      "Sector": "Energy",
+      "Latitude": 38.6270025,
+      "Longitude": -90.1994042
+    },
+    {
+      "Title": "ON Semiconductor",
+      "Rank": 492,
+      "Employees": 34000,
+      "Sector": "Technology",
+      "Latitude": 33.4483771,
+      "Longitude": -112.0740373
+    },
+    {
+      "Title": "Simon Property Group",
+      "Rank": 493,
+      "Employees": 4150,
+      "Sector": "Financials",
+      "Latitude": 39.768403,
+      "Longitude": -86.158068
+    },
+    {
+      "Title": "Western Union",
+      "Rank": 494,
+      "Employees": 11500,
+      "Sector": "Business Services",
+      "Latitude": 39.6477653,
+      "Longitude": -104.9877597
+    },
+    {
+      "Title": "NetApp",
+      "Rank": 495,
+      "Employees": 10100,
+      "Sector": "Technology",
+      "Latitude": 37.36883,
+      "Longitude": -122.0363496
+    },
+    {
+      "Title": "Polaris Industries",
+      "Rank": 496,
+      "Employees": 11000,
+      "Sector": "Transportation",
+      "Latitude": 45.0352411,
+      "Longitude": -93.5824586
+    },
+    {
+      "Title": "Pioneer Natural Resources",
+      "Rank": 497,
+      "Employees": 3836,
+      "Sector": "Energy",
+      "Latitude": 32.8140177,
+      "Longitude": -96.9488945
+    },
+    {
+      "Title": "ABM Industries",
+      "Rank": 498,
+      "Employees": 140000,
+      "Sector": "Business Services",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Vistra Energy",
+      "Rank": 499,
+      "Employees": 4150,
+      "Sector": "Energy",
+      "Latitude": 32.8140177,
+      "Longitude": -96.9488945
+    },
+    {
+      "Title": "Cintas",
+      "Rank": 500,
+      "Employees": 42000,
+      "Sector": "Business Services",
+      "Latitude": 39.1031182,
+      "Longitude": -84.5120196
+    },
+    {
+      "Title": "Hess",
+      "Rank": 501,
+      "Employees": 2075,
+      "Sector": "Energy",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Host Hotels & Resorts",
+      "Rank": 502,
+      "Employees": 205,
+      "Sector": "Financials",
+      "Latitude": 38.984652,
+      "Longitude": -77.0947092
+    },
+    {
+      "Title": "Kelly Services",
+      "Rank": 503,
+      "Employees": 7800,
+      "Sector": "Business Services",
+      "Latitude": 42.6064095,
+      "Longitude": -83.1497751
+    },
+    {
+      "Title": "Genesis Healthcare",
+      "Rank": 504,
+      "Employees": 68700,
+      "Sector": "Health Care",
+      "Latitude": 39.8467767,
+      "Longitude": -75.7116032
+    },
+    {
+      "Title": "Michaels Cos.",
+      "Rank": 505,
+      "Employees": 30500,
+      "Sector": "Retailing",
+      "Latitude": 32.8140177,
+      "Longitude": -96.9488945
+    },
+    {
+      "Title": "Advanced Micro Devices",
+      "Rank": 506,
+      "Employees": 8900,
+      "Sector": "Technology",
+      "Latitude": 37.3541079,
+      "Longitude": -121.9552356
+    },
+    {
+      "Title": "Zoetis",
+      "Rank": 507,
+      "Employees": 9200,
+      "Sector": "Health Care",
+      "Latitude": 40.8652865,
+      "Longitude": -74.4173877
+    },
+    {
+      "Title": "Williams-Sonoma",
+      "Rank": 508,
+      "Employees": 19350,
+      "Sector": "Retailing",
+      "Latitude": 37.7749295,
+      "Longitude": -122.4194155
+    },
+    {
+      "Title": "Fortune Brands Home & Security",
+      "Rank": 509,
+      "Employees": 23870,
+      "Sector": "Household Products",
+      "Latitude": 42.1711365,
+      "Longitude": -87.8445119
+    },
+    {
+      "Title": "Big Lots",
+      "Rank": 510,
+      "Employees": 22900,
+      "Sector": "Retailing",
+      "Latitude": 39.9611755,
+      "Longitude": -82.9987942
+    },
+    {
+      "Title": "Robert Half International",
+      "Rank": 511,
+      "Employees": 17200,
+      "Sector": "Business Services",
+      "Latitude": 37.4529598,
+      "Longitude": -122.1817252
+    },
+    {
+      "Title": "Post Holdings",
+      "Rank": 512,
+      "Employees": 11410,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 38.6270025,
+      "Longitude": -90.1994042
+    },
+    {
+      "Title": "Hasbro",
+      "Rank": 513,
+      "Employees": 5400,
+      "Sector": "Household Products",
+      "Latitude": 41.878711,
+      "Longitude": -71.3825558
+    },
+    {
+      "Title": "Hanover Insurance Group",
+      "Rank": 514,
+      "Employees": 4600,
+      "Sector": "Financials",
+      "Latitude": 42.2625932,
+      "Longitude": -71.8022934
+    },
+    {
+      "Title": "Navient",
+      "Rank": 515,
+      "Employees": 6700,
+      "Sector": "Financials",
+      "Latitude": 39.7390721,
+      "Longitude": -75.5397878
+    },
+    {
+      "Title": "Intuit",
+      "Rank": 516,
+      "Employees": 8200,
+      "Sector": "Technology",
+      "Latitude": 37.3860517,
+      "Longitude": -122.0838511
+    },
+    {
+      "Title": "Domtar",
+      "Rank": 517,
+      "Employees": 10000,
+      "Sector": "Materials",
+      "Latitude": 35.0073697,
+      "Longitude": -80.9450759
+    },
+    {
+      "Title": "Marathon Oil",
+      "Rank": 518,
+      "Employees": 2300,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Cerner",
+      "Rank": 519,
+      "Employees": 26000,
+      "Sector": "Health Care",
+      "Latitude": 39.1429081,
+      "Longitude": -94.5729781
+    },
+    {
+      "Title": "Analog Devices",
+      "Rank": 520,
+      "Employees": 15300,
+      "Sector": "Technology",
+      "Latitude": 42.1943909,
+      "Longitude": -71.1989695
+    },
+    {
+      "Title": "Telephone & Data Systems",
+      "Rank": 521,
+      "Employees": 9900,
+      "Sector": "Telecommunications",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Essendant",
+      "Rank": 522,
+      "Employees": 6400,
+      "Sector": "Wholesalers",
+      "Latitude": 42.1711365,
+      "Longitude": -87.8445119
+    },
+    {
+      "Title": "Sonoco Products",
+      "Rank": 523,
+      "Employees": 21000,
+      "Sector": "Materials",
+      "Latitude": 34.3740431,
+      "Longitude": -80.0734005
+    },
+    {
+      "Title": "Juniper Networks",
+      "Rank": 524,
+      "Employees": 9381,
+      "Sector": "Technology",
+      "Latitude": 37.36883,
+      "Longitude": -122.0363496
+    },
+    {
+      "Title": "Commercial Metals",
+      "Rank": 525,
+      "Employees": 8797,
+      "Sector": "Materials",
+      "Latitude": 32.8140177,
+      "Longitude": -96.9488945
+    },
+    {
+      "Title": "CSRA",
+      "Rank": 526,
+      "Employees": 18500,
+      "Sector": "Technology",
+      "Latitude": 38.882334,
+      "Longitude": -77.1710914
+    },
+    {
+      "Title": "Under Armour",
+      "Rank": 527,
+      "Employees": 11350,
+      "Sector": "Apparel",
+      "Latitude": 39.2903848,
+      "Longitude": -76.6121893
+    },
+    {
+      "Title": "RPM International",
+      "Rank": 528,
+      "Employees": 14318,
+      "Sector": "Chemicals",
+      "Latitude": 41.143245,
+      "Longitude": -81.8552196
+    },
+    {
+      "Title": "Total System Services",
+      "Rank": 529,
+      "Employees": 11800,
+      "Sector": "Business Services",
+      "Latitude": 32.4609764,
+      "Longitude": -84.9877094
+    },
+    {
+      "Title": "Levi Strauss",
+      "Rank": 530,
+      "Employees": 13800,
+      "Sector": "Apparel",
+      "Latitude": 37.7749295,
+      "Longitude": -122.4194155
+    },
+    {
+      "Title": "Brunswick",
+      "Rank": 531,
+      "Employees": 15116,
+      "Sector": "Transportation",
+      "Latitude": 42.2333571,
+      "Longitude": -87.9259058
+    },
+    {
+      "Title": "YRC Worldwide",
+      "Rank": 532,
+      "Employees": 32000,
+      "Sector": "Transportation",
+      "Latitude": 38.9822282,
+      "Longitude": -94.6707917
+    },
+    {
+      "Title": "Mattel",
+      "Rank": 533,
+      "Employees": 28000,
+      "Sector": "Household Products",
+      "Latitude": 33.9191799,
+      "Longitude": -118.4164652
+    },
+    {
+      "Title": "FM Global",
+      "Rank": 534,
+      "Employees": 5441,
+      "Sector": "Financials",
+      "Latitude": 41.8205199,
+      "Longitude": -71.512617
+    },
+    {
+      "Title": "NiSource",
+      "Rank": 535,
+      "Employees": 8175,
+      "Sector": "Energy",
+      "Latitude": 41.4828144,
+      "Longitude": -87.3328139
+    },
+    {
+      "Title": "Caesars Entertainment",
+      "Rank": 536,
+      "Employees": 65000,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 36.1699412,
+      "Longitude": -115.1398296
+    },
+    {
+      "Title": "Electronic Arts",
+      "Rank": 537,
+      "Employees": 8800,
+      "Sector": "Technology",
+      "Latitude": 37.4852152,
+      "Longitude": -122.2363548
+    },
+    {
+      "Title": "Dynegy",
+      "Rank": 538,
+      "Employees": 2489,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "McCormick",
+      "Rank": 539,
+      "Employees": 11700,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 39.5309389,
+      "Longitude": -76.6458043
+    },
+    {
+      "Title": "T. Rowe Price",
+      "Rank": 540,
+      "Employees": 6881,
+      "Sector": "Financials",
+      "Latitude": 39.2903848,
+      "Longitude": -76.6121893
+    },
+    {
+      "Title": "Orbital ATK",
+      "Rank": 541,
+      "Employees": 13900,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 38.9624899,
+      "Longitude": -77.4380485
+    },
+    {
+      "Title": "Tutor Perini",
+      "Rank": 542,
+      "Employees": 10061,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 34.3058279,
+      "Longitude": -118.4571974
+    },
+    {
+      "Title": "Brookdale Senior Living",
+      "Rank": 543,
+      "Employees": 62550,
+      "Sector": "Health Care",
+      "Latitude": 36.0331164,
+      "Longitude": -86.7827772
+    },
+    {
+      "Title": "Huntington Bancshares",
+      "Rank": 544,
+      "Employees": 15770,
+      "Sector": "Financials",
+      "Latitude": 39.9611755,
+      "Longitude": -82.9987942
+    },
+    {
+      "Title": "Wayfair",
+      "Rank": 545,
+      "Employees": 7751,
+      "Sector": "Technology",
+      "Latitude": 42.3600825,
+      "Longitude": -71.0588801
+    },
+    {
+      "Title": "Rush Enterprises",
+      "Rank": 546,
+      "Employees": 6825,
+      "Sector": "Retailing",
+      "Latitude": 29.7030024,
+      "Longitude": -98.1244531
+    },
+    {
+      "Title": "Xylem",
+      "Rank": 547,
+      "Employees": 16200,
+      "Sector": "Industrials",
+      "Latitude": 41.0192641,
+      "Longitude": -73.6834621
+    },
+    {
+      "Title": "Neiman Marcus Group",
+      "Rank": 548,
+      "Employees": 13700,
+      "Sector": "Retailing",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "Hyatt Hotels",
+      "Rank": 549,
+      "Employees": 45000,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Sprouts Farmers Market",
+      "Rank": 550,
+      "Employees": 27000,
+      "Sector": "Food &  Drug Stores",
+      "Latitude": 33.4483771,
+      "Longitude": -112.0740373
+    },
+    {
+      "Title": "Diebold Nixdorf",
+      "Rank": 551,
+      "Employees": 23000,
+      "Sector": "Technology",
+      "Latitude": 40.875891,
+      "Longitude": -81.4023356
+    },
+    {
+      "Title": "Roper Technologies",
+      "Rank": 552,
+      "Employees": 14236,
+      "Sector": "Technology",
+      "Latitude": 27.3364347,
+      "Longitude": -82.5306527
+    },
+    {
+      "Title": "Smart & Final Stores",
+      "Rank": 553,
+      "Employees": 7570,
+      "Sector": "Food &  Drug Stores",
+      "Latitude": 34.0005691,
+      "Longitude": -118.1597929
+    },
+    {
+      "Title": "CommScope Holding",
+      "Rank": 554,
+      "Employees": 20000,
+      "Sector": "Technology",
+      "Latitude": 35.7344538,
+      "Longitude": -81.3444573
+    },
+    {
+      "Title": "Tapestry",
+      "Rank": 555,
+      "Employees": 12450,
+      "Sector": "Apparel",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Diplomat Pharmacy",
+      "Rank": 556,
+      "Employees": 2298,
+      "Sector": "Health Care",
+      "Latitude": 43.0125274,
+      "Longitude": -83.6874562
+    },
+    {
+      "Title": "Chipotle Mexican Grill",
+      "Rank": 557,
+      "Employees": 68890,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 39.7392358,
+      "Longitude": -104.990251
+    },
+    {
+      "Title": "Agilent Technologies",
+      "Rank": 558,
+      "Employees": 13500,
+      "Sector": "Technology",
+      "Latitude": 37.3541079,
+      "Longitude": -121.9552356
+    },
+    {
+      "Title": "Science Applications International",
+      "Rank": 559,
+      "Employees": 15391,
+      "Sector": "Technology",
+      "Latitude": 38.9586307,
+      "Longitude": -77.3570028
+    },
+    {
+      "Title": "MDU Resources Group",
+      "Rank": 560,
+      "Employees": 10140,
+      "Sector": "Energy",
+      "Latitude": 46.8083268,
+      "Longitude": -100.7837392
+    },
+    {
+      "Title": "Select Medical Holdings",
+      "Rank": 561,
+      "Employees": 36050,
+      "Sector": "Health Care",
+      "Latitude": 40.2142565,
+      "Longitude": -77.0085876
+    },
+    {
+      "Title": "Boise Cascade",
+      "Rank": 562,
+      "Employees": 6370,
+      "Sector": "Wholesalers",
+      "Latitude": 43.6150186,
+      "Longitude": -116.2023137
+    },
+    {
+      "Title": "National General Holdings",
+      "Rank": 563,
+      "Employees": 7570,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "SCANA",
+      "Rank": 564,
+      "Employees": 5228,
+      "Sector": "Energy",
+      "Latitude": 33.9657091,
+      "Longitude": -81.0739827
+    },
+    {
+      "Title": "Graphic Packaging Holding",
+      "Rank": 565,
+      "Employees": 13000,
+      "Sector": "Materials",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Fastenal",
+      "Rank": 566,
+      "Employees": 20565,
+      "Sector": "Wholesalers",
+      "Latitude": 44.0553908,
+      "Longitude": -91.6663523
+    },
+    {
+      "Title": "Schneider National",
+      "Rank": 567,
+      "Employees": 19600,
+      "Sector": "Transportation",
+      "Latitude": 44.5133188,
+      "Longitude": -88.0132958
+    },
+    {
+      "Title": "Laureate Education",
+      "Rank": 568,
+      "Employees": 54500,
+      "Sector": "Business Services",
+      "Latitude": 39.2903848,
+      "Longitude": -76.6121893
+    },
+    {
+      "Title": "Beacon Roofing Supply",
+      "Rank": 569,
+      "Employees": 5406,
+      "Sector": "Wholesalers",
+      "Latitude": 38.9695545,
+      "Longitude": -77.3860976
+    },
+    {
+      "Title": "KB Home",
+      "Rank": 570,
+      "Employees": 1915,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 34.0522342,
+      "Longitude": -118.2436849
+    },
+    {
+      "Title": "Equinix",
+      "Rank": 571,
+      "Employees": 7273,
+      "Sector": "Financials",
+      "Latitude": 37.4852152,
+      "Longitude": -122.2363548
+    },
+    {
+      "Title": "Terex",
+      "Rank": 572,
+      "Employees": 10700,
+      "Sector": "Industrials",
+      "Latitude": 41.1414717,
+      "Longitude": -73.3579049
+    },
+    {
+      "Title": "Crown Castle International",
+      "Rank": 573,
+      "Employees": 4500,
+      "Sector": "Financials",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "CACI International",
+      "Rank": 574,
+      "Employees": 18600,
+      "Sector": "Technology",
+      "Latitude": 38.8816208,
+      "Longitude": -77.0909809
+    },
+    {
+      "Title": "Watsco",
+      "Rank": 575,
+      "Employees": 5200,
+      "Sector": "Wholesalers",
+      "Latitude": 25.7616798,
+      "Longitude": -80.1917902
+    },
+    {
+      "Title": "Coca-Cola Bottling",
+      "Rank": 576,
+      "Employees": 15500,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 35.2270869,
+      "Longitude": -80.8431267
+    },
+    {
+      "Title": "Welltower",
+      "Rank": 577,
+      "Employees": 392,
+      "Sector": "Financials",
+      "Latitude": 41.6528052,
+      "Longitude": -83.5378674
+    },
+    {
+      "Title": "ADT",
+      "Rank": 578,
+      "Employees": 18000,
+      "Sector": "Business Services",
+      "Latitude": 26.3683064,
+      "Longitude": -80.1289321
+    },
+    {
+      "Title": "Ametek",
+      "Rank": 579,
+      "Employees": 16900,
+      "Sector": "Technology",
+      "Latitude": 40.045824,
+      "Longitude": -75.4395931
+    },
+    {
+      "Title": "CNO Financial Group",
+      "Rank": 580,
+      "Employees": 3300,
+      "Sector": "Financials",
+      "Latitude": 39.978371,
+      "Longitude": -86.1180435
+    },
+    {
+      "Title": "Camping World Holdings",
+      "Rank": 581,
+      "Employees": 10227,
+      "Sector": "Retailing",
+      "Latitude": 42.1900249,
+      "Longitude": -87.9084039
+    },
+    {
+      "Title": "LPL Financial Holdings",
+      "Rank": 582,
+      "Employees": 3736,
+      "Sector": "Financials",
+      "Latitude": 42.3600825,
+      "Longitude": -71.0588801
+    },
+    {
+      "Title": "Noble Energy",
+      "Rank": 583,
+      "Employees": 2277,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Bloomin Brands",
+      "Rank": 584,
+      "Employees": 94000,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 27.950575,
+      "Longitude": -82.4571776
+    },
+    {
+      "Title": "Moodys",
+      "Rank": 585,
+      "Employees": 11896,
+      "Sector": "Business Services",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Symantec",
+      "Rank": 586,
+      "Employees": 13000,
+      "Sector": "Technology",
+      "Latitude": 37.3860517,
+      "Longitude": -122.0838511
+    },
+    {
+      "Title": "Amkor Technology",
+      "Rank": 587,
+      "Employees": 29300,
+      "Sector": "Technology",
+      "Latitude": 33.4255104,
+      "Longitude": -111.9400054
+    },
+    {
+      "Title": "Skechers U.S.A.",
+      "Rank": 588,
+      "Employees": 8150,
+      "Sector": "Apparel",
+      "Latitude": 33.8847361,
+      "Longitude": -118.4109089
+    },
+    {
+      "Title": "KBR",
+      "Rank": 589,
+      "Employees": 20000,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Tiffany",
+      "Rank": 590,
+      "Employees": 13100,
+      "Sector": "Retailing",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Torchmark",
+      "Rank": 591,
+      "Employees": 3102,
+      "Sector": "Financials",
+      "Latitude": 33.1972465,
+      "Longitude": -96.6397822
+    },
+    {
+      "Title": "Broadridge Financial Solutions",
+      "Rank": 592,
+      "Employees": 10000,
+      "Sector": "Business Services",
+      "Latitude": 40.7706572,
+      "Longitude": -73.7176312
+    },
+    {
+      "Title": "Quad/Graphics",
+      "Rank": 593,
+      "Employees": 21100,
+      "Sector": "Media",
+      "Latitude": 43.13418,
+      "Longitude": -88.22294
+    },
+    {
+      "Title": "CF Industries Holdings",
+      "Rank": 594,
+      "Employees": 2950,
+      "Sector": "Chemicals",
+      "Latitude": 42.1711365,
+      "Longitude": -87.8445119
+    },
+    {
+      "Title": "Carlisle",
+      "Rank": 595,
+      "Employees": 14800,
+      "Sector": "Materials",
+      "Latitude": 33.4941704,
+      "Longitude": -111.9260519
+    },
+    {
+      "Title": "Silgan Holdings",
+      "Rank": 596,
+      "Employees": 12515,
+      "Sector": "Materials",
+      "Latitude": 41.0534302,
+      "Longitude": -73.5387341
+    },
+    {
+      "Title": "Bemis",
+      "Rank": 597,
+      "Employees": 16582,
+      "Sector": "Materials",
+      "Latitude": 44.1858193,
+      "Longitude": -88.462609
+    },
+    {
+      "Title": "CA",
+      "Rank": 598,
+      "Employees": 11800,
+      "Sector": "Technology",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Hub Group",
+      "Rank": 599,
+      "Employees": 4377,
+      "Sector": "Transportation",
+      "Latitude": 41.8397865,
+      "Longitude": -87.9535534
+    },
+    {
+      "Title": "Worldpay",
+      "Rank": 600,
+      "Employees": 3560,
+      "Sector": "Business Services",
+      "Latitude": 39.2807348,
+      "Longitude": -84.3173878
+    },
+    {
+      "Title": "Ingles Markets",
+      "Rank": 601,
+      "Employees": 17250,
+      "Sector": "Food &  Drug Stores",
+      "Latitude": 35.6178951,
+      "Longitude": -82.3212302
+    },
+    {
+      "Title": "Snap-on",
+      "Rank": 602,
+      "Employees": 12600,
+      "Sector": "Industrials",
+      "Latitude": 42.5847425,
+      "Longitude": -87.8211854
+    },
+    {
+      "Title": "Dentsply Sirona",
+      "Rank": 603,
+      "Employees": 16100,
+      "Sector": "Health Care",
+      "Latitude": 39.9625984,
+      "Longitude": -76.727745
+    },
+    {
+      "Title": "Calumet Specialty Products",
+      "Rank": 604,
+      "Employees": 1600,
+      "Sector": "Energy",
+      "Latitude": 39.768403,
+      "Longitude": -86.158068
+    },
+    {
+      "Title": "Global Payments",
+      "Rank": 605,
+      "Employees": 10000,
+      "Sector": "Business Services",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Encompass Health",
+      "Rank": 606,
+      "Employees": 30935,
+      "Sector": "Health Care",
+      "Latitude": 33.5206608,
+      "Longitude": -86.80249
+    },
+    {
+      "Title": "Martin Marietta Materials",
+      "Rank": 607,
+      "Employees": 8406,
+      "Sector": "Materials",
+      "Latitude": 35.7795897,
+      "Longitude": -78.6381787
+    },
+    {
+      "Title": "Nasdaq",
+      "Rank": 608,
+      "Employees": 4734,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Leggett & Platt",
+      "Rank": 609,
+      "Employees": 22200,
+      "Sector": "Household Products",
+      "Latitude": 37.176447,
+      "Longitude": -94.3102228
+    },
+    {
+      "Title": "Universal Forest Products",
+      "Rank": 610,
+      "Employees": 10000,
+      "Sector": "Materials",
+      "Latitude": 42.9633599,
+      "Longitude": -85.6680863
+    },
+    {
+      "Title": "Sally Beauty Holdings",
+      "Rank": 611,
+      "Employees": 21755,
+      "Sector": "Retailing",
+      "Latitude": 33.2148412,
+      "Longitude": -97.1330683
+    },
+    {
+      "Title": "Flowers Foods",
+      "Rank": 612,
+      "Employees": 9800,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 30.8365815,
+      "Longitude": -83.9787808
+    },
+    {
+      "Title": "Barnes & Noble",
+      "Rank": 613,
+      "Employees": 18592,
+      "Sector": "Retailing",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "American Equity Investment Life",
+      "Rank": 614,
+      "Employees": 515,
+      "Sector": "Financials",
+      "Latitude": 41.5772115,
+      "Longitude": -93.711332
+    },
+    {
+      "Title": "Vulcan Materials",
+      "Rank": 615,
+      "Employees": 8287,
+      "Sector": "Materials",
+      "Latitude": 33.5206608,
+      "Longitude": -86.80249
+    },
+    {
+      "Title": "Taylor Morrison Home",
+      "Rank": 616,
+      "Employees": 1800,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 33.4941704,
+      "Longitude": -111.9260519
+    },
+    {
+      "Title": "Westinghouse Air Brake",
+      "Rank": 617,
+      "Employees": 18000,
+      "Sector": "Industrials",
+      "Latitude": 40.3909023,
+      "Longitude": -79.8100472
+    },
+    {
+      "Title": "Crestwood Equity Partners",
+      "Rank": 618,
+      "Employees": 954,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Iron Mountain",
+      "Rank": 619,
+      "Employees": 24000,
+      "Sector": "Business Services",
+      "Latitude": 42.3600825,
+      "Longitude": -71.0588801
+    },
+    {
+      "Title": "Lennox International",
+      "Rank": 620,
+      "Employees": 11450,
+      "Sector": "Industrials",
+      "Latitude": 32.9483335,
+      "Longitude": -96.7298519
+    },
+    {
+      "Title": "General Cable",
+      "Rank": 621,
+      "Employees": 8500,
+      "Sector": "Industrials",
+      "Latitude": 39.0331169,
+      "Longitude": -84.4518854
+    },
+    {
+      "Title": "American Eagle Outfitters",
+      "Rank": 622,
+      "Employees": 24100,
+      "Sector": "Retailing",
+      "Latitude": 40.4406248,
+      "Longitude": -79.9958864
+    },
+    {
+      "Title": "Church & Dwight",
+      "Rank": 623,
+      "Employees": 4700,
+      "Sector": "Household Products",
+      "Latitude": 40.2599864,
+      "Longitude": -74.7909125
+    },
+    {
+      "Title": "Platform Specialty Products",
+      "Rank": 624,
+      "Employees": 7850,
+      "Sector": "Chemicals",
+      "Latitude": 26.7153424,
+      "Longitude": -80.0533746
+    },
+    {
+      "Title": "JELD-WEN Holding",
+      "Rank": 625,
+      "Employees": 21000,
+      "Sector": "Materials",
+      "Latitude": 35.2270869,
+      "Longitude": -80.8431267
+    },
+    {
+      "Title": "OneMain Holdings",
+      "Rank": 626,
+      "Employees": 10100,
+      "Sector": "Financials",
+      "Latitude": 37.9715592,
+      "Longitude": -87.5710898
+    },
+    {
+      "Title": "Colfax",
+      "Rank": 627,
+      "Employees": 14300,
+      "Sector": "Industrials",
+      "Latitude": 39.1202934,
+      "Longitude": -76.7769324
+    },
+    {
+      "Title": "Zebra Technologies",
+      "Rank": 628,
+      "Employees": 7000,
+      "Sector": "Industrials",
+      "Latitude": 42.1900249,
+      "Longitude": -87.9084039
+    },
+    {
+      "Title": "Andersons",
+      "Rank": 629,
+      "Employees": 1819,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 41.5628294,
+      "Longitude": -83.6538244
+    },
+    {
+      "Title": "TD Ameritrade Holding",
+      "Rank": 630,
+      "Employees": 10412,
+      "Sector": "Financials",
+      "Latitude": 41.2565369,
+      "Longitude": -95.9345034
+    },
+    {
+      "Title": "Carlyle Group",
+      "Rank": 631,
+      "Employees": 1600,
+      "Sector": "Financials",
+      "Latitude": 47.7510741,
+      "Longitude": -120.7401385
+    },
+    {
+      "Title": "Hubbell",
+      "Rank": 632,
+      "Employees": 17700,
+      "Sector": "Industrials",
+      "Latitude": 41.3164856,
+      "Longitude": -73.0931641
+    },
+    {
+      "Title": "Trinity Industries",
+      "Rank": 633,
+      "Employees": 15605,
+      "Sector": "Transportation",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "Darling Ingredients",
+      "Rank": 634,
+      "Employees": 9800,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 32.8140177,
+      "Longitude": -96.9488945
+    },
+    {
+      "Title": "Flowserve",
+      "Rank": 635,
+      "Employees": 17000,
+      "Sector": "Industrials",
+      "Latitude": 32.8140177,
+      "Longitude": -96.9488945
+    },
+    {
+      "Title": "Antero Resources",
+      "Rank": 636,
+      "Employees": 593,
+      "Sector": "Energy",
+      "Latitude": 39.7392358,
+      "Longitude": -104.990251
+    },
+    {
+      "Title": "Skyworks Solutions",
+      "Rank": 637,
+      "Employees": 8400,
+      "Sector": "Technology",
+      "Latitude": 42.4792618,
+      "Longitude": -71.1522765
+    },
+    {
+      "Title": "Landstar System",
+      "Rank": 638,
+      "Employees": 1273,
+      "Sector": "Transportation",
+      "Latitude": 30.3321838,
+      "Longitude": -81.655651
+    },
+    {
+      "Title": "Buckeye Partners",
+      "Rank": 639,
+      "Employees": 1870,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "MRC Global",
+      "Rank": 640,
+      "Employees": 3580,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "CME Group",
+      "Rank": 641,
+      "Employees": 2830,
+      "Sector": "Financials",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Greif",
+      "Rank": 642,
+      "Employees": 13000,
+      "Sector": "Materials",
+      "Latitude": 40.2986724,
+      "Longitude": -83.067965
+    },
+    {
+      "Title": "Nexeo Solutions",
+      "Rank": 643,
+      "Employees": 2640,
+      "Sector": "Wholesalers",
+      "Latitude": 30.1658207,
+      "Longitude": -95.4612625
+    },
+    {
+      "Title": "Cooper-Standard Holdings",
+      "Rank": 644,
+      "Employees": 32000,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 42.48059,
+      "Longitude": -83.4754913
+    },
+    {
+      "Title": "Urban Outfitters",
+      "Rank": 645,
+      "Employees": 16330,
+      "Sector": "Retailing",
+      "Latitude": 39.9525839,
+      "Longitude": -75.1652215
+    },
+    {
+      "Title": "LSC Communications",
+      "Rank": 646,
+      "Employees": 24000,
+      "Sector": "Media",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Sabre",
+      "Rank": 647,
+      "Employees": 9000,
+      "Sector": "Technology",
+      "Latitude": 32.9412363,
+      "Longitude": -97.1341783
+    },
+    {
+      "Title": "Green Plains",
+      "Rank": 648,
+      "Employees": 1427,
+      "Sector": "Energy",
+      "Latitude": 41.2565369,
+      "Longitude": -95.9345034
+    },
+    {
+      "Title": "Hexion",
+      "Rank": 649,
+      "Employees": 4300,
+      "Sector": "Chemicals",
+      "Latitude": 39.9611755,
+      "Longitude": -82.9987942
+    },
+    {
+      "Title": "Stericycle",
+      "Rank": 650,
+      "Employees": 23200,
+      "Sector": "Business Services",
+      "Latitude": 42.2586342,
+      "Longitude": -87.840625
+    },
+    {
+      "Title": "Warner Music Group",
+      "Rank": 651,
+      "Employees": 4520,
+      "Sector": "Media",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Ventas",
+      "Rank": 652,
+      "Employees": 493,
+      "Sector": "Financials",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "ScanSource",
+      "Rank": 653,
+      "Employees": 2000,
+      "Sector": "Wholesalers",
+      "Latitude": 34.8526176,
+      "Longitude": -82.3940104
+    },
+    {
+      "Title": "Pinnacle West Capital",
+      "Rank": 654,
+      "Employees": 6292,
+      "Sector": "Energy",
+      "Latitude": 33.4483771,
+      "Longitude": -112.0740373
+    },
+    {
+      "Title": "Scripps Networks Interactive",
+      "Rank": 655,
+      "Employees": 3600,
+      "Sector": "Media",
+      "Latitude": 35.9606384,
+      "Longitude": -83.9207392
+    },
+    {
+      "Title": "Alexion Pharmaceuticals",
+      "Rank": 656,
+      "Employees": 2525,
+      "Sector": "Health Care",
+      "Latitude": 41.308274,
+      "Longitude": -72.9278835
+    },
+    {
+      "Title": "Pitney Bowes",
+      "Rank": 657,
+      "Employees": 14700,
+      "Sector": "Technology",
+      "Latitude": 41.0534302,
+      "Longitude": -73.5387341
+    },
+    {
+      "Title": "CIT Group",
+      "Rank": 658,
+      "Employees": 4167,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Country Financial",
+      "Rank": 659,
+      "Employees": 3834,
+      "Sector": "Financials",
+      "Latitude": 40.4842027,
+      "Longitude": -88.9936873
+    },
+    {
+      "Title": "CUNA Mutual Group",
+      "Rank": 660,
+      "Employees": 3300,
+      "Sector": "Financials",
+      "Latitude": 43.0730517,
+      "Longitude": -89.4012302
+    },
+    {
+      "Title": "Triumph Group",
+      "Rank": 661,
+      "Employees": 14309,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 40.045824,
+      "Longitude": -75.4395931
+    },
+    {
+      "Title": "TransDigm Group",
+      "Rank": 662,
+      "Employees": 9200,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 41.49932,
+      "Longitude": -81.6943605
+    },
+    {
+      "Title": "Allegheny Technologies",
+      "Rank": 663,
+      "Employees": 8600,
+      "Sector": "Materials",
+      "Latitude": 40.4406248,
+      "Longitude": -79.9958864
+    },
+    {
+      "Title": "Resolute Forest Products",
+      "Rank": 664,
+      "Employees": 7700,
+      "Sector": "Materials",
+      "Latitude": 34.8529233,
+      "Longitude": -80.9111862
+    },
+    {
+      "Title": "Acuity Brands",
+      "Rank": 665,
+      "Employees": 12500,
+      "Sector": "Industrials",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Abercrombie & Fitch",
+      "Rank": 666,
+      "Employees": 22500,
+      "Sector": "Retailing",
+      "Latitude": 40.0811745,
+      "Longitude": -82.8087864
+    },
+    {
+      "Title": "KLA-Tencor",
+      "Rank": 667,
+      "Employees": 5990,
+      "Sector": "Technology",
+      "Latitude": 37.4323341,
+      "Longitude": -121.8995741
+    },
+    {
+      "Title": "Weis Markets",
+      "Rank": 668,
+      "Employees": 23000,
+      "Sector": "Food &  Drug Stores",
+      "Latitude": 40.862585,
+      "Longitude": -76.7944104
+    },
+    {
+      "Title": "Puget Energy",
+      "Rank": 669,
+      "Employees": 3140,
+      "Sector": "Energy",
+      "Latitude": 47.6101497,
+      "Longitude": -122.2015159
+    },
+    {
+      "Title": "Mednax",
+      "Rank": 670,
+      "Employees": 14000,
+      "Sector": "Health Care",
+      "Latitude": 26.1669711,
+      "Longitude": -80.256595
+    },
+    {
+      "Title": "Kar Auction Services",
+      "Rank": 671,
+      "Employees": 15488,
+      "Sector": "Wholesalers",
+      "Latitude": 39.978371,
+      "Longitude": -86.1180435
+    },
+    {
+      "Title": "PolyOne",
+      "Rank": 672,
+      "Employees": 6400,
+      "Sector": "Chemicals",
+      "Latitude": 41.5053178,
+      "Longitude": -82.0282001
+    },
+    {
+      "Title": "FMC",
+      "Rank": 673,
+      "Employees": 7000,
+      "Sector": "Chemicals",
+      "Latitude": 39.9525839,
+      "Longitude": -75.1652215
+    },
+    {
+      "Title": "Edwards Lifesciences",
+      "Rank": 674,
+      "Employees": 12200,
+      "Sector": "Health Care",
+      "Latitude": 33.6845673,
+      "Longitude": -117.8265049
+    },
+    {
+      "Title": "Microchip Technology",
+      "Rank": 675,
+      "Employees": 12656,
+      "Sector": "Technology",
+      "Latitude": 33.3061605,
+      "Longitude": -111.8412502
+    },
+    {
+      "Title": "Amerco",
+      "Rank": 676,
+      "Employees": 20376,
+      "Sector": "Transportation",
+      "Latitude": 39.5296329,
+      "Longitude": -119.8138027
+    },
+    {
+      "Title": "Mercury General",
+      "Rank": 677,
+      "Employees": 4300,
+      "Sector": "Financials",
+      "Latitude": 34.0522342,
+      "Longitude": -118.2436849
+    },
+    {
+      "Title": "American National Insurance",
+      "Rank": 678,
+      "Employees": 4621,
+      "Sector": "Financials",
+      "Latitude": 29.3013479,
+      "Longitude": -94.7976958
+    },
+    {
+      "Title": "Carters",
+      "Rank": 679,
+      "Employees": 20900,
+      "Sector": "Apparel",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "International Flavors & Fragrances",
+      "Rank": 680,
+      "Employees": 7300,
+      "Sector": "Chemicals",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Aarons",
+      "Rank": 681,
+      "Employees": 11900,
+      "Sector": "Retailing",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Alliant Energy",
+      "Rank": 682,
+      "Employees": 3989,
+      "Sector": "Energy",
+      "Latitude": 43.0730517,
+      "Longitude": -89.4012302
+    },
+    {
+      "Title": "EQT",
+      "Rank": 683,
+      "Employees": 2067,
+      "Sector": "Energy",
+      "Latitude": 40.4406248,
+      "Longitude": -79.9958864
+    },
+    {
+      "Title": "Monster Beverage",
+      "Rank": 684,
+      "Employees": 2589,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 33.8752935,
+      "Longitude": -117.5664384
+    },
+    {
+      "Title": "BMC Stock Holdings",
+      "Rank": 685,
+      "Employees": 9100,
+      "Sector": "Wholesalers",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Ryerson Holding",
+      "Rank": 686,
+      "Employees": 3600,
+      "Sector": "Materials",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Equifax",
+      "Rank": 687,
+      "Employees": 10300,
+      "Sector": "Business Services",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "Regal Beloit",
+      "Rank": 688,
+      "Employees": 23600,
+      "Sector": "Industrials",
+      "Latitude": 42.5083482,
+      "Longitude": -89.0317765
+    },
+    {
+      "Title": "Old Dominion Freight Line",
+      "Rank": 689,
+      "Employees": 19183,
+      "Sector": "Transportation",
+      "Latitude": 35.8826369,
+      "Longitude": -80.0819879
+    },
+    {
+      "Title": "American Water Works",
+      "Rank": 690,
+      "Employees": 6900,
+      "Sector": "Energy",
+      "Latitude": 39.8519447,
+      "Longitude": -74.961517
+    },
+    {
+      "Title": "BGC Partners",
+      "Rank": 691,
+      "Employees": 9238,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Brinks",
+      "Rank": 692,
+      "Employees": 62150,
+      "Sector": "Business Services",
+      "Latitude": 37.5407246,
+      "Longitude": -77.4360481
+    },
+    {
+      "Title": "Meritor",
+      "Rank": 692,
+      "Employees": 62150,
+      "Sector": "Business Services",
+      "Latitude": 37.5407246,
+      "Longitude": -77.4360481
+    },
+    {
+      "Title": "Sentry Insurance Group",
+      "Rank": 694,
+      "Employees": 4139,
+      "Sector": "Financials",
+      "Latitude": 44.5235792,
+      "Longitude": -89.574563
+    },
+    {
+      "Title": "Sanderson Farms",
+      "Rank": 695,
+      "Employees": 14669,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 31.6940509,
+      "Longitude": -89.1306124
+    },
+    {
+      "Title": "KapStone Paper & Packaging",
+      "Rank": 696,
+      "Employees": 6400,
+      "Sector": "Materials",
+      "Latitude": 42.1275267,
+      "Longitude": -87.8289548
+    },
+    {
+      "Title": "Gartner",
+      "Rank": 697,
+      "Employees": 15131,
+      "Sector": "Technology",
+      "Latitude": 41.0534302,
+      "Longitude": -73.5387341
+    },
+    {
+      "Title": "IAC/InterActiveCorp",
+      "Rank": 698,
+      "Employees": 7000,
+      "Sector": "Technology",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Tailored Brands",
+      "Rank": 699,
+      "Employees": 18200,
+      "Sector": "Retailing",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "WABCO Holdings",
+      "Rank": 700,
+      "Employees": 14631,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 42.6583661,
+      "Longitude": -83.1499322
+    },
+    {
+      "Title": "Insperity",
+      "Rank": 701,
+      "Employees": 2900,
+      "Sector": "Business Services",
+      "Latitude": 30.0575359,
+      "Longitude": -95.1902986
+    },
+    {
+      "Title": "Comerica",
+      "Rank": 702,
+      "Employees": 7999,
+      "Sector": "Financials",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "TriNet Group",
+      "Rank": 703,
+      "Employees": 2700,
+      "Sector": "Business Services",
+      "Latitude": 37.7249296,
+      "Longitude": -122.1560768
+    },
+    {
+      "Title": "Avaya Holdings",
+      "Rank": 704,
+      "Employees": 8700,
+      "Sector": "Technology",
+      "Latitude": 37.3541079,
+      "Longitude": -121.9552356
+    },
+    {
+      "Title": "Ashland Global Holdings",
+      "Rank": 705,
+      "Employees": 6500,
+      "Sector": "Chemicals",
+      "Latitude": 39.0836712,
+      "Longitude": -84.5085536
+    },
+    {
+      "Title": "Meritage Homes",
+      "Rank": 706,
+      "Employees": 1605,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 33.4941704,
+      "Longitude": -111.9260519
+    },
+    {
+      "Title": "SkyWest",
+      "Rank": 707,
+      "Employees": 16300,
+      "Sector": "Transportation",
+      "Latitude": 37.0965278,
+      "Longitude": -113.5684164
+    },
+    {
+      "Title": "USG",
+      "Rank": 708,
+      "Employees": 6800,
+      "Sector": "Materials",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Southwestern Energy",
+      "Rank": 709,
+      "Employees": 1575,
+      "Sector": "Energy",
+      "Latitude": 30.0799405,
+      "Longitude": -95.4171601
+    },
+    {
+      "Title": "Keysight Technologies",
+      "Rank": 710,
+      "Employees": 12600,
+      "Sector": "Technology",
+      "Latitude": 38.440429,
+      "Longitude": -122.7140548
+    },
+    {
+      "Title": "Regal Entertainment Group",
+      "Rank": 711,
+      "Employees": 26047,
+      "Sector": "Media",
+      "Latitude": 35.9606384,
+      "Longitude": -83.9207392
+    },
+    {
+      "Title": "Mutual of America Life Insurance",
+      "Rank": 712,
+      "Employees": 1079,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Paychex",
+      "Rank": 713,
+      "Employees": 13700,
+      "Sector": "Business Services",
+      "Latitude": 43.1565779,
+      "Longitude": -77.6088465
+    },
+    {
+      "Title": "Brinker International",
+      "Rank": 714,
+      "Employees": 57906,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "Penn National Gaming",
+      "Rank": 715,
+      "Employees": 18754,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 40.329537,
+      "Longitude": -75.9652117
+    },
+    {
+      "Title": "Gannett",
+      "Rank": 716,
+      "Employees": 19000,
+      "Sector": "Media",
+      "Latitude": 38.9338676,
+      "Longitude": -77.1772604
+    },
+    {
+      "Title": "Visteon",
+      "Rank": 717,
+      "Employees": 10000,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 42.2203171,
+      "Longitude": -83.4838244
+    },
+    {
+      "Title": "Pinnacle Foods",
+      "Rank": 718,
+      "Employees": 4900,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 40.8652865,
+      "Longitude": -74.4173877
+    },
+    {
+      "Title": "Intuitive Surgical",
+      "Rank": 719,
+      "Employees": 4444,
+      "Sector": "Health Care",
+      "Latitude": 37.36883,
+      "Longitude": -122.0363496
+    },
+    {
+      "Title": "Continental Resources",
+      "Rank": 720,
+      "Employees": 1127,
+      "Sector": "Energy",
+      "Latitude": 35.4675602,
+      "Longitude": -97.5164276
+    },
+    {
+      "Title": "Service Corp. International",
+      "Rank": 721,
+      "Employees": 19468,
+      "Sector": "Business Services",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Scientific Games",
+      "Rank": 722,
+      "Employees": 8600,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 36.1699412,
+      "Longitude": -115.1398296
+    },
+    {
+      "Title": "Albemarle",
+      "Rank": 723,
+      "Employees": 5400,
+      "Sector": "Chemicals",
+      "Latitude": 35.2270869,
+      "Longitude": -80.8431267
+    },
+    {
+      "Title": "Atmos Energy",
+      "Rank": 724,
+      "Employees": 4565,
+      "Sector": "Energy",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "Hologic",
+      "Rank": 725,
+      "Employees": 6233,
+      "Sector": "Health Care",
+      "Latitude": 42.3459271,
+      "Longitude": -71.5522874
+    },
+    {
+      "Title": "H& R Block",
+      "Rank": 726,
+      "Employees": 44900,
+      "Sector": "Financials",
+      "Latitude": 39.0997265,
+      "Longitude": -94.5785667
+    },
+    {
+      "Title": "Qorvo",
+      "Rank": 727,
+      "Employees": 8600,
+      "Sector": "Technology",
+      "Latitude": 36.0726354,
+      "Longitude": -79.7919754
+    },
+    {
+      "Title": "Steelcase",
+      "Rank": 728,
+      "Employees": 12650,
+      "Sector": "Household Products",
+      "Latitude": 42.9633599,
+      "Longitude": -85.6680863
+    },
+    {
+      "Title": "Univision Communications",
+      "Rank": 729,
+      "Employees": 4500,
+      "Sector": "Media",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Worthington Industries",
+      "Rank": 730,
+      "Employees": 10000,
+      "Sector": "Materials",
+      "Latitude": 39.9611755,
+      "Longitude": -82.9987942
+    },
+    {
+      "Title": "Timken",
+      "Rank": 731,
+      "Employees": 15006,
+      "Sector": "Industrials",
+      "Latitude": 40.875891,
+      "Longitude": -81.4023356
+    },
+    {
+      "Title": "A.O. Smith",
+      "Rank": 732,
+      "Employees": 16100,
+      "Sector": "Industrials",
+      "Latitude": 43.0389025,
+      "Longitude": -87.9064736
+    },
+    {
+      "Title": "PriceSmart",
+      "Rank": 733,
+      "Employees": 7903,
+      "Sector": "Retailing",
+      "Latitude": 32.715738,
+      "Longitude": -117.1610838
+    },
+    {
+      "Title": "Stifel Financial",
+      "Rank": 734,
+      "Employees": 7100,
+      "Sector": "Financials",
+      "Latitude": 38.6270025,
+      "Longitude": -90.1994042
+    },
+    {
+      "Title": "Brown-Forman",
+      "Rank": 735,
+      "Employees": 4570,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 38.2526647,
+      "Longitude": -85.7584557
+    },
+    {
+      "Title": "Cinemark Holdings",
+      "Rank": 736,
+      "Employees": 19915,
+      "Sector": "Media",
+      "Latitude": 33.0198431,
+      "Longitude": -96.6988856
+    },
+    {
+      "Title": "Granite Construction",
+      "Rank": 737,
+      "Employees": 3600,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 36.910231,
+      "Longitude": -121.7568946
+    },
+    {
+      "Title": "Dycom Industries",
+      "Rank": 738,
+      "Employees": 14365,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 26.8233946,
+      "Longitude": -80.1386547
+    },
+    {
+      "Title": "Clean Harbors",
+      "Rank": 739,
+      "Employees": 12700,
+      "Sector": "Business Services",
+      "Latitude": 42.1615157,
+      "Longitude": -70.7927832
+    },
+    {
+      "Title": "First Solar",
+      "Rank": 740,
+      "Employees": 4100,
+      "Sector": "Energy",
+      "Latitude": 33.4255104,
+      "Longitude": -111.9400054
+    },
+    {
+      "Title": "Scotts Miracle-Gro",
+      "Rank": 741,
+      "Employees": 4700,
+      "Sector": "Chemicals",
+      "Latitude": 40.2364486,
+      "Longitude": -83.3671432
+    },
+    {
+      "Title": "Cracker Barrel Old Country Store",
+      "Rank": 742,
+      "Employees": 73000,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 36.2081098,
+      "Longitude": -86.2911024
+    },
+    {
+      "Title": "Triple-S Management",
+      "Rank": 743,
+      "Employees": 3517,
+      "Sector": "Health Care",
+      "Latitude": 18.4655394,
+      "Longitude": -66.1057355
+    },
+    {
+      "Title": "First Republic Bank",
+      "Rank": 744,
+      "Employees": 4025,
+      "Sector": "Financials",
+      "Latitude": 37.7749295,
+      "Longitude": -122.4194155
+    },
+    {
+      "Title": "ServiceMaster Global Holdings",
+      "Rank": 745,
+      "Employees": 13000,
+      "Sector": "Business Services",
+      "Latitude": 35.1495343,
+      "Longitude": -90.0489801
+    },
+    {
+      "Title": "PC Connection",
+      "Rank": 746,
+      "Employees": 2505,
+      "Sector": "Retailing",
+      "Latitude": 42.8678693,
+      "Longitude": -71.4948322
+    },
+    {
+      "Title": "Genesco",
+      "Rank": 747,
+      "Employees": 19350,
+      "Sector": "Retailing",
+      "Latitude": 36.1626638,
+      "Longitude": -86.7816016
+    },
+    {
+      "Title": "Medical Mutual of Ohio",
+      "Rank": 748,
+      "Employees": 2244,
+      "Sector": "Financials",
+      "Latitude": 41.49932,
+      "Longitude": -81.6943605
+    },
+    {
+      "Title": "MSC Industrial Direct",
+      "Rank": 749,
+      "Employees": 6563,
+      "Sector": "Wholesalers",
+      "Latitude": 40.7934322,
+      "Longitude": -73.4151214
+    },
+    {
+      "Title": "Legg Mason",
+      "Rank": 750,
+      "Employees": 3338,
+      "Sector": "Financials",
+      "Latitude": 39.2903848,
+      "Longitude": -76.6121893
+    },
+    {
+      "Title": "Hyster-Yale Materials Handling",
+      "Rank": 751,
+      "Employees": 6800,
+      "Sector": "Industrials",
+      "Latitude": 41.49932,
+      "Longitude": -81.6943605
+    },
+    {
+      "Title": "Apollo Global Management",
+      "Rank": 752,
+      "Employees": 1047,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Citrix Systems",
+      "Rank": 753,
+      "Employees": 7500,
+      "Sector": "Technology",
+      "Latitude": 26.1224386,
+      "Longitude": -80.1373174
+    },
+    {
+      "Title": "Acadia Healthcare",
+      "Rank": 754,
+      "Employees": 34050,
+      "Sector": "Health Care",
+      "Latitude": 35.9250637,
+      "Longitude": -86.8688899
+    },
+    {
+      "Title": "Varian Medical Systems",
+      "Rank": 755,
+      "Employees": 6600,
+      "Sector": "Health Care",
+      "Latitude": 37.4418834,
+      "Longitude": -122.1430195
+    },
+    {
+      "Title": "Groupon",
+      "Rank": 756,
+      "Employees": 6672,
+      "Sector": "Technology",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Aleris",
+      "Rank": 757,
+      "Employees": 5400,
+      "Sector": "Materials",
+      "Latitude": 41.49932,
+      "Longitude": -81.6943605
+    },
+    {
+      "Title": "Sprague Resources",
+      "Rank": 758,
+      "Employees": 981,
+      "Sector": "Wholesalers",
+      "Latitude": 43.0717552,
+      "Longitude": -70.7625532
+    },
+    {
+      "Title": "Cooper Tire & Rubber",
+      "Rank": 759,
+      "Employees": 9204,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 41.04422,
+      "Longitude": -83.6499321
+    },
+    {
+      "Title": "Hain Celestial Group",
+      "Rank": 760,
+      "Employees": 7825,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 40.7706572,
+      "Longitude": -73.7176312
+    },
+    {
+      "Title": "Penn Mutual Life Insurance",
+      "Rank": 761,
+      "Employees": 3089,
+      "Sector": "Financials",
+      "Latitude": 40.1784422,
+      "Longitude": -75.1285061
+    },
+    {
+      "Title": "Colony NorthStar",
+      "Rank": 762,
+      "Employees": 544,
+      "Sector": "Financials",
+      "Latitude": 34.0522342,
+      "Longitude": -118.2436849
+    },
+    {
+      "Title": "ArcBest",
+      "Rank": 763,
+      "Employees": 13000,
+      "Sector": "Transportation",
+      "Latitude": 35.3859242,
+      "Longitude": -94.3985475
+    },
+    {
+      "Title": "Presidio",
+      "Rank": 764,
+      "Employees": 2700,
+      "Sector": "Technology",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "TRI Pointe Group",
+      "Rank": 765,
+      "Employees": 1251,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 33.6845673,
+      "Longitude": -117.8265049
+    },
+    {
+      "Title": "Annaly Capital Management",
+      "Rank": 766,
+      "Employees": 152,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "G-III Apparel Group",
+      "Rank": 767,
+      "Employees": 9961,
+      "Sector": "Apparel",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "AMC Networks",
+      "Rank": 768,
+      "Employees": 2039,
+      "Sector": "Media",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Enable Midstream Partners",
+      "Rank": 769,
+      "Employees": 1630,
+      "Sector": "Energy",
+      "Latitude": 35.4675602,
+      "Longitude": -97.5164276
+    },
+    {
+      "Title": "Ciena",
+      "Rank": 770,
+      "Employees": 5737,
+      "Sector": "Technology",
+      "Latitude": 39.1955042,
+      "Longitude": -76.7228227
+    },
+    {
+      "Title": "DSW",
+      "Rank": 771,
+      "Employees": 12000,
+      "Sector": "Retailing",
+      "Latitude": 39.9611755,
+      "Longitude": -82.9987942
+    },
+    {
+      "Title": "Convergys",
+      "Rank": 772,
+      "Employees": 115000,
+      "Sector": "Business Services",
+      "Latitude": 39.1031182,
+      "Longitude": -84.5120196
+    },
+    {
+      "Title": "Park Hotels & Resorts",
+      "Rank": 773,
+      "Employees": 520,
+      "Sector": "Financials",
+      "Latitude": 38.9338676,
+      "Longitude": -77.1772604
+    },
+    {
+      "Title": "Pool",
+      "Rank": 774,
+      "Employees": 4000,
+      "Sector": "Wholesalers",
+      "Latitude": 30.4754702,
+      "Longitude": -90.1009108
+    },
+    {
+      "Title": "Fossil Group",
+      "Rank": 775,
+      "Employees": 12300,
+      "Sector": "Apparel",
+      "Latitude": 32.9483335,
+      "Longitude": -96.7298519
+    },
+    {
+      "Title": "Dominos Pizza",
+      "Rank": 776,
+      "Employees": 14200,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 42.2808256,
+      "Longitude": -83.7430378
+    },
+    {
+      "Title": "Crane",
+      "Rank": 777,
+      "Employees": 10600,
+      "Sector": "Industrials",
+      "Latitude": 41.0534302,
+      "Longitude": -73.5387341
+    },
+    {
+      "Title": "Caleres",
+      "Rank": 778,
+      "Employees": 12000,
+      "Sector": "Retailing",
+      "Latitude": 38.6270025,
+      "Longitude": -90.1994042
+    },
+    {
+      "Title": "Tempur Sealy International",
+      "Rank": 779,
+      "Employees": 7000,
+      "Sector": "Household Products",
+      "Latitude": 38.0405837,
+      "Longitude": -84.5037164
+    },
+    {
+      "Title": "Tetra Tech",
+      "Rank": 780,
+      "Employees": 16000,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 34.1477849,
+      "Longitude": -118.1445155
+    },
+    {
+      "Title": "Illumina",
+      "Rank": 781,
+      "Employees": 6200,
+      "Sector": "Technology",
+      "Latitude": 32.715738,
+      "Longitude": -117.1610838
+    },
+    {
+      "Title": "Valmont Industries",
+      "Rank": 782,
+      "Employees": 10690,
+      "Sector": "Materials",
+      "Latitude": 41.2565369,
+      "Longitude": -95.9345034
+    },
+    {
+      "Title": "Hill-Rom Holdings",
+      "Rank": 783,
+      "Employees": 10000,
+      "Sector": "Health Care",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Unisys",
+      "Rank": 784,
+      "Employees": 20500,
+      "Sector": "Technology",
+      "Latitude": 40.1523309,
+      "Longitude": -75.266289
+    },
+    {
+      "Title": "Zions Bancorp.",
+      "Rank": 785,
+      "Employees": 10083,
+      "Sector": "Financials",
+      "Latitude": 40.7607793,
+      "Longitude": -111.8910474
+    },
+    {
+      "Title": "Sinclair Broadcast Group",
+      "Rank": 786,
+      "Employees": 8900,
+      "Sector": "Media",
+      "Latitude": 39.4900013,
+      "Longitude": -76.6585074
+    },
+    {
+      "Title": "Louisiana-Pacific",
+      "Rank": 787,
+      "Employees": 5000,
+      "Sector": "Materials",
+      "Latitude": 36.1626638,
+      "Longitude": -86.7816016
+    },
+    {
+      "Title": "Mettler-Toledo International",
+      "Rank": 788,
+      "Employees": 14600,
+      "Sector": "Technology",
+      "Latitude": 39.9611755,
+      "Longitude": -82.9987942
+    },
+    {
+      "Title": "Synopsys",
+      "Rank": 789,
+      "Employees": 11686,
+      "Sector": "Technology",
+      "Latitude": 37.3860517,
+      "Longitude": -122.0838511
+    },
+    {
+      "Title": "Kemper",
+      "Rank": 790,
+      "Employees": 5550,
+      "Sector": "Financials",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Cabot",
+      "Rank": 791,
+      "Employees": 4500,
+      "Sector": "Chemicals",
+      "Latitude": 42.3600825,
+      "Longitude": -71.0588801
+    },
+    {
+      "Title": "Great Plains Energy",
+      "Rank": 792,
+      "Employees": 2709,
+      "Sector": "Energy",
+      "Latitude": 39.0997265,
+      "Longitude": -94.5785667
+    },
+    {
+      "Title": "Rent-A-Center",
+      "Rank": 793,
+      "Employees": 18300,
+      "Sector": "Retailing",
+      "Latitude": 33.0198431,
+      "Longitude": -96.6988856
+    },
+    {
+      "Title": "Hawaiian Holdings",
+      "Rank": 794,
+      "Employees": 6660,
+      "Sector": "Transportation",
+      "Latitude": 21.3069444,
+      "Longitude": -157.8583333
+    },
+    {
+      "Title": "Revlon",
+      "Rank": 795,
+      "Employees": 7800,
+      "Sector": "Household Products",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Syneos Health",
+      "Rank": 796,
+      "Employees": 21000,
+      "Sector": "Health Care",
+      "Latitude": 35.7795897,
+      "Longitude": -78.6381787
+    },
+    {
+      "Title": "Public Storage",
+      "Rank": 797,
+      "Employees": 5600,
+      "Sector": "Financials",
+      "Latitude": 34.1425078,
+      "Longitude": -118.255075
+    },
+    {
+      "Title": "TTM Technologies",
+      "Rank": 798,
+      "Employees": 29000,
+      "Sector": "Technology",
+      "Latitude": 33.6412156,
+      "Longitude": -117.9188221
+    },
+    {
+      "Title": "Vectren",
+      "Rank": 799,
+      "Employees": 5500,
+      "Sector": "Energy",
+      "Latitude": 37.9715592,
+      "Longitude": -87.5710898
+    },
+    {
+      "Title": "Trimble",
+      "Rank": 800,
+      "Employees": 9523,
+      "Sector": "Technology",
+      "Latitude": 37.36883,
+      "Longitude": -122.0363496
+    },
+    {
+      "Title": "NOW",
+      "Rank": 801,
+      "Employees": 4463,
+      "Sector": "Wholesalers",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Spirit Airlines",
+      "Rank": 802,
+      "Employees": 6100,
+      "Sector": "Transportation",
+      "Latitude": 25.9860762,
+      "Longitude": -80.3035602
+    },
+    {
+      "Title": "ASGN",
+      "Rank": 803,
+      "Employees": 3800,
+      "Sector": "Business Services",
+      "Latitude": 34.1367208,
+      "Longitude": -118.6614809
+    },
+    {
+      "Title": "Lincoln Electric Holdings",
+      "Rank": 804,
+      "Employees": 11000,
+      "Sector": "Industrials",
+      "Latitude": 41.49932,
+      "Longitude": -81.6943605
+    },
+    {
+      "Title": "Prologis",
+      "Rank": 805,
+      "Employees": 1565,
+      "Sector": "Financials",
+      "Latitude": 37.7749295,
+      "Longitude": -122.4194155
+    },
+    {
+      "Title": "Range Resources",
+      "Rank": 806,
+      "Employees": 773,
+      "Sector": "Energy",
+      "Latitude": 32.7554883,
+      "Longitude": -97.3307658
+    },
+    {
+      "Title": "Teledyne Technologies",
+      "Rank": 807,
+      "Employees": 10340,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 34.1705609,
+      "Longitude": -118.8375937
+    },
+    {
+      "Title": "Vishay Intertechnology",
+      "Rank": 808,
+      "Employees": 23000,
+      "Sector": "Technology",
+      "Latitude": 40.0362184,
+      "Longitude": -75.5138118
+    },
+    {
+      "Title": "Boston Properties",
+      "Rank": 809,
+      "Employees": 740,
+      "Sector": "Financials",
+      "Latitude": 42.3600825,
+      "Longitude": -71.0588801
+    },
+    {
+      "Title": "Applied Industrial Technologies",
+      "Rank": 810,
+      "Employees": 5554,
+      "Sector": "Wholesalers",
+      "Latitude": 41.49932,
+      "Longitude": -81.6943605
+    },
+    {
+      "Title": "Graham Holdings",
+      "Rank": 811,
+      "Employees": 16153,
+      "Sector": "Business Services",
+      "Latitude": 38.8816208,
+      "Longitude": -77.0909809
+    },
+    {
+      "Title": "Amica Mutual Insurance",
+      "Rank": 812,
+      "Employees": 3693,
+      "Sector": "Financials",
+      "Latitude": 41.9110123,
+      "Longitude": -71.4418101
+    },
+    {
+      "Title": "Concho Resources",
+      "Rank": 813,
+      "Employees": 1203,
+      "Sector": "Energy",
+      "Latitude": 31.9973456,
+      "Longitude": -102.0779146
+    },
+    {
+      "Title": "ITT",
+      "Rank": 814,
+      "Employees": 10000,
+      "Sector": "Industrials",
+      "Latitude": 41.0339862,
+      "Longitude": -73.7629097
+    },
+    {
+      "Title": "Kansas City Southern",
+      "Rank": 815,
+      "Employees": 7130,
+      "Sector": "Transportation",
+      "Latitude": 39.0997265,
+      "Longitude": -94.5785667
+    },
+    {
+      "Title": "MDC Holdings",
+      "Rank": 816,
+      "Employees": 1491,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 39.7392358,
+      "Longitude": -104.990251
+    },
+    {
+      "Title": "Evergy",
+      "Rank": 817,
+      "Employees": 2205,
+      "Sector": "Energy",
+      "Latitude": 39.0473451,
+      "Longitude": -95.6751576
+    },
+    {
+      "Title": "Pinnacle Entertainment",
+      "Rank": 818,
+      "Employees": 15377,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 36.1699412,
+      "Longitude": -115.1398296
+    },
+    {
+      "Title": "Hawaiian Electric Industries",
+      "Rank": 819,
+      "Employees": 3880,
+      "Sector": "Energy",
+      "Latitude": 21.3069444,
+      "Longitude": -157.8583333
+    },
+    {
+      "Title": "TEGNA",
+      "Rank": 820,
+      "Employees": 5283,
+      "Sector": "Media",
+      "Latitude": 38.9338676,
+      "Longitude": -77.1772604
+    },
+    {
+      "Title": "Southwest Gas Holdings",
+      "Rank": 821,
+      "Employees": 7771,
+      "Sector": "Energy",
+      "Latitude": 36.1699412,
+      "Longitude": -115.1398296
+    },
+    {
+      "Title": "Vista Outdoor",
+      "Rank": 822,
+      "Employees": 6400,
+      "Sector": "Household Products",
+      "Latitude": 40.9804999,
+      "Longitude": -111.8874392
+    },
+    {
+      "Title": "Bon-Ton Stores",
+      "Rank": 823,
+      "Employees": 23300,
+      "Sector": "Retailing",
+      "Latitude": 39.9625984,
+      "Longitude": -76.727745
+    },
+    {
+      "Title": "Super Micro Computer",
+      "Rank": 824,
+      "Employees": 2699,
+      "Sector": "Technology",
+      "Latitude": 37.3382082,
+      "Longitude": -121.8863286
+    },
+    {
+      "Title": "Plexus",
+      "Rank": 825,
+      "Employees": 16000,
+      "Sector": "Technology",
+      "Latitude": 44.1858193,
+      "Longitude": -88.462609
+    },
+    {
+      "Title": "TrueBlue",
+      "Rank": 826,
+      "Employees": 5500,
+      "Sector": "Business Services",
+      "Latitude": 47.2528768,
+      "Longitude": -122.4442906
+    },
+    {
+      "Title": "Magellan Midstream Partners",
+      "Rank": 827,
+      "Employees": 1802,
+      "Sector": "Energy",
+      "Latitude": 36.1539816,
+      "Longitude": -95.992775
+    },
+    {
+      "Title": "Toro",
+      "Rank": 828,
+      "Employees": 6779,
+      "Sector": "Industrials",
+      "Latitude": 44.840798,
+      "Longitude": -93.2982799
+    },
+    {
+      "Title": "Akamai Technologies",
+      "Rank": 829,
+      "Employees": 7650,
+      "Sector": "Technology",
+      "Latitude": 42.3736158,
+      "Longitude": -71.1097335
+    },
+    {
+      "Title": "Moog",
+      "Rank": 830,
+      "Employees": 10675,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 42.8212288,
+      "Longitude": -78.6341996
+    },
+    {
+      "Title": "Vertex Pharmaceuticals",
+      "Rank": 831,
+      "Employees": 2300,
+      "Sector": "Health Care",
+      "Latitude": 42.3600825,
+      "Longitude": -71.0588801
+    },
+    {
+      "Title": "Equity Residential",
+      "Rank": 832,
+      "Employees": 2683,
+      "Sector": "Financials",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Selective Insurance Group",
+      "Rank": 833,
+      "Employees": 2260,
+      "Sector": "Financials",
+      "Latitude": 41.1464852,
+      "Longitude": -74.7523874
+    },
+    {
+      "Title": "AptarGroup",
+      "Rank": 834,
+      "Employees": 13200,
+      "Sector": "Materials",
+      "Latitude": 42.2411344,
+      "Longitude": -88.3161965
+    },
+    {
+      "Title": "Benchmark Electronics",
+      "Rank": 835,
+      "Employees": 10600,
+      "Sector": "Technology",
+      "Latitude": 33.4941704,
+      "Longitude": -111.9260519
+    },
+    {
+      "Title": "Columbia Sportswear",
+      "Rank": 836,
+      "Employees": 6188,
+      "Sector": "Apparel",
+      "Latitude": 45.5122308,
+      "Longitude": -122.6587185
+    },
+    {
+      "Title": "A. Schulman",
+      "Rank": 837,
+      "Employees": 4900,
+      "Sector": "Chemicals",
+      "Latitude": 41.127833,
+      "Longitude": -81.609844
+    },
+    {
+      "Title": "Verso",
+      "Rank": 838,
+      "Employees": 4200,
+      "Sector": "Materials",
+      "Latitude": 39.6428362,
+      "Longitude": -84.2866083
+    },
+    {
+      "Title": "Digital Realty Trust",
+      "Rank": 839,
+      "Employees": 1429,
+      "Sector": "Financials",
+      "Latitude": 37.7749295,
+      "Longitude": -122.4194155
+    },
+    {
+      "Title": "GNC Holdings",
+      "Rank": 840,
+      "Employees": 11500,
+      "Sector": "Food &  Drug Stores",
+      "Latitude": 40.4406248,
+      "Longitude": -79.9958864
+    },
+    {
+      "Title": "E*Trade Financial",
+      "Rank": 841,
+      "Employees": 3607,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Hovnanian Enterprises",
+      "Rank": 842,
+      "Employees": 1905,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 40.3470543,
+      "Longitude": -74.0643065
+    },
+    {
+      "Title": "Maximus",
+      "Rank": 843,
+      "Employees": 20400,
+      "Sector": "Technology",
+      "Latitude": 38.9586307,
+      "Longitude": -77.3570028
+    },
+    {
+      "Title": "Twitter",
+      "Rank": 844,
+      "Employees": 3372,
+      "Sector": "Technology",
+      "Latitude": 37.7749295,
+      "Longitude": -122.4194155
+    },
+    {
+      "Title": "Par Pacific Holdings",
+      "Rank": 845,
+      "Employees": 905,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Parexel International",
+      "Rank": 846,
+      "Employees": 18900,
+      "Sector": "Health Care",
+      "Latitude": 42.3764852,
+      "Longitude": -71.2356113
+    },
+    {
+      "Title": "RH",
+      "Rank": 847,
+      "Employees": 4750,
+      "Sector": "Retailing",
+      "Latitude": 37.9254806,
+      "Longitude": -122.5274755
+    },
+    {
+      "Title": "Nexstar Media Group",
+      "Rank": 848,
+      "Employees": 8737,
+      "Sector": "Media",
+      "Latitude": 32.8140177,
+      "Longitude": -96.9488945
+    },
+    {
+      "Title": "Knight-Swift Transportation Holdings",
+      "Rank": 849,
+      "Employees": 25300,
+      "Sector": "Transportation",
+      "Latitude": 33.4483771,
+      "Longitude": -112.0740373
+    },
+    {
+      "Title": "Red Hat",
+      "Rank": 850,
+      "Employees": 10500,
+      "Sector": "Technology",
+      "Latitude": 35.7795897,
+      "Longitude": -78.6381787
+    },
+    {
+      "Title": "Belden",
+      "Rank": 851,
+      "Employees": 8800,
+      "Sector": "Industrials",
+      "Latitude": 38.6270025,
+      "Longitude": -90.1994042
+    },
+    {
+      "Title": "Boyd Gaming",
+      "Rank": 852,
+      "Employees": 19707,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 36.1699412,
+      "Longitude": -115.1398296
+    },
+    {
+      "Title": "Primoris Services",
+      "Rank": 853,
+      "Employees": 7102,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "Gardner Denver",
+      "Rank": 854,
+      "Employees": 6400,
+      "Sector": "Industrials",
+      "Latitude": 43.0389025,
+      "Longitude": -87.9064736
+    },
+    {
+      "Title": "Donaldson",
+      "Rank": 855,
+      "Employees": 13200,
+      "Sector": "Industrials",
+      "Latitude": 44.977753,
+      "Longitude": -93.2650108
+    },
+    {
+      "Title": "Party City Holdco",
+      "Rank": 856,
+      "Employees": 14600,
+      "Sector": "Retailing",
+      "Latitude": 41.0550969,
+      "Longitude": -73.8201337
+    },
+    {
+      "Title": "J.Crew Group",
+      "Rank": 857,
+      "Employees": 8950,
+      "Sector": "Retailing",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "EnerSys",
+      "Rank": 858,
+      "Employees": 9400,
+      "Sector": "Industrials",
+      "Latitude": 40.3356483,
+      "Longitude": -75.9268747
+    },
+    {
+      "Title": "Guess",
+      "Rank": 859,
+      "Employees": 14700,
+      "Sector": "Retailing",
+      "Latitude": 34.0522342,
+      "Longitude": -118.2436849
+    },
+    {
+      "Title": "Patterson-UTI Energy",
+      "Rank": 860,
+      "Employees": 8000,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "WGL Holdings",
+      "Rank": 861,
+      "Employees": 1586,
+      "Sector": "Energy",
+      "Latitude": 47.7510741,
+      "Longitude": -120.7401385
+    },
+    {
+      "Title": "Wolverine World Wide",
+      "Rank": 862,
+      "Employees": 3700,
+      "Sector": "Apparel",
+      "Latitude": 43.1200272,
+      "Longitude": -85.5600316
+    },
+    {
+      "Title": "Xilinx",
+      "Rank": 863,
+      "Employees": 3831,
+      "Sector": "Technology",
+      "Latitude": 37.3382082,
+      "Longitude": -121.8863286
+    },
+    {
+      "Title": "Vornado Realty Trust",
+      "Rank": 864,
+      "Employees": 3989,
+      "Sector": "Financials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Middleby",
+      "Rank": 865,
+      "Employees": 8493,
+      "Sector": "Industrials",
+      "Latitude": 42.0354084,
+      "Longitude": -88.2825668
+    },
+    {
+      "Title": "MPM Holdings",
+      "Rank": 866,
+      "Employees": 5200,
+      "Sector": "Chemicals",
+      "Latitude": 42.7925777,
+      "Longitude": -73.6812293
+    },
+    {
+      "Title": "Cleveland-Cliffs",
+      "Rank": 867,
+      "Employees": 2938,
+      "Sector": "Energy",
+      "Latitude": 41.49932,
+      "Longitude": -81.6943605
+    },
+    {
+      "Title": "GGP",
+      "Rank": 868,
+      "Employees": 1700,
+      "Sector": "Financials",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Cypress Semiconductor",
+      "Rank": 869,
+      "Employees": 6099,
+      "Sector": "Technology",
+      "Latitude": 37.3382082,
+      "Longitude": -121.8863286
+    },
+    {
+      "Title": "Arch Coal",
+      "Rank": 870,
+      "Employees": 3790,
+      "Sector": "Energy",
+      "Latitude": 38.6270025,
+      "Longitude": -90.1994042
+    },
+    {
+      "Title": "GMS",
+      "Rank": 871,
+      "Employees": 4464,
+      "Sector": "Wholesalers",
+      "Latitude": 33.8545479,
+      "Longitude": -84.2171424
+    },
+    {
+      "Title": "Waters",
+      "Rank": 872,
+      "Employees": 7000,
+      "Sector": "Technology",
+      "Latitude": 42.1398577,
+      "Longitude": -71.5163049
+    },
+    {
+      "Title": "H.B. Fuller",
+      "Rank": 873,
+      "Employees": 5965,
+      "Sector": "Chemicals",
+      "Latitude": 44.9537029,
+      "Longitude": -93.0899578
+    },
+    {
+      "Title": "Affiliated Managers Group",
+      "Rank": 874,
+      "Employees": 4400,
+      "Sector": "Financials",
+      "Latitude": 26.7153424,
+      "Longitude": -80.0533746
+    },
+    {
+      "Title": "PerkinElmer",
+      "Rank": 875,
+      "Employees": 11000,
+      "Sector": "Technology",
+      "Latitude": 42.3764852,
+      "Longitude": -71.2356113
+    },
+    {
+      "Title": "Edgewell Personal Care",
+      "Rank": 876,
+      "Employees": 6000,
+      "Sector": "Household Products",
+      "Latitude": 38.6631083,
+      "Longitude": -90.5770675
+    },
+    {
+      "Title": "Maxim Integrated Products",
+      "Rank": 877,
+      "Employees": 7040,
+      "Sector": "Technology",
+      "Latitude": 37.3382082,
+      "Longitude": -121.8863286
+    },
+    {
+      "Title": "Knights of Columbus",
+      "Rank": 878,
+      "Employees": 926,
+      "Sector": "Financials",
+      "Latitude": 41.308274,
+      "Longitude": -72.9278835
+    },
+    {
+      "Title": "IDEX",
+      "Rank": 879,
+      "Employees": 7167,
+      "Sector": "Industrials",
+      "Latitude": 42.2586342,
+      "Longitude": -87.840625
+    },
+    {
+      "Title": "DST Systems",
+      "Rank": 880,
+      "Employees": 14200,
+      "Sector": "Business Services",
+      "Latitude": 39.0997265,
+      "Longitude": -94.5785667
+    },
+    {
+      "Title": "Chicos FAS",
+      "Rank": 881,
+      "Employees": 12350,
+      "Sector": "Retailing",
+      "Latitude": 26.640628,
+      "Longitude": -81.8723084
+    },
+    {
+      "Title": "Nu Skin Enterprises",
+      "Rank": 882,
+      "Employees": 48700,
+      "Sector": "Household Products",
+      "Latitude": 40.2338438,
+      "Longitude": -111.6585337
+    },
+    {
+      "Title": "Herman Miller",
+      "Rank": 883,
+      "Employees": 7478,
+      "Sector": "Household Products",
+      "Latitude": 42.8125246,
+      "Longitude": -86.018651
+    },
+    {
+      "Title": "NLV Financial",
+      "Rank": 884,
+      "Employees": 1065,
+      "Sector": "Financials",
+      "Latitude": 44.2600593,
+      "Longitude": -72.5753869
+    },
+    {
+      "Title": "Curtiss-Wright",
+      "Rank": 885,
+      "Employees": 8600,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 35.2270869,
+      "Longitude": -80.8431267
+    },
+    {
+      "Title": "New Jersey Resources",
+      "Rank": 886,
+      "Employees": 1052,
+      "Sector": "Energy",
+      "Latitude": 40.1606666,
+      "Longitude": -74.0679753
+    },
+    {
+      "Title": "REV Group",
+      "Rank": 887,
+      "Employees": 7800,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 43.0389025,
+      "Longitude": -87.9064736
+    },
+    {
+      "Title": "Mueller Industries",
+      "Rank": 888,
+      "Employees": 4125,
+      "Sector": "Industrials",
+      "Latitude": 35.1495343,
+      "Longitude": -90.0489801
+    },
+    {
+      "Title": "GEO Group",
+      "Rank": 889,
+      "Employees": 18512,
+      "Sector": "Business Services",
+      "Latitude": 26.3683064,
+      "Longitude": -80.1289321
+    },
+    {
+      "Title": "Allison Transmission Holdings",
+      "Rank": 890,
+      "Employees": 2700,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 39.768403,
+      "Longitude": -86.158068
+    },
+    {
+      "Title": "OGE Energy",
+      "Rank": 891,
+      "Employees": 2413,
+      "Sector": "Energy",
+      "Latitude": 35.4675602,
+      "Longitude": -97.5164276
+    },
+    {
+      "Title": "Cheesecake Factory",
+      "Rank": 892,
+      "Employees": 39100,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 34.1372953,
+      "Longitude": -118.6541895
+    },
+    {
+      "Title": "PRA Health Sciences",
+      "Rank": 893,
+      "Employees": 15800,
+      "Sector": "Technology",
+      "Latitude": 35.7795897,
+      "Longitude": -78.6381787
+    },
+    {
+      "Title": "Tupperware Brands",
+      "Rank": 894,
+      "Employees": 12000,
+      "Sector": "Household Products",
+      "Latitude": 28.5383355,
+      "Longitude": -81.3792365
+    },
+    {
+      "Title": "Euronet Worldwide",
+      "Rank": 895,
+      "Employees": 6600,
+      "Sector": "Business Services",
+      "Latitude": 38.966673,
+      "Longitude": -94.6169012
+    },
+    {
+      "Title": "FLEETCOR Technologies",
+      "Rank": 896,
+      "Employees": 7890,
+      "Sector": "Business Services",
+      "Latitude": 33.969864,
+      "Longitude": -84.2212938
+    },
+    {
+      "Title": "Nationstar Mortgage Holdings",
+      "Rank": 897,
+      "Employees": 7600,
+      "Sector": "Financials",
+      "Latitude": 32.9545687,
+      "Longitude": -97.0150078
+    },
+    {
+      "Title": "GoDaddy",
+      "Rank": 898,
+      "Employees": 5990,
+      "Sector": "Technology",
+      "Latitude": 33.4941704,
+      "Longitude": -111.9260519
+    },
+    {
+      "Title": "Blackhawk Network Holdings",
+      "Rank": 899,
+      "Employees": 3190,
+      "Sector": "Business Services",
+      "Latitude": 37.6624312,
+      "Longitude": -121.8746789
+    },
+    {
+      "Title": "Cboe Global Markets",
+      "Rank": 900,
+      "Employees": 889,
+      "Sector": "Financials",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Snyders-Lance",
+      "Rank": 901,
+      "Employees": 5900,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 35.2270869,
+      "Longitude": -80.8431267
+    },
+    {
+      "Title": "Murphy Oil",
+      "Rank": 902,
+      "Employees": 1128,
+      "Sector": "Energy",
+      "Latitude": 33.20763,
+      "Longitude": -92.6662674
+    },
+    {
+      "Title": "CDK Global",
+      "Rank": 903,
+      "Employees": 8900,
+      "Sector": "Technology",
+      "Latitude": 42.0629915,
+      "Longitude": -88.1227199
+    },
+    {
+      "Title": "Texas Roadhouse",
+      "Rank": 904,
+      "Employees": 29524,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 38.2526647,
+      "Longitude": -85.7584557
+    },
+    {
+      "Title": "Kirby",
+      "Rank": 905,
+      "Employees": 5775,
+      "Sector": "Transportation",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Square",
+      "Rank": 906,
+      "Employees": 2338,
+      "Sector": "Business Services",
+      "Latitude": 37.7749295,
+      "Longitude": -122.4194155
+    },
+    {
+      "Title": "Genesee & Wyoming",
+      "Rank": 907,
+      "Employees": 8000,
+      "Sector": "Transportation",
+      "Latitude": 41.0771914,
+      "Longitude": -73.4686858
+    },
+    {
+      "Title": "Zayo Group Holdings",
+      "Rank": 908,
+      "Employees": 3794,
+      "Sector": "Telecommunications",
+      "Latitude": 40.0149856,
+      "Longitude": -105.2705456
+    },
+    {
+      "Title": "NewMarket",
+      "Rank": 909,
+      "Employees": 2223,
+      "Sector": "Chemicals",
+      "Latitude": 37.5407246,
+      "Longitude": -77.4360481
+    },
+    {
+      "Title": "99 Cents Only Stores",
+      "Rank": 910,
+      "Employees": 17200,
+      "Sector": "Retailing",
+      "Latitude": 34.0005691,
+      "Longitude": -118.1597929
+    },
+    {
+      "Title": "PCM",
+      "Rank": 911,
+      "Employees": 4118,
+      "Sector": "Wholesalers",
+      "Latitude": 33.9191799,
+      "Longitude": -118.4164652
+    },
+    {
+      "Title": "Federated Mutual Insurance",
+      "Rank": 912,
+      "Employees": 2388,
+      "Sector": "Financials",
+      "Latitude": 44.0855572,
+      "Longitude": -93.2259349
+    },
+    {
+      "Title": "HNI",
+      "Rank": 913,
+      "Employees": 9350,
+      "Sector": "Household Products",
+      "Latitude": 41.424473,
+      "Longitude": -91.0432051
+    },
+    {
+      "Title": "Hospitality Properties Trust",
+      "Rank": 914,
+      "Employees": 450,
+      "Sector": "Financials",
+      "Latitude": 42.3370413,
+      "Longitude": -71.2092214
+    },
+    {
+      "Title": "Greenbrier Cos.",
+      "Rank": 915,
+      "Employees": 11917,
+      "Sector": "Transportation",
+      "Latitude": 45.4156817,
+      "Longitude": -122.7159726
+    },
+    {
+      "Title": "Bio-Rad Laboratories",
+      "Rank": 916,
+      "Employees": 8150,
+      "Sector": "Health Care",
+      "Latitude": 38.0171441,
+      "Longitude": -122.2885808
+    },
+    {
+      "Title": "AvalonBay Communities",
+      "Rank": 917,
+      "Employees": 3123,
+      "Sector": "Financials",
+      "Latitude": 38.8816208,
+      "Longitude": -77.0909809
+    },
+    {
+      "Title": "Renewable Energy Group",
+      "Rank": 918,
+      "Employees": 853,
+      "Sector": "Energy",
+      "Latitude": 42.0307812,
+      "Longitude": -93.6319131
+    },
+    {
+      "Title": "Atlas Air Worldwide Holdings",
+      "Rank": 919,
+      "Employees": 2870,
+      "Sector": "Transportation",
+      "Latitude": 41.0400135,
+      "Longitude": -73.7144477
+    },
+    {
+      "Title": "Teradata",
+      "Rank": 920,
+      "Employees": 10615,
+      "Sector": "Technology",
+      "Latitude": 39.7589478,
+      "Longitude": -84.1916069
+    },
+    {
+      "Title": "LCI Industries",
+      "Rank": 921,
+      "Employees": 9852,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 41.6819935,
+      "Longitude": -85.9766671
+    },
+    {
+      "Title": "Teleflex",
+      "Rank": 922,
+      "Employees": 14400,
+      "Sector": "Health Care",
+      "Latitude": 40.0415996,
+      "Longitude": -75.3698895
+    },
+    {
+      "Title": "Verisk Analytics",
+      "Rank": 923,
+      "Employees": 7192,
+      "Sector": "Business Services",
+      "Latitude": 40.7281575,
+      "Longitude": -74.0776417
+    },
+    {
+      "Title": "Popular",
+      "Rank": 924,
+      "Employees": 7784,
+      "Sector": "Financials",
+      "Latitude": 18.4225782,
+      "Longitude": -66.0509549
+    },
+    {
+      "Title": "Workday",
+      "Rank": 925,
+      "Employees": 8200,
+      "Sector": "Technology",
+      "Latitude": 37.6624312,
+      "Longitude": -121.8746789
+    },
+    {
+      "Title": "Cooper Cos.",
+      "Rank": 926,
+      "Employees": 11800,
+      "Sector": "Health Care",
+      "Latitude": 37.6624312,
+      "Longitude": -121.8746789
+    },
+    {
+      "Title": "Express",
+      "Rank": 927,
+      "Employees": 9576,
+      "Sector": "Retailing",
+      "Latitude": 39.9611755,
+      "Longitude": -82.9987942
+    },
+    {
+      "Title": "Teradyne",
+      "Rank": 928,
+      "Employees": 4500,
+      "Sector": "Technology",
+      "Latitude": 42.5750939,
+      "Longitude": -71.0786653
+    },
+    {
+      "Title": "Werner Enterprises",
+      "Rank": 929,
+      "Employees": 12154,
+      "Sector": "Transportation",
+      "Latitude": 41.2565369,
+      "Longitude": -95.9345034
+    },
+    {
+      "Title": "Oaktree Capital Group",
+      "Rank": 930,
+      "Employees": 930,
+      "Sector": "Financials",
+      "Latitude": 34.0522342,
+      "Longitude": -118.2436849
+    },
+    {
+      "Title": "Woodward",
+      "Rank": 931,
+      "Employees": 6829,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 40.5852602,
+      "Longitude": -105.084423
+    },
+    {
+      "Title": "F5 Networks",
+      "Rank": 932,
+      "Employees": 4366,
+      "Sector": "Technology",
+      "Latitude": 47.6062095,
+      "Longitude": -122.3320708
+    },
+    {
+      "Title": "Valvoline",
+      "Rank": 933,
+      "Employees": 5600,
+      "Sector": "Chemicals",
+      "Latitude": 38.0405837,
+      "Longitude": -84.5037164
+    },
+    {
+      "Title": "Roadrunner Transportation Systems",
+      "Rank": 934,
+      "Employees": 4645,
+      "Sector": "Transportation",
+      "Latitude": 41.8089191,
+      "Longitude": -88.0111746
+    },
+    {
+      "Title": "SemGroup",
+      "Rank": 935,
+      "Employees": 1220,
+      "Sector": "Energy",
+      "Latitude": 36.1539816,
+      "Longitude": -95.992775
+    },
+    {
+      "Title": "Catalent",
+      "Rank": 936,
+      "Employees": 10800,
+      "Sector": "Health Care",
+      "Latitude": 40.497604,
+      "Longitude": -74.4884868
+    },
+    {
+      "Title": "Quorum Health",
+      "Rank": 937,
+      "Employees": 11250,
+      "Sector": "Health Care",
+      "Latitude": 36.0331164,
+      "Longitude": -86.7827772
+    },
+    {
+      "Title": "Universal",
+      "Rank": 938,
+      "Employees": 24000,
+      "Sector": "Food, Beverages &  Tobacco",
+      "Latitude": 37.5407246,
+      "Longitude": -77.4360481
+    },
+    {
+      "Title": "Nordson",
+      "Rank": 939,
+      "Employees": 7532,
+      "Sector": "Industrials",
+      "Latitude": 41.4553232,
+      "Longitude": -81.9179173
+    },
+    {
+      "Title": "ResMed",
+      "Rank": 940,
+      "Employees": 6080,
+      "Sector": "Health Care",
+      "Latitude": 32.715738,
+      "Longitude": -117.1610838
+    },
+    {
+      "Title": "Tower International",
+      "Rank": 941,
+      "Employees": 7600,
+      "Sector": "Motor Vehicles &  Parts",
+      "Latitude": 42.36837,
+      "Longitude": -83.3527097
+    },
+    {
+      "Title": "Freds",
+      "Rank": 942,
+      "Employees": 7324,
+      "Sector": "Food &  Drug Stores",
+      "Latitude": 35.1495343,
+      "Longitude": -90.0489801
+    },
+    {
+      "Title": "Foundation Building Materials",
+      "Rank": 943,
+      "Employees": 3782,
+      "Sector": "Wholesalers",
+      "Latitude": 33.7420005,
+      "Longitude": -117.8236391
+    },
+    {
+      "Title": "Kennametal",
+      "Rank": 944,
+      "Employees": 10744,
+      "Sector": "Industrials",
+      "Latitude": 40.4406248,
+      "Longitude": -79.9958864
+    },
+    {
+      "Title": "Autodesk",
+      "Rank": 945,
+      "Employees": 8800,
+      "Sector": "Technology",
+      "Latitude": 37.9735346,
+      "Longitude": -122.5310874
+    },
+    {
+      "Title": "Ply Gem Holdings",
+      "Rank": 946,
+      "Employees": 9471,
+      "Sector": "Materials",
+      "Latitude": 35.79154,
+      "Longitude": -78.7811169
+    },
+    {
+      "Title": "Central Garden & Pet",
+      "Rank": 947,
+      "Employees": 4050,
+      "Sector": "Household Products",
+      "Latitude": 37.9100783,
+      "Longitude": -122.0651819
+    },
+    {
+      "Title": "Matson",
+      "Rank": 948,
+      "Employees": 1947,
+      "Sector": "Transportation",
+      "Latitude": 21.3069444,
+      "Longitude": -157.8583333
+    },
+    {
+      "Title": "EchoStar",
+      "Rank": 949,
+      "Employees": 2100,
+      "Sector": "Technology",
+      "Latitude": 39.6477653,
+      "Longitude": -104.9877597
+    },
+    {
+      "Title": "Genesis Energy",
+      "Rank": 950,
+      "Employees": 2100,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "SVB Financial Group",
+      "Rank": 951,
+      "Employees": 2438,
+      "Sector": "Financials",
+      "Latitude": 37.3541079,
+      "Longitude": -121.9552356
+    },
+    {
+      "Title": "Itron",
+      "Rank": 952,
+      "Employees": 7150,
+      "Sector": "Industrials",
+      "Latitude": 47.6743428,
+      "Longitude": -117.1124241
+    },
+    {
+      "Title": "Portland General Electric",
+      "Rank": 953,
+      "Employees": 2906,
+      "Sector": "Energy",
+      "Latitude": 45.5122308,
+      "Longitude": -122.6587185
+    },
+    {
+      "Title": "California Resources",
+      "Rank": 954,
+      "Employees": 1450,
+      "Sector": "Energy",
+      "Latitude": 34.0522342,
+      "Longitude": -118.2436849
+    },
+    {
+      "Title": "Esterline Technologies",
+      "Rank": 955,
+      "Employees": 13255,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 47.6101497,
+      "Longitude": -122.2015159
+    },
+    {
+      "Title": "Delta Tucker Holdings",
+      "Rank": 956,
+      "Employees": 8800,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 38.9338676,
+      "Longitude": -77.1772604
+    },
+    {
+      "Title": "AMN Healthcare Services",
+      "Rank": 957,
+      "Employees": 2980,
+      "Sector": "Health Care",
+      "Latitude": 32.715738,
+      "Longitude": -117.1610838
+    },
+    {
+      "Title": "Griffon",
+      "Rank": 958,
+      "Employees": 4700,
+      "Sector": "Materials",
+      "Latitude": 40.7127753,
+      "Longitude": -74.0059728
+    },
+    {
+      "Title": "Valhi",
+      "Rank": 959,
+      "Employees": 2790,
+      "Sector": "Chemicals",
+      "Latitude": 32.7766642,
+      "Longitude": -96.7969879
+    },
+    {
+      "Title": "Hexcel",
+      "Rank": 960,
+      "Employees": 6259,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 41.0534302,
+      "Longitude": -73.5387341
+    },
+    {
+      "Title": "IDEXX Laboratories",
+      "Rank": 961,
+      "Employees": 7600,
+      "Sector": "Health Care",
+      "Latitude": 43.6770252,
+      "Longitude": -70.3711617
+    },
+    {
+      "Title": "Deluxe",
+      "Rank": 962,
+      "Employees": 5886,
+      "Sector": "Media",
+      "Latitude": 45.0791325,
+      "Longitude": -93.1471667
+    },
+    {
+      "Title": "M/I Homes",
+      "Rank": 963,
+      "Employees": 1238,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 39.9611755,
+      "Longitude": -82.9987942
+    },
+    {
+      "Title": "Kraton",
+      "Rank": 964,
+      "Employees": 1931,
+      "Sector": "Chemicals",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Stewart Information Services",
+      "Rank": 965,
+      "Employees": 5960,
+      "Sector": "Financials",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Marriott Vacations Worldwide",
+      "Rank": 966,
+      "Employees": 11000,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 28.5383355,
+      "Longitude": -81.3792365
+    },
+    {
+      "Title": "SPX FLOW",
+      "Rank": 967,
+      "Employees": 7000,
+      "Sector": "Industrials",
+      "Latitude": 35.2270869,
+      "Longitude": -80.8431267
+    },
+    {
+      "Title": "ACCO Brands",
+      "Rank": 968,
+      "Employees": 6620,
+      "Sector": "Household Products",
+      "Latitude": 42.1969689,
+      "Longitude": -88.0934108
+    },
+    {
+      "Title": "Echo Global Logistics",
+      "Rank": 969,
+      "Employees": 2453,
+      "Sector": "Transportation",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Cadence Design Systems",
+      "Rank": 970,
+      "Employees": 7214,
+      "Sector": "Technology",
+      "Latitude": 37.3382082,
+      "Longitude": -121.8863286
+    },
+    {
+      "Title": "Nuance Communications",
+      "Rank": 971,
+      "Employees": 11600,
+      "Sector": "Technology",
+      "Latitude": 42.5047161,
+      "Longitude": -71.1956205
+    },
+    {
+      "Title": "Finish Line",
+      "Rank": 972,
+      "Employees": 8200,
+      "Sector": "Retailing",
+      "Latitude": 39.768403,
+      "Longitude": -86.158068
+    },
+    {
+      "Title": "TransUnion",
+      "Rank": 973,
+      "Employees": 5100,
+      "Sector": "Business Services",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "ServiceNow",
+      "Rank": 974,
+      "Employees": 6222,
+      "Sector": "Technology",
+      "Latitude": 37.3541079,
+      "Longitude": -121.9552356
+    },
+    {
+      "Title": "Summit Materials",
+      "Rank": 975,
+      "Employees": 6000,
+      "Sector": "Materials",
+      "Latitude": 39.7392358,
+      "Longitude": -104.990251
+    },
+    {
+      "Title": "Engility Holdings",
+      "Rank": 976,
+      "Employees": 8700,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 38.8942786,
+      "Longitude": -77.4310992
+    },
+    {
+      "Title": "Ferrellgas Partners",
+      "Rank": 977,
+      "Employees": 3891,
+      "Sector": "Energy",
+      "Latitude": 38.9822282,
+      "Longitude": -94.6707917
+    },
+    {
+      "Title": "Interactive Brokers Group",
+      "Rank": 978,
+      "Employees": 1228,
+      "Sector": "Financials",
+      "Latitude": 41.0262417,
+      "Longitude": -73.6281964
+    },
+    {
+      "Title": "Stepan",
+      "Rank": 979,
+      "Employees": 2096,
+      "Sector": "Chemicals",
+      "Latitude": 42.09975,
+      "Longitude": -87.7808967
+    },
+    {
+      "Title": "Oceaneering International",
+      "Rank": 980,
+      "Employees": 8200,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "Cimarex Energy",
+      "Rank": 981,
+      "Employees": 910,
+      "Sector": "Energy",
+      "Latitude": 39.7392358,
+      "Longitude": -104.990251
+    },
+    {
+      "Title": "Rexnord",
+      "Rank": 982,
+      "Employees": 8000,
+      "Sector": "Industrials",
+      "Latitude": 43.0389025,
+      "Longitude": -87.9064736
+    },
+    {
+      "Title": "Beazer Homes USA",
+      "Rank": 983,
+      "Employees": 1100,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 33.7489954,
+      "Longitude": -84.3879824
+    },
+    {
+      "Title": "MKS Instruments",
+      "Rank": 984,
+      "Employees": 4923,
+      "Sector": "Technology",
+      "Latitude": 42.6583356,
+      "Longitude": -71.1367953
+    },
+    {
+      "Title": "Vail Resorts",
+      "Rank": 985,
+      "Employees": 20150,
+      "Sector": "Hotels, Restaurants &  Leisure",
+      "Latitude": 39.9205411,
+      "Longitude": -105.0866504
+    },
+    {
+      "Title": "Ohio National Mutual",
+      "Rank": 986,
+      "Employees": 1300,
+      "Sector": "Financials",
+      "Latitude": 39.1031182,
+      "Longitude": -84.5120196
+    },
+    {
+      "Title": "TopBuild",
+      "Rank": 987,
+      "Employees": 8400,
+      "Sector": "Engineering &  Construction",
+      "Latitude": 29.2108147,
+      "Longitude": -81.0228331
+    },
+    {
+      "Title": "Brown & Brown",
+      "Rank": 988,
+      "Employees": 8491,
+      "Sector": "Financials",
+      "Latitude": 29.2108147,
+      "Longitude": -81.0228331
+    },
+    {
+      "Title": "Aerojet Rocketdyne Holdings",
+      "Rank": 989,
+      "Employees": 5157,
+      "Sector": "Aerospace &  Defense",
+      "Latitude": 33.9191799,
+      "Longitude": -118.4164652
+    },
+    {
+      "Title": "Barnes & Noble Education",
+      "Rank": 990,
+      "Employees": 13375,
+      "Sector": "Retailing",
+      "Latitude": 40.7066174,
+      "Longitude": -74.5493284
+    },
+    {
+      "Title": "Superior Energy Services",
+      "Rank": 991,
+      "Employees": 6400,
+      "Sector": "Energy",
+      "Latitude": 29.7604267,
+      "Longitude": -95.3698028
+    },
+    {
+      "Title": "VeriFone Systems",
+      "Rank": 992,
+      "Employees": 5600,
+      "Sector": "Technology",
+      "Latitude": 37.3382082,
+      "Longitude": -121.8863286
+    },
+    {
+      "Title": "Childrens Place",
+      "Rank": 993,
+      "Employees": 9800,
+      "Sector": "Retailing",
+      "Latitude": 40.7895453,
+      "Longitude": -74.0565298
+    },
+    {
+      "Title": "Tribune Media",
+      "Rank": 994,
+      "Employees": 6000,
+      "Sector": "Media",
+      "Latitude": 41.8781136,
+      "Longitude": -87.6297982
+    },
+    {
+      "Title": "Healthcare Services Group",
+      "Rank": 995,
+      "Employees": 55000,
+      "Sector": "Health Care",
+      "Latitude": 40.0994425,
+      "Longitude": -74.9325683
+    },
+    {
+      "Title": "SiteOne Landscape Supply",
+      "Rank": 996,
+      "Employees": 3664,
+      "Sector": "Wholesalers",
+      "Latitude": 34.0232431,
+      "Longitude": -84.3615555
+    },
+    {
+      "Title": "Charles River Laboratories Intl",
+      "Rank": 997,
+      "Employees": 11800,
+      "Sector": "Health Care",
+      "Latitude": 42.5481714,
+      "Longitude": -71.1724467
+    },
+    {
+      "Title": "CoreLogic",
+      "Rank": 998,
+      "Employees": 5900,
+      "Sector": "Business Services",
+      "Latitude": 33.6845673,
+      "Longitude": -117.8265049
+    },
+    {
+      "Title": "Ensign Group",
+      "Rank": 999,
+      "Employees": 21301,
+      "Sector": "Health Care",
+      "Latitude": 33.5968913,
+      "Longitude": -117.6581562
+    },
+    {
+      "Title": "HCP",
+      "Rank": 1000,
+      "Employees": 190,
+      "Sector": "Financials",
+      "Latitude": 33.6845673,
+      "Longitude": -117.8265049
+    }
+  ]
+}]

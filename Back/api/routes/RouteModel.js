@@ -64,11 +64,11 @@ router.route('/all').get((req, res) =>{
 
 router.route('/search').post((req, res) => {
 	// get all map data
-	db.earthDB.find({ state: req.body.name })
+	db.testDB.find({ state: req.body.name })
 		.then(mapData => {
 			if (mapData.length !== 1) {
 				let polyData = [...mapData[0].polygons];
-				polyData = [...polyData, mapData[1].polygons];
+				polyData = [...polyData, ...mapData[1].polygons];
 
 				res.json(polyData);
 			} else {
@@ -131,7 +131,6 @@ router.route('/save').post((req, res) => {
 	// save the visitor's details
 	db.visitorDB.find()
 		.then(result => {
-			// console.log(result);
 			if (result.length === 0) {
 				const newVisitor = new db.visitorDB({
 			        IP_address: req.body.IP,

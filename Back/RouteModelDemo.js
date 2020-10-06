@@ -5,108 +5,47 @@ var fs = require('fs'),
     xmlReader = require('read-xml');
 
 var papa = require('papaparse');
-// get data from csv and kml
-var csvFile = path.join(__dirname, './population.csv');
 var convert = require('xml-js');
-var firstKmlFile = path.join(__dirname, './firstKml.kml');
-var secondKmlFile = path.join(__dirname, './secondKml.kml');
-var testKmlFile = path.join(__dirname, './us_states.kml');
+
+// get data from csv and kml
+var stateKmlFile = path.join(__dirname, './us_states.kml');
+const jsonData = require('./add.json');
 
 // import models visitorDB
 let db = require('../models');
 
+let rad = function (x) {
+    return x * Math.PI / 180;
+};
+
 router.route('/all').get((req, res) =>{
-	// for test
-	xmlReader.readXML(fs.readFileSync(testKmlFile), function(err, firstData) {
+
+	xmlReader.readXML(fs.readFileSync(stateKmlFile), function(err, stateData) {
 		if (err) {
 	        console.error(err);
 	    }
 
-	    var firstXml = firstData.content;
-	    var firstResult = JSON.parse(convert.xml2json(firstXml, {compact: true, spaces: 4}));
-		res.json(firstResult);
+	    var stateXml = stateData.content;
+	    var stateResult = JSON.parse(convert.xml2json(stateXml, {compact: true, spaces: 4}));
+
+	    let data = {};
+	    data['state'] = stateResult;
+		
+		// get data from DB
+		db.countDB.find()
+	    	.then(counts => {
+	    		data['counts'] = counts;
+
+	    		// get data from visitorDB
+	    		db.visitorDB.find()
+	    			.then(visitorData => {
+	    				data['visitorData'] = visitorData;
+	    				res.json(data);
+	    			})
+	    			.catch(err => console.log(err));
+	    	})
+	    	.catch(err => console.log(err));
 	});
-
-	// get all map data
-	// xmlReader.readXML(fs.readFileSync(firstKmlFile), function(err, firstData) {
-	//     if (err) {
-	//         console.error(err);
-	//     }
-
-	//     var firstXml = firstData.content;
-	//     var firstResult = JSON.parse(convert.xml2json(firstXml, {compact: true, spaces: 4}));
-
-	//     xmlReader.readXML(fs.readFileSync(secondKmlFile), function(error, secondData) {
-	//     	if (error) {
-	//     		console.log(error);
-	//     	}
-
-	//     	var secondXml = secondData.content;
-	//     	var secondResult = JSON.parse(convert.xml2json(secondXml, {compact: true, spaces: 4}));
-
-	//     	var totalData = [...firstResult.kml.Document.Folder.Placemark];
-	//     	totalData = [...totalData, ...secondResult.kml.Document.Folder.Placemark];
-
-	// 	    var csvs = papa.parse(fs.readFileSync(csvFile, {encoding:'utf-8'}).toString()).data;
-
-	// 	    var totalPoints = [];
-	// 	    let data = {};
-
-	// 	    for(var i = 0; i < 100; i++){
-	// 	    // for(var i = 0; i < result.kml.Document.Folder.Placemark.length; i++){
-	// 	    	var points = {
-	//          		path: []
-	//          	};
-	// 	    	if (typeof totalData[i].MultiGeometry.Polygon.length !== "number") {
-	// 		        var results = totalData[i].MultiGeometry.Polygon.outerBoundaryIs.LinearRing.coordinates._text;
-
-	// 		        var coordinates = results.split(" ");
-	// 		        coordinates.forEach(item => {
-	// 		         	var coordinate = item.split(",");
-	// 		         	var pointPolys = {
-	// 		         		lat: parseFloat(coordinate[1]),
-	// 		         		lng: parseFloat(coordinate[0])
-	// 		         	};
-	// 		         	points.path.push(pointPolys);
-	// 		        });
-
-	// 		        // search geoID
-	// 		        for (let j = 1; j < csvs.length; j++) {
-	// 		        	if (csvs[j][0] == totalData[i].ExtendedData.SchemaData.SimpleData[0]._text) {
-	// 		        		points['countyname'] = totalData[i].ExtendedData.SchemaData.SimpleData[2]._text;
-	// 			            points['geoid'] = totalData[i].ExtendedData.SchemaData.SimpleData[0]._text;
-	// 			            points['statename'] = totalData[i].ExtendedData.SchemaData.SimpleData[1]._text;
-	// 			            points['population'] = csvs[j][1];
-	// 			            points['single'] = csvs[j][4];
-	// 			            points['medium'] = csvs[j][5];
-	// 			            points['expand'] = csvs[j][6];
-	// 			            points['income'] = csvs[j][3];
-	// 			            points['degree'] = csvs[j][2];
-	// 			            break;
-	// 		        	}
-	// 		        }
-	// 		        points.path.pop();
-	//             	totalPoints.push(points);
-	// 	    	}
-	// 	    }
-
-	// 	    data['totalPoints'] = totalPoints;
-	// 	    // get back-end data
-	// 	    db.countDB.find()
-	// 	    	.then(counts => {
-	// 	    		data['counts'] = counts;
-
-	// 	    		// get data from visitorDB
-	// 	    		db.visitorDB.find()
-	// 	    			.then(visitorData => {
-	// 	    				data['visitorData'] = visitorData;
-	// 	    				res.json(data);
-	// 	    			})
-	// 	    			.catch(err => console.log(err));
-	// 	    	})
-	// 	    	.catch(err => console.log(err));
-	//     });
-	// });
 
 	// save display count
 	// db.countDB.find()
@@ -124,11 +63,85 @@ router.route('/all').get((req, res) =>{
 	// 	.catch(err => console.log(err));
 });
 
+router.route('/search').post((req, res) => {
+	console.log(req.body.name)
+	// get all map data
+	db.earthDB.find({ state: req.body.name })
+		.then(mapData => {
+			if (mapData.length !== 1) {
+				let polyData = [...mapData[0].polygons];
+				polyData = [...polyData, ...mapData[1].polygons];
+				console.log(polyData.length)
+
+				// search geoID
+				polyData.forEach(item => {
+			        for (let k = 0; k < jsonData[0].data.length; k++) {
+			        	if (jsonData[0].data[k].GEOID == item.geoid) {
+			        		item['house_count'] = jsonData[0].data[k].house_count
+			        		item['degrees'] = jsonData[0].data[k].degrees
+			        		item['residents_count'] = jsonData[0].data[k].residents_count
+			        		item['job_growth_rate'] = jsonData[0].data[k].job_growth_rate
+			        		item['per_square_job'] = jsonData[0].data[k].per_square_job
+			        		break;
+			        	}
+			        }
+				});
+
+				const newVisitor = new db.testDB({
+			        state: req.body.name,
+			        polygons: polyData.slice(0, 300)
+			    });
+
+			    newVisitor.save()
+			        .then(success => {
+			        	console.log('ok1')
+			        	const newVisitortwo = new db.testDB({
+					        state: req.body.name,
+					        polygons: polyData.slice(300)
+					    });
+
+					    newVisitortwo.save()
+					    	.then(success => console.log('OK2'))
+					    	.catch(err => console.log('err'))
+			        })
+			        .catch(err => console.log('Error', err));
+
+				// res.json(polyData);
+			} else {
+				let polyData = [...mapData[0].polygons];
+				// search geoID
+				polyData.forEach(item => {
+			        for (let k = 0; k < jsonData[0].data.length; k++) {
+			        	if (jsonData[0].data[k].GEOID == item.geoid) {
+			        		item['house_count'] = jsonData[0].data[k].house_count
+			        		item['degrees'] = jsonData[0].data[k].degrees
+			        		item['residents_count'] = jsonData[0].data[k].residents_count
+			        		item['job_growth_rate'] = jsonData[0].data[k].job_growth_rate
+			        		item['per_square_job'] = jsonData[0].data[k].per_square_job
+			        		break;
+			        	}
+			        }
+				});
+
+				const newVisitor = new db.testDB({
+			        state: req.body.name,
+			        polygons: polyData
+			    });
+
+			    newVisitor.save()
+			        .then(success => console.log('Ok'))
+			        .catch(err => console.log('Error', err));
+				// res.json(polyData);
+			}
+		})
+		.catch(err => console.log('Error', err));
+});
+
 router.route('/save').post((req, res) => {
-	console.log('-save-', req.body);
 	// search IP , update visitor IP array and visitor number.
 	db.countDB.find()
 		.then(result => {
+			// save IP
 			if (result[0].IPs.length === 0) {
 				db.countDB.updateOne(
 					{ _id: result[0]._id},
@@ -160,6 +173,17 @@ router.route('/save').post((req, res) => {
 					.catch(err => console.log('err', err));
 				}
 			}
+
+			// save current visitor IP as previous visitor IP
+			db.countDB.updateOne(
+				{ _id: result[0]._id},
+				{ $set: 
+				  	{
+				  		"previous_visitor" : req.body.IP
+				  	}
+				}
+			).then(res => console.log("ok"))
+			.catch(err => console.log('err', err));
 		})
 		.catch(err => console.log(err));
 	
@@ -287,6 +311,6 @@ router.route('/save').post((req, res) => {
 			.catch(err => console.log(err));
 	}
 	
-})
+});
 
 module.exports = router;

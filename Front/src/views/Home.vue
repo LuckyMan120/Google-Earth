@@ -23,6 +23,14 @@
                             {{ state.name }}
                         </option>
                     </select>
+                    <div class="img-icon">
+                        <img :src="pinkIconImg" />
+                        <span>School</span>
+                    </div>
+                    <div class="img-icon">
+                        <img :src="blueIconImg" />
+                        <span>Company</span>
+                    </div>
                 </div>
                 <GmapMap
                     ref="gmap"
@@ -59,6 +67,26 @@
                     </gmap-polygon>
 
                     <GmapMarker v-if="marked" :position="markedPosition" :label="title" />
+
+                    <!-- schools and companies pins -->
+                    <!-- schools -->
+                    <GmapMarker
+                        v-for="(bluepin, index) in schoolsData"
+                        :key="index"
+                        :icon="schoolIcon"
+                        :position="getPosition(bluepin)"
+                        @click="showPinDetail(bluepin)"
+                    />
+
+                    <!-- companies -->
+                    <GmapMarker
+                        v-for="(pinkpin, index) in companyData"
+                        :key="index"
+                        :icon="companyIcon"
+                        :position="getPosition(pinkpin)"
+                        @click="showPinDetail(pinkpin)"
+                    />
+
                     <!-- first infowindow -->
                     <gmap-info-window 
                         @closeclick="window_open_first=false" 
@@ -77,36 +105,56 @@
                                 <td>{{ firstInfoData.geoid }}</td>
                             </tr>
                             <tr>
-                                <td>COUNTY NAME</td>
+                                <td>County Name</td>
                                 <td>{{ firstInfoData.countyname }}</td>
                             </tr>
                             <tr>
-                                <td>STATE NAME</td>
+                                <td>State Name</td>
                                 <td>{{ firstInfoData.statename }}</td>
                             </tr>
                             <tr>
-                                <td>URBANIZED / TOTAL POPULATION</td>
+                                <td>Uranized / Total Population</td>
                                 <td>{{ firstInfoData.population }}</td>
                             </tr>
                             <tr>
-                                <td>NUMBER OF PEOPLE WITH COLLEGE DEGREE OR HIGHER / TOTAL POPULATION</td>
+                                <td>Number of pelple with college degree or higher / total population</td>
                                 <td>{{ firstInfoData.degree }}</td>
                             </tr>
                             <tr>
-                                <td>SINGLE FAMILY UNIT HOUSING STRUCTURES (%)</td>
+                                <td>Single family unit housing structures (%)</td>
                                 <td>{{ firstInfoData.single }}</td>
                             </tr>
                             <tr>
-                                <td>2-9 UNIT HOUSING STRUCTURES (%)</td>
+                                <td>2-9 Unit housing structures (%)</td>
                                 <td>{{ firstInfoData.medium }}</td>
                             </tr>
                             <tr>
-                                <td>10 OR MORE UNIT HOUSING STRUCTURES (%)</td>
+                                <td>10 or more unit housing structures (%)</td>
                                 <td>{{ firstInfoData.expand }}</td>
                             </tr>
                             <tr>
-                                <td>MEDIAN HOUSEHOLD INCOME</td>
+                                <td>Median household income</td>
                                 <td>{{ firstInfoData.income }}</td>
+                            </tr>
+                            <tr>
+                                <td>Number of people aged 25 or older who have a bachelor's degree,<br>master's degree, professional school degree, or doctorate degree, divided by the total number of people aged 25 or older in a tract (%)</td>
+                                <td>{{ firstInfoData.degrees }}</td>
+                            </tr>
+                            <tr>
+                                <td>The median gross rent for renter-occupied housing units with two bedrooms that pay cash rent (from the 2011-2015 ACS)</td>
+                                <td>{{ firstInfoData.house_count }}</td>
+                            </tr>
+                            <tr>
+                                <td>Average annualized job growth rate over the time period 2004 to 2013 (%)</td>
+                                <td>{{ firstInfoData.job_growth_rate }}</td>
+                            </tr>
+                            <tr>
+                                <td>Number of jobs per square mile in each tract</td>
+                                <td>{{ firstInfoData.per_square_job }}</td>
+                            </tr>
+                            <tr>
+                                <td>Number of residents per square mile</td>
+                                <td>{{ firstInfoData.residents_count }}</td>
                             </tr>
                         </table>
                     </gmap-info-window>
@@ -129,36 +177,112 @@
                                 <td>{{ secondInfoData.geoid }}</td>
                             </tr>
                             <tr>
-                                <td>COUNTY NAME</td>
+                                <td>County Name</td>
                                 <td>{{ secondInfoData.countyname }}</td>
                             </tr>
                             <tr>
-                                <td>STATE NAME</td>
+                                <td>State Name</td>
                                 <td>{{ secondInfoData.statename }}</td>
                             </tr>
                             <tr>
-                                <td>URBANIZED / TOTAL POPULATION</td>
+                                <td>Uranized / Total Population</td>
                                 <td>{{ secondInfoData.population }}</td>
                             </tr>
                             <tr>
-                                <td>NUMBER OF PEOPLE WITH COLLEGE DEGREE OR HIGHER / TOTAL POPULATION</td>
+                                <td>Number of pelple with college degree or higher / total population</td>
                                 <td>{{ secondInfoData.degree }}</td>
                             </tr>
                             <tr>
-                                <td>SINGLE FAMILY UNIT HOUSING STRUCTURES (%)</td>
+                                <td>Single family unit housing structures (%)</td>
                                 <td>{{ secondInfoData.single }}</td>
                             </tr>
                             <tr>
-                                <td>2-9 UNIT HOUSING STRUCTURES (%)</td>
+                                <td>2-9 Unit housing structures (%)</td>
                                 <td>{{ secondInfoData.medium }}</td>
                             </tr>
                             <tr>
-                                <td>10 OR MORE UNIT HOUSING STRUCTURES (%)</td>
+                                <td>10 or more unit housing structures (%)</td>
                                 <td>{{ secondInfoData.expand }}</td>
                             </tr>
                             <tr>
-                                <td>MEDIAN HOUSEHOLD INCOME</td>
+                                <td>Median household income</td>
                                 <td>{{ secondInfoData.income }}</td>
+                            </tr>
+                            <tr>
+                                <td>Number of people aged 25 or older who have a bachelor's degree,<br>master's degree, professional school degree, or doctorate degree, divided by the total number of people aged 25 or older in a tract (%)</td>
+                                <td>{{ secondInfoData.degrees }}</td>
+                            </tr>
+                            <tr>
+                                <td>The median gross rent for renter-occupied housing units with two bedrooms that pay cash rent (from the 2011-2015 ACS)</td>
+                                <td>{{ secondInfoData.house_count }}</td>
+                            </tr>
+                            <tr>
+                                <td>Average annualized job growth rate over the time period 2004 to 2013 (%)</td>
+                                <td>{{ secondInfoData.job_growth_rate }}</td>
+                            </tr>
+                            <tr>
+                                <td>Number of jobs per square mile in each tract</td>
+                                <td>{{ secondInfoData.per_square_job }}</td>
+                            </tr>
+                            <tr>
+                                <td>Number of residents per square mile</td>
+                                <td>{{ secondInfoData.residents_count }}</td>
+                            </tr>
+                        </table>
+                    </gmap-info-window>
+
+                    <!-- school pin infowindow -->
+                    <gmap-info-window 
+                        @closeclick="open_school_pin=false" 
+                        :opened="open_school_pin" 
+                        :position="school_pin_latlng"
+                        :options="{
+                          pixelOffset: {
+                            width: 0,
+                            height: -35
+                          }
+                        }"
+                    >
+                        <table>
+                            <tr>
+                                <td>School Name</td>
+                                <td>{{ schoolPinData.name }}</td>
+                            </tr>
+                            <tr>
+                                <td>Student Population</td>
+                                <td>{{ schoolPinData.population }}</td>
+                            </tr>
+                        </table>
+                    </gmap-info-window>
+
+                    <!-- company pin infowindow -->
+                    <gmap-info-window 
+                        @closeclick="open_company_pin=false" 
+                        :opened="open_company_pin" 
+                        :position="company_pin_latlng"
+                        :options="{
+                          pixelOffset: {
+                            width: 0,
+                            height: -35
+                          }
+                        }"
+                    >
+                        <table>
+                            <tr>
+                                <td>Title</td>
+                                <td>{{ companyPinData.title }}</td>
+                            </tr>
+                            <tr>
+                                <td>Rank</td>
+                                <td>{{ companyPinData.rank }}</td>
+                            </tr>
+                            <tr>
+                                <td>Employees</td>
+                                <td>{{ companyPinData.employers }}</td>
+                            </tr>
+                            <tr>
+                                <td>Sector</td>
+                                <td>{{ companyPinData.sector }}</td>
                             </tr>
                         </table>
                     </gmap-info-window>
@@ -181,7 +305,12 @@
 import { api } from '../services/api'
 import moment from 'moment'
 
+// import jsons and files
+import schoolsJson from '../jsons/schools.json'
+import companyJson from '../jsons/company.json'
 import loader from '../assets/loading.gif'
+import pinkIcon from '../assets/pink.png'
+import blueIcon from '../assets/blue.png'
 
 // import components
 import Chart from '../components/Chart'
@@ -208,7 +337,12 @@ export default {
                 medium: '',
                 expand: '',
                 income: '',
-                degree: ''
+                degree: '',
+                degrees: '',
+                residents_count: '',
+                job_growth_rate: '',
+                per_square_job: '',
+                house_count: ''
             },
             secondInfoData: {
                 countyname: '',
@@ -219,7 +353,22 @@ export default {
                 medium: '',
                 expand: '',
                 income: '',
-                degree: ''
+                degree: '',
+                degrees: '',
+                residents_count: '',
+                job_growth_rate: '',
+                per_square_job: '',
+                house_count: ''
+            },
+            schoolPinData: {
+                name: '',
+                population: ''
+            },
+            companyPinData: {
+                title: '',
+                rank: '',
+                employers: '',
+                sector: ''
             },
             marked: false,
             markedPosition: null,
@@ -236,7 +385,23 @@ export default {
             historyData: null,
             time: '',
             selectState: null,
-            selectedStatePath: null
+            selectedStatePath: null,
+            schoolsData: null,
+            companyData: null,
+            open_school_pin: false,
+            open_company_pin: false,
+            school_pin_latlng: null,
+            company_pin_latlng: null,
+            schoolIcon: {
+                scaledSize: { width: 10, height: 10 },
+                url: pinkIcon
+            },
+            companyIcon: {
+                scaledSize: { width: 10, height: 10 },
+                url: blueIcon
+            },
+            pinkIconImg: pinkIcon,
+            blueIconImg: blueIcon
         }
     },
     components: {
@@ -340,6 +505,8 @@ export default {
         let date = new Date()
         this.visit_at = moment(date).format('YYYY-MM-DD hh:mm:ss a')
         this.started = true
+        this.schoolsData = schoolsJson[0].schools
+        this.companyData = companyJson[0].company
         this.loading_flag = false
     },
     methods: {
@@ -347,6 +514,8 @@ export default {
             this.marked = false
             this.window_open_second = false
             this.window_open_first = false
+            this.open_school_pin = false
+            this.open_company_pin = false
             this.loading_flag = true
             this.paths = null
             this.selectedStatePath = null
@@ -421,6 +590,7 @@ export default {
             console.log(doc)
         },
         showDetails: function (detail) {
+            console.log('detail', detail)
             if (!this.window_open_first && !this.window_open_second) {
                 this.firstInfowindow = {
                     lat: detail.path[0].lat,
@@ -435,6 +605,11 @@ export default {
                 this.firstInfoData.expand = detail.expand
                 this.firstInfoData.income = detail.income
                 this.firstInfoData.degree = detail.degree
+                this.firstInfoData.degrees = parseFloat(detail.degrees * 100).toFixed(2)
+                this.firstInfoData.residents_count = parseFloat(detail.residents_count).toFixed()
+                this.firstInfoData.job_growth_rate = parseFloat(detail.job_growth_rate * 100).toFixed(2)
+                this.firstInfoData.per_square_job = parseFloat(detail.per_square_job).toFixed()
+                this.firstInfoData.house_count = detail.house_count
                 this.window_open_first = true
             } else if (!this.window_open_first && this.window_open_second) {
                 this.firstInfowindow = {
@@ -450,6 +625,11 @@ export default {
                 this.firstInfoData.expand = detail.expand
                 this.firstInfoData.income = detail.income
                 this.firstInfoData.degree = detail.degree
+                this.firstInfoData.degrees = parseFloat(detail.degrees * 100).toFixed(2)
+                this.firstInfoData.residents_count = parseFloat(detail.residents_count).toFixed()
+                this.firstInfoData.job_growth_rate = parseFloat(detail.job_growth_rate * 100).toFixed(2)
+                this.firstInfoData.per_square_job = parseFloat(detail.per_square_job).toFixed()
+                this.firstInfoData.house_count = detail.house_count
                 this.window_open_first = true
             } else if (this.window_open_first && !this.window_open_second) {
                 this.secondInfowindow = {
@@ -465,6 +645,11 @@ export default {
                 this.secondInfoData.expand = detail.expand
                 this.secondInfoData.income = detail.income
                 this.secondInfoData.degree = detail.degree
+                this.secondInfoData.degrees = parseFloat(detail.degrees * 100).toFixed(2)
+                this.secondInfoData.residents_count = parseFloat(detail.residents_count).toFixed()
+                this.secondInfoData.job_growth_rate = parseFloat(detail.job_growth_rate * 100).toFixed(2)
+                this.secondInfoData.per_square_job = parseFloat(detail.per_square_job).toFixed()
+                this.secondInfoData.house_count = detail.house_count
                 this.window_open_second = true
             } else if (this.window_open_second && this.window_open_first) {
                 this.secondInfowindow = {
@@ -480,6 +665,11 @@ export default {
                 this.secondInfoData.expand = detail.expand
                 this.secondInfoData.income = detail.income
                 this.secondInfoData.degree = detail.degree
+                this.secondInfoData.degrees = parseFloat(detail.degrees * 100).toFixed(2)
+                this.secondInfoData.residents_count = parseFloat(detail.residents_count).toFixed()
+                this.secondInfoData.job_growth_rate = parseFloat(detail.job_growth_rate * 100).toFixed(2)
+                this.secondInfoData.per_square_job = parseFloat(detail.per_square_job).toFixed()
+                this.secondInfoData.house_count = detail.house_count
                 this.window_open_second = true
             }
             let polygon = {
@@ -491,7 +681,12 @@ export default {
                 medium: detail.medium,
                 expand: detail.expand,
                 income: detail.income,
-                degree: detail.degree
+                degree: detail.degree,
+                degrees: parseFloat(detail.degrees * 100).toFixed(2),
+                residents_count: parseFloat(detail.residents_count).toFixed(),
+                job_growth_rate: parseFloat(detail.job_growth_rate * 100).toFixed(2),
+                per_square_job: parseFloat(detail.per_square_job).toFixed(),
+                house_count: detail.house_count
             }
 
             this.selectedPolygons.push(polygon)
@@ -503,6 +698,8 @@ export default {
             this.marked = false
             this.window_open_second = false
             this.window_open_first = false
+            this.open_school_pin = false
+            this.open_company_pin = false
             this.loading_flag = true
             this.paths = null
             this.selectedStatePath = null
@@ -515,7 +712,12 @@ export default {
                 if (item.name === event.target.value) {
                     let data = {}
                     data['name'] = item.name
+                    console.log(data)
                     let polygons = await api.searchPolygon(data)
+                    console.log(polygons.length)
+                    polygons.forEach(poly => {
+                        console.log(typeof poly)
+                    })
                     this.paths = polygons
                     this.center = item.center
                     this.zoom = 6
@@ -523,6 +725,35 @@ export default {
                     this.loading_flag = false
                 }
             })
+        },
+        getPosition: function (pin) {
+            return {
+                lat: pin.Latitude,
+                lng: pin.Longitude
+            }
+        },
+        showPinDetail: function (pin) {
+            if (Object.keys(pin).length === 5) { // school pin
+                let data = {
+                    lat: pin.Latitude,
+                    lng: pin.Longitude
+                }
+                this.school_pin_latlng = data
+                this.schoolPinData.name = pin['School Name']
+                this.schoolPinData.population = pin['Student Population']
+                this.open_school_pin = true
+            } else { // company pin
+                let data = {
+                    lat: pin.Latitude,
+                    lng: pin.Longitude
+                }
+                this.company_pin_latlng = data
+                this.companyPinData.title = pin['Title']
+                this.companyPinData.rank = pin['Rank']
+                this.companyPinData.employers = pin['Employees']
+                this.companyPinData.sector = pin['Sector']
+                this.open_company_pin = true
+            }
         }
     },
     watch: {

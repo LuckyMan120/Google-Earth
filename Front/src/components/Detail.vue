@@ -1,34 +1,74 @@
 <template>
 	<div class="details">
-		<div class="rate-price">
-			<div class="rate-price" style="width: 70%">
-				<p>Price at which you paid for your asset</p>
-				<p>$</p>
+		<!-- switch button for first and second calculators -->
+		<SwitchBtn @toggle="toggleBtn" />
+		<!-- first calculator -->
+		<div v-if="toggleFlag">
+			<div class="rate-price">
+				<div class="rate-price" style="width: 70%">
+					<p>Price at which you paid for your asset</p>
+					<p>$</p>
+				</div>
+				<input type="number" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency" min="0" v-model="B1" placeholder="price" />
 			</div>
-			<input type="number" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency" min="0" v-model="B1" placeholder="price" />
-		</div>
-		<div class="rate-price">
-			<div class="rate-price" style="width: 70%">
-				<p>Price at which you sold your asset</p>
-				<p>$</p>
+			<div class="rate-price">
+				<div class="rate-price" style="width: 70%">
+					<p>Price at which you sold your asset</p>
+					<p>$</p>
+				</div>
+				<input type="number" min="0" v-model="B2" placeholder="price" />
 			</div>
-			<input type="number" min="0" v-model="B2" placeholder="price" />
+			<div class="rate-price">
+				<p>Your assumed rate of growth (%)</p>
+				<input type="number" min="0" max="100" v-model="B3" placeholder="rate" />
+			</div>
+			<div class="rate-price">
+				<p>Holding Period (Years)</p>
+				<input type="number" min="10" max="20" v-model="B4" placeholder="period" />
+			</div>
+			<div class="rate-price">
+				<p>Your State</p>
+				<select class="select-state">
+					<option>Select State</option>
+					<option v-for="(state, index) in states" :key="index" :value="state">{{ state }}</option>
+				</select>
+			</div>
 		</div>
-		<div class="rate-price">
-			<p>Your assumed rate of growth (%)</p>
-			<input type="number" min="0" max="100" v-model="B3" placeholder="rate" />
+
+		<!-- second calculator -->
+		<div v-else>
+			<div class="rate-price">
+				<p>Initial value of the business</p>
+				<input type="number" v-model="B2" placeholder="Initial value" />
+			</div>
+			<div class="rate-price">
+				<p>Cash invested in business</p>
+				<input type="number" v-model="B3" placeholder="Invested value" />
+			</div>
+			<div class="rate-price">
+				<p>Sales price of the business</p>
+				<input type="number" v-model="B4" placeholder="Sales price" />
+			</div>
+			<div class="rate-price">
+				<p>Number of employees</p>
+				<input type="number" v-model="B4" placeholder="Employees number" />
+			</div>
+			<div class="rate-price">
+				<p>Your State</p>
+				<select class="select-state">
+					<option>Select State</option>
+					<option v-for="(state, index) in states" :key="index" :value="state">{{ state }}</option>
+				</select>
+			</div>
+			<div class="rate-price">
+				<p>Sectors</p>
+				<select class="select-state">
+					<option>Select Sector</option>
+					<option v-for="(sector, index) in sectorData" :key="index" :value="sector.sector">{{ sector.sector }}</option>
+				</select>
+			</div>
 		</div>
-		<div class="rate-price">
-			<p>Holding Period (Years)</p>
-			<input type="number" min="10" max="20" v-model="B4" placeholder="period" />
-		</div>
-		<div class="rate-price">
-			<p>Your State</p>
-			<select class="select-state">
-				<option>Select State</option>
-				<option v-for="(state, index) in states" :key="index" :value="state">{{ state }}</option>
-			</select>
-		</div>
+		
 
 		<button @click="statistics">
 			Statistics
@@ -75,7 +115,9 @@ import moment from 'moment'
 import { mapGetters, mapActions } from 'vuex'
 import dialogs from '../services/dialogs.js'
 import stateJson from '../assets/state.json'
+import sectorJson from '../jsons/sector.json'
 import Disclaimer from './Disclaimer'
+import SwitchBtn from './SwitchBtn'
 export default {
 	name: 'Detail',
 	data () {
@@ -88,11 +130,14 @@ export default {
 			OZ: '',
 			notOZ: '',
 			difference: '',
-			showDetailFlag: false
+			showDetailFlag: false,
+			toggleFlag: true,
+			sectorData: null
 		}
 	},
 	components: {
-		Disclaimer
+		Disclaimer,
+		SwitchBtn
 	},
 	computed: {
 		...mapGetters({
@@ -101,6 +146,7 @@ export default {
 	},
 	mounted () {
 		this.states = stateJson.states
+		this.sectorData = sectorJson[0].sectors
 	},
 	methods: {
 		...mapActions({
@@ -155,6 +201,9 @@ export default {
 		},
 		closeDetail: function () {
 			this.showDetailFlag = false
+		},
+		toggleBtn: function (flag) {
+			this.toggleFlag = flag
 		}
 	}
 }

@@ -1,0 +1,67 @@
+[{
+  "sectors": [
+    {
+      "sector": "Retailing"
+    },
+    {
+      "sector": "Energy"
+    },
+    {
+      "sector": "Financials"
+    },
+    {
+      "sector": "Technology"
+    },
+    {
+      "sector": "Health Care"
+    },
+    {
+      "sector": "Wholesalers"
+    },
+    {
+      "sector": "Telecommunications"
+    },
+    {
+      "sector": "Motor Vehicles &  Parts"
+    },
+    {
+      "sector": "Food &  Drug Stores"
+    },
+    {
+      "sector": "Industrials"
+    },
+    {
+      "sector": "Aerospace &  Defense"
+    },
+    {
+      "sector": "Household Products"
+    },
+    {
+      "sector": "Transportation"
+    },
+    {
+      "sector": "Food, Beverages &  Tobacco"
+    },
+    {
+      "sector": "Chemicals"
+    },
+    {
+      "sector": "Media"
+    },
+    {
+      "sector": "Apparel"
+    },
+    {
+      "sector": "Materials"
+    },
+    {
+      "sector": "Hotels, Restaurants &  Leisure"
+    },
+    {
+      "sector": "Business Services"
+    },
+    {
+      "sector": "Engineering &  Construction"
+    }
+  ]
+}]

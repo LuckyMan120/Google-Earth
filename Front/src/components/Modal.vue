@@ -61,6 +61,11 @@
                                             <th>10 More (%)</th>
                                             <th>Income</th>
                                             <th>Population</th>
+                                            <th>Degrees (%)</th>
+                                            <th>Housing Unit</th>
+                                            <th>Job Growth (%)</th>
+                                            <th>Per square mile Job</th>
+                                            <th>Number of residents</th>
                                         </tr>
                                     </thead>
                                     <tbody v-if="item.polygons.length !== 0">
@@ -74,11 +79,16 @@
                                             <td>{{ polygon.expand }}</td>
                                             <td>{{ polygon.income }}</td>
                                             <td>{{ polygon.population }}</td>
+                                            <td>{{ polygon.degrees }}</td>
+                                            <td>{{ polygon.house_count }}</td>
+                                            <td>{{ polygon.job_growth_rate }}</td>
+                                            <td>{{ polygon.per_square_job }}</td>
+                                            <td>{{ polygon.residents_count }}</td>
                                         </tr>
                                     </tbody>
                                     <tbody v-else>
                                         <tr>
-                                            <td colspan="9">Never Selected</td>
+                                            <td colspan="14">Never Selected</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -138,6 +148,7 @@ export default {
             })
 
             this.details = detail
+            console.log(detail);
         },
         showTime: function (detail) {
             if (detail.visited_at === this.selectedAt) {
