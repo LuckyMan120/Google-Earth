@@ -384,10 +384,8 @@ export default {
             loading_img: '',
             loading_flag: true,
             statisData: null,
-            taxBusinessData: {
-                tax: null,
-                business: null
-            },
+            taxData: [],
+            businessData: [],
             historyData: null,
             time: '',
             selectState: null,
@@ -577,9 +575,10 @@ export default {
                 
                 visitorData['IP'] = this.visiterIP
                 visitorData['session'] = this.time
-                visitorData['polygons'] = this.selectedPolygons
                 visitorData['visit_at'] = this.visit_at
-                visitorData['taxInfo'] = this.taxBusinessData
+                visitorData['polygons'] = this.selectedPolygons
+                visitorData['taxInfo'] = this.taxData
+                visitorData['businessInfo'] = this.businessData
                 visitorData['schools'] = this.selectedSchools
                 visitorData['companies'] = this.selectedCompanies
                 
@@ -696,9 +695,29 @@ export default {
         },
         detail: function (data) {
             if (data.status === 'first') {
-                this.taxBusinessData.tax = data
+                let tax = {
+                    paid: data.paid,
+                    sold: data.sold,
+                    rate: data.rate,
+                    period: data.period,
+                    OZ: data.second,
+                    notOZ: data.first,
+                    federal: data.federal
+                }
+
+                this.taxData.push(tax)
             } else {
-                this.taxBusinessData.business = data
+                let business = {
+                    initial: data.initial,
+                    cash: data.cash,
+                    rate: data.rate,
+                    sales: data.sales,
+                    OZ: data.second,
+                    notOZ: data.first,
+                    federal: data.federal
+                }
+
+                this.businessData.push(business)
             }
             this.statisData = data
         },

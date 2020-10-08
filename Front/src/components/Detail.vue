@@ -224,6 +224,9 @@ export default {
 
 				let statistics = {
 					status: 'second',
+					initial: this.A1,
+					cash: this.A2,
+					sales: this.A3,
 					first: (this.A3 - this.A1- this.A2) * 0.75,
 					second: this.A3 - this.A1- this.A2,
 					federal: (parseInt(this.A3 - this.A1- this.A2) * 0.5 / 3).toFixed(2),

@@ -148,7 +148,6 @@ export default {
             })
 
             this.details = detail
-            console.log(detail);
         },
         showTime: function (detail) {
             if (detail.visited_at === this.selectedAt) {
