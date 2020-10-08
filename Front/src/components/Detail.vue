@@ -26,43 +26,43 @@
 				<p>Holding Period (Years)</p>
 				<input type="number" min="10" max="20" v-model="B4" placeholder="period" />
 			</div>
-			<div class="rate-price">
+			<!-- <div class="rate-price">
 				<p>Your State</p>
 				<select class="select-state">
 					<option>Select State</option>
 					<option v-for="(state, index) in states" :key="index" :value="state">{{ state }}</option>
 				</select>
-			</div>
+			</div> -->
 		</div>
 
 		<!-- second calculator -->
 		<div v-else>
 			<div class="rate-price">
 				<p>Initial value of the business</p>
-				<input type="number" v-model="B2" placeholder="Initial value" />
+				<input type="number" v-model="A1" placeholder="Initial value" />
 			</div>
 			<div class="rate-price">
 				<p>Cash invested in business</p>
-				<input type="number" v-model="B3" placeholder="Invested value" />
+				<input type="number" v-model="A2" placeholder="Invested value" />
 			</div>
 			<div class="rate-price">
 				<p>Sales price of the business</p>
-				<input type="number" v-model="B4" placeholder="Sales price" />
+				<input type="number" v-model="A3" placeholder="Sales price" />
 			</div>
 			<div class="rate-price">
 				<p>Number of employees</p>
-				<input type="number" v-model="B4" placeholder="Employees number" />
+				<input type="number" v-model="A4" placeholder="Employees number" />
 			</div>
 			<div class="rate-price">
 				<p>Your State</p>
-				<select class="select-state">
+				<select class="select-state" v-model="state">
 					<option>Select State</option>
 					<option v-for="(state, index) in states" :key="index" :value="state">{{ state }}</option>
 				</select>
 			</div>
 			<div class="rate-price">
 				<p>Sectors</p>
-				<select class="select-state">
+				<select class="select-state" v-model="sector">
 					<option>Select Sector</option>
 					<option v-for="(sector, index) in sectorData" :key="index" :value="sector.sector">{{ sector.sector }}</option>
 				</select>
@@ -127,12 +127,18 @@ export default {
 			B2: null,
 			B3: null,
 			B4: null,
+			A1: null,
+			A2: null,
+			A3: null,
+			A4: null,
 			OZ: '',
 			notOZ: '',
 			difference: '',
 			showDetailFlag: false,
 			toggleFlag: true,
-			sectorData: null
+			sectorData: null,
+			state: 'Select State',
+			sector: 'Select Sector'
 		}
 	},
 	components: {
@@ -153,45 +159,85 @@ export default {
 			setFlag: 'reverse/setOpened'
 		}),
 		statistics: function () {
-			// validate
-			if (this.B1 === null || this.B2 === null || this.B3 === null || this.B4 === null) {
-				dialogs.message('You have to insert all values.', { duration: 10, state: 'error' });
-				return;
+			if (this.toggleFlag) {
+				// validate
+				if (this.B1 === null || this.B2 === null || this.B3 === null || this.B4 === null) {
+					dialogs.message('You have to insert all values.', { duration: 10, state: 'error' });
+					return;
+				}
+				if (parseInt(this.B1) < 0 || parseInt(this.B2) < 0 || parseInt(this.B3) < 0 || parseInt(this.B4) < 0) {
+					dialogs.message('No numbers can be negative.', { duration: 10, state: 'error' });
+					return;
+				}
+				if (parseInt(this.B1) > parseInt(this.B2)) {
+					dialogs.message('Sold Price must be larger than Paid Price.', { duration: 10, state: 'error' });
+					return;
+				}
+				if (parseInt(this.B3) < 0 || parseInt(this.B3) > 100) {
+					dialogs.message('The Rate must be the value up 0 to 100.', { duration: 10, state: 'error' });
+					return;
+				}
+				if (parseInt(this.B4) < 10 || parseInt(this.B4) > 20) {
+					dialogs.message('The Period must be the value up 10 to 20.', { duration: 10, state: 'error' });
+					return;
+				}
+				let current = new Date()
+				let B7 = this.B2 * (Math.pow((1 + this.B3 / 100), (2026 - moment(current).toDate().getFullYear()))) - (this.B2 * (Math.pow((1 + this.B3 /100), (2026 - moment(current).toDate().getFullYear()))) - this.B2) * 0.25
+				let B8 = this.B2 * (Math.pow((1 + this.B3 / 100), (2026 - moment(current).toDate().getFullYear())))
+				let statistics = {
+					first: B7.toFixed(2),
+					second: B8.toFixed(2),
+					federal: (((B8 - B7) / 3) * 2).toFixed(2),
+					paid: this.B1,
+					sold: this.B2,
+					rate: this.B3,
+					period: this.B4,
+					status: 'first'
+				}
+				this.OZ = B8.toFixed(2)
+				this.notOZ = B7.toFixed(2)
+				this.difference = (B8 - B7).toFixed(2)
+
+				dialogs.message('Statistics Completed.', { duration: 10, state: 'success' });
+				this.$emit('detail', statistics)
+			} else {
+				console.log(typeof (this.A3 - this.A2 - this.A1))
+				if (this.A1 === null || this.A2 === null || this.A3 === null) {
+					dialogs.message('You have to insert the values', { duration: 10, state: 'error' });
+					return;
+				}
+
+				if (this.state === 'Select State') {
+					dialogs.message('You have to select the state.', { duration: 10, state: 'error' });
+					return;	
+				}
+
+				if (this.sector === 'Select Sector') {
+					dialogs.message('You have to select the sector.', { duration: 10, state: 'error' });
+					return;	
+				}
+
+				if ((this.A3 - this.A2 - this.A1) < 0) {
+					dialogs.message('Sales price of the business must be bigger than Initial and Cash', { duration: 10, state: 'error' });
+					return;
+				}
+
+				let statistics = {
+					status: 'second',
+					first: (this.A3 - this.A1- this.A2) * 0.75,
+					second: this.A3 - this.A1- this.A2,
+					federal: (parseInt(this.A3 - this.A1- this.A2) * 0.5 / 3).toFixed(2),
+					state: this.state,
+					sector: this.sector
+				}
+
+				this.OZ = this.A3 - this.A1- this.A2
+				this.notOZ = (this.A3 - this.A1- this.A2) * 0.75,
+				this.difference = this.OZ - this.notOZ
+
+				dialogs.message('Statistics Completed.', { duration: 10, state: 'success' });
+				this.$emit('detail', statistics)
 			}
-			if (this.B1 < 0 || this.B2 < 0 || this.B3 < 0 || this.B4 < 0) {
-				dialogs.message('No numbers can be negative.', { duration: 10, state: 'error' });
-				return;
-			}
-			if (this.B1 > this.B2) {
-				dialogs.message('Sold Price must be larger than Paid Price.', { duration: 10, state: 'error' });
-				return;
-			}
-			if (this.B3 < 0 || this.B3 > 100) {
-				dialogs.message('The Rate must be the value up 0 to 100.', { duration: 10, state: 'error' });
-				return;
-			}
-			if (this.B4 < 10 || this.B4 > 20) {
-				dialogs.message('The Period must be the value up 10 to 20.', { duration: 10, state: 'error' });
-				return;
-			}
-			let current = new Date()
-			let B7 = this.B2 * (Math.pow((1 + this.B3 / 100), (2026 - moment(current).toDate().getFullYear()))) - (this.B2 * (Math.pow((1 + this.B3 /100), (2026 - moment(current).toDate().getFullYear()))) - this.B2) * 0.25
-			let B8 = this.B2 * (Math.pow((1 + this.B3 / 100), (2026 - moment(current).toDate().getFullYear())))
-			let statistics = {
-				first: B7.toFixed(2),
-				second: B8.toFixed(2),
-				federal: (((B8 - B7) / 3) * 2).toFixed(2),
-				state: ((B8 - B7) / 3).toFixed(2),
-				paid: this.B1,
-				sold: this.B2,
-				rate: this.B3,
-				period: this.B4
-			}
-			this.OZ = B8.toFixed(2)
-			this.notOZ = B7.toFixed(2)
-			this.difference = (B8 - B7).toFixed(2)
-			dialogs.message('Statistics Completed.', { duration: 10, state: 'success' });
-			this.$emit('detail', statistics)
 		},
 		showMore: function () {
 			if (!this.opened) {

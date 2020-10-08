@@ -3,5 +3,7 @@ module.exports = {
     countDB: require("./countModel"),
     taxDB: require("./taxModel"),
     earthDB: require("./earthModel"),
-    testDB: require("./testModel")
+    testDB: require("./testModel"),
+    pinDB: require("./pinModel"),
+    businessDB: require("./businessModel")
 };

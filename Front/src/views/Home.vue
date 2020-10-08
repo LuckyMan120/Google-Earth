@@ -25,11 +25,13 @@
                     </select>
                     <div class="img-icon">
                         <img :src="pinkIconImg" />
-                        <span>School</span>
+                        <span>University</span>
+                        <span v-if="schoolCount !== 0">{{ schoolCount }}</span>
                     </div>
                     <div class="img-icon">
                         <img :src="blueIconImg" />
                         <span>Company</span>
+                        <span v-if="companyCount !== 0">{{ companyCount }}</span>
                     </div>
                 </div>
                 <GmapMap
@@ -382,12 +384,18 @@ export default {
             loading_img: '',
             loading_flag: true,
             statisData: null,
+            taxBusinessData: {
+                tax: null,
+                business: null
+            },
             historyData: null,
             time: '',
             selectState: null,
             selectedStatePath: null,
             schoolsData: null,
             companyData: null,
+            schoolStaticData: null,
+            companyStaticData: null,
             open_school_pin: false,
             open_company_pin: false,
             school_pin_latlng: null,
@@ -401,7 +409,11 @@ export default {
                 url: blueIcon
             },
             pinkIconImg: pinkIcon,
-            blueIconImg: blueIcon
+            blueIconImg: blueIcon,
+            schoolCount: 0,
+            companyCount: 0,
+            selectedSchools: [],
+            selectedCompanies: []
         }
     },
     components: {
@@ -415,6 +427,7 @@ export default {
     },
     async mounted() {
         let details = await api.getAllData()
+        console.log('details', details)
         let data = {}
         data['counts'] = details.counts
         data['history'] = details.visitorData
@@ -505,8 +518,8 @@ export default {
         let date = new Date()
         this.visit_at = moment(date).format('YYYY-MM-DD hh:mm:ss a')
         this.started = true
-        this.schoolsData = schoolsJson[0].schools
-        this.companyData = companyJson[0].company
+        this.schoolStaticData = schoolsJson[0].schools
+        this.companyStaticData = companyJson[0].company
         this.loading_flag = false
     },
     methods: {
@@ -561,25 +574,15 @@ export default {
         confirm_leaving: function (evt) {
             if (this.started) {
                 let visitorData = {}
-                if (this.statisData === null) {
-                    visitorData['IP'] = this.visiterIP
-                    visitorData['session'] = this.time
-                    visitorData['polygons'] = this.selectedPolygons
-                    visitorData['visit_at'] = this.visit_at
-                } else {
-                    visitorData['IP'] = this.visiterIP
-                    visitorData['session'] = this.time
-                    visitorData['polygons'] = this.selectedPolygons
-                    visitorData['visit_at'] = this.visit_at
-                    visitorData['OZ'] = this.statisData.second
-                    visitorData['notOZ'] = this.statisData.first
-                    visitorData['federal'] = this.statisData.federal
-                    visitorData['state'] = this.statisData.state
-                    visitorData['paid'] = this.statisData.paid
-                    visitorData['sold'] = this.statisData.sold
-                    visitorData['rate'] = this.statisData.rate
-                    visitorData['period'] = this.statisData.period
-                }
+                
+                visitorData['IP'] = this.visiterIP
+                visitorData['session'] = this.time
+                visitorData['polygons'] = this.selectedPolygons
+                visitorData['visit_at'] = this.visit_at
+                visitorData['taxInfo'] = this.taxBusinessData
+                visitorData['schools'] = this.selectedSchools
+                visitorData['companies'] = this.selectedCompanies
+                
                 api.saveData(visitorData)
             }
             const unsaved_changes_warning = "You have unsaved changes. Are you sure you wish to leave?";
@@ -692,6 +695,11 @@ export default {
             this.selectedPolygons.push(polygon)
         },
         detail: function (data) {
+            if (data.status === 'first') {
+                this.taxBusinessData.tax = data
+            } else {
+                this.taxBusinessData.business = data
+            }
             this.statisData = data
         },
         searchState: function (event) {
@@ -741,6 +749,13 @@ export default {
                 this.school_pin_latlng = data
                 this.schoolPinData.name = pin['School Name']
                 this.schoolPinData.population = pin['Student Population']
+
+                let schoolPin = {
+                    name: pin['School Name'],
+                    population: pin['Student Population']
+                }
+
+                this.selectedSchools.push(schoolPin)
                 this.open_school_pin = true
             } else { // company pin
                 let data = {
@@ -752,6 +767,15 @@ export default {
                 this.companyPinData.rank = pin['Rank']
                 this.companyPinData.employers = pin['Employees']
                 this.companyPinData.sector = pin['Sector']
+
+                let companyPin = {
+                    title: pin['Title'],
+                    rank: pin['Rank'],
+                    employees: pin['Employees'],
+                    sector: pin['Sector']
+                }
+
+                this.selectedCompanies.push(companyPin)
                 this.open_company_pin = true
             }
         }
@@ -764,6 +788,30 @@ export default {
                 this.time = Math.floor(this.session / 60) + ' M ' + (this.session % 60) + ' S'
             } else {
                 this.time = Math.floor(this.session / 3600) + ' H ' + Math.floor((this.session - Math.floor(this.session / 3600) * 3600) / 60) + ' M ' + (this.session % 60) + ' S'
+            }
+        },
+        statisData: function () {
+            if (this.statisData.status === 'second') {
+                // search company
+                let companies = []
+                this.companyStaticData.forEach(company => {
+                    if (company.State === this.statisData.state && company.Sector === this.statisData.sector) {
+                        companies.push(company)
+                    }
+                })
+
+                // search schools
+                let schools = []
+                this.schoolStaticData.forEach(school => {
+                    if (school.State === this.statisData.state) {
+                        schools.push(school)
+                    }
+                })
+
+                this.companyData = companies
+                this.schoolsData = schools
+                this.schoolCount = this.schoolsData.length
+                this.companyCount = this.companyData.length
             }
         }
     }

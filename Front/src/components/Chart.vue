@@ -35,10 +35,6 @@ export default {
           theme: "fusion"
         },
         data: [
-          // {
-          //   label: "State Tax",
-          //   value: 0
-          // },
           {
             label: "Federal Tax",
             value: 0
@@ -57,10 +53,15 @@ export default {
   },
   watch: {
     data: function () {
-      this.dataSource.data[1].value = this.data.first
-      this.dataSource.data[2].value = this.data.second
-      // this.dataSource.data[0].value = ((this.data.second - this.data.first) / 3).toFixed(2)
-      this.dataSource.data[0].value = ((this.data.second - this.data.first) / 3).toFixed(2) * 2
+      if (this.data.status === 'second') {
+        this.dataSource.data[1].value = this.data.first
+        this.dataSource.data[2].value = this.data.second
+        this.dataSource.data[0].value = ((this.data.second - this.data.first) / 3).toFixed(2) * 2
+      } else {
+        this.dataSource.data[1].value = this.data.first
+        this.dataSource.data[2].value = this.data.second
+        this.dataSource.data[0].value = ((this.data.second - this.data.first) / 3).toFixed(2) * 2
+      }
     }
   }
 };
