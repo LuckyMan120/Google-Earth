@@ -12,6 +12,7 @@ import '@babel/polyfill';
 
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'v-dropdown-menu/dist/v-dropdown-menu.css'
 import store from './store';
 
 library.add(fas);
@@ -31,10 +32,28 @@ Vue.use(VueGoogleMaps, {
     }
 })
 
+// import firebase
+import { auth } from './firebase'
+
 Vue.config.productionTip = false
 
-new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app')
+
+let app
+auth.onAuthStateChanged(user => {
+	console.log('user', user)
+	if (!app) {
+		app = new Vue({
+			router,
+			store,
+			render: h => h(App)
+		}).$mount('#app')
+	}
+	// if (user) {
+	// 	store.dispatch('users/fetchUserProfile', user)
+	// }
+})
+// new Vue({
+//   router,
+//   store,
+//   render: h => h(App)
+// }).$mount('#app')

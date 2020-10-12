@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "item": "polygons"
+        },
+        {
+            "item": "tax"
+        },
+        {
+            "item": "business"
+        },
+        {
+            "item": "university"
+        },
+        {
+            "item": "company"
+        }
+    ]
+}

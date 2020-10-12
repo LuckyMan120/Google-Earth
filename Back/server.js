@@ -20,10 +20,12 @@ connection.once('open', () => {
     console.log("MongoDB database connection established successfully");
 });
 
-// chargebee routes
+// all routes
 const earthRouter = require('./api/routes/RouteModel');
+const userRouter = require('./api/routes/userModel');
 
 app.use('/earth', earthRouter);
+app.use('/user', userRouter);
 
 app.use('/', express.static(path.resolve(__dirname, './dist')));
 

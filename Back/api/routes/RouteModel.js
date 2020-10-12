@@ -170,8 +170,8 @@ router.route('/save').post((req, res) => {
 							}
 						},
 						{multi : true}
-					).then(res => console.log('--res', res))
-					.catch(err => console.log('--err', err));
+					).then(res => console.log('ok'))
+					.catch(err => console.log('err'));
 				} else {
 					const newVisitor = new db.visitorDB({
 				        IP_address: req.body.IP,

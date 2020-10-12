@@ -5,6 +5,7 @@
             :session="time"
             :history="historyData"
             :preIP="previousIP"
+            :role="role"
             @search="searchArea"
         />
         <div class="main-body">
@@ -306,6 +307,7 @@
 <script type="module">
 import { api } from '../services/api'
 import moment from 'moment'
+import { mapGetters } from 'vuex'
 
 // import jsons and files
 import schoolsJson from '../jsons/schools.json'
@@ -411,13 +413,19 @@ export default {
             schoolCount: 0,
             companyCount: 0,
             selectedSchools: [],
-            selectedCompanies: []
+            selectedCompanies: [],
+            role: 0
         }
     },
     components: {
         Chart,
         Detail,
         Topbar
+    },
+    computed: {
+        ...mapGetters({
+            user: 'auth/getuser'
+        })
     },
     created () {
         window.addEventListener('beforeunload', this.confirm_leaving)
@@ -519,6 +527,7 @@ export default {
         this.schoolStaticData = schoolsJson[0].schools
         this.companyStaticData = companyJson[0].company
         this.loading_flag = false
+        this.role = this.user.role
     },
     methods: {
         searchArea: async function (place) {
