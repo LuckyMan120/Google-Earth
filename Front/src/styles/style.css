@@ -27,7 +27,7 @@ input {
 	border-radius: 10px;
 	padding: 10px;
 }
-button {
+/*button {
 	background: #1C8983;
 	border: 1px solid #1C8983;
 	padding: 10px 15px;
@@ -38,6 +38,18 @@ button {
 	margin: 10px 0 !important;
 	box-shadow: 0 0 5px lightgrey;
 	text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+}*/
+button {
+	display: flex !important;
+	align-items: center;
+	border-radius: 10px !important;
+	padding: 10px 15px !important;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 5px !important;
+	font-family: Avenir !important;
+	box-shadow: 0 0 5px lightgrey;
 }
 button:active {
 	box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
@@ -58,6 +70,17 @@ ul {
 ul span {
 	font-size: 1em !important;
 	border: unset !important;
+}
+.drop-down-menu .dropdown-toggler {
+	display: contents;
+}
+.drop-down-menu .dropdown-item:hover {
+	background: #4285f4 !important;
+}
+.btn-area {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 .v-dropdown-menu--direction-left .v-dropdown-menu__container {
 	left: -44px !important;
@@ -141,6 +164,7 @@ ul span {
 }
 .loading {
 	display: contents !important;
+	margin-left: 1em;
 }
 .download-btn {
 	background: #1C8983;
@@ -221,6 +245,11 @@ input:focus {
 .right-top-bar {
 	display: flex;
 	align-items: center;
+}
+.not-right-top-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 #nav {
 	padding: unset !important;
@@ -323,6 +352,11 @@ input:focus {
 	cursor: pointer;
 	margin-right: 20px;
 }
+.non-top-bar {
+	padding: 0 1em;
+	background: #e4eccf;
+	box-shadow: 0 0 10px black;
+}
 .top-bar {
 	display: flex;
 	align-items: center;
@@ -348,17 +382,41 @@ input:focus {
 	font-size: 20px;
 }
 .v-icon {
-	margin: 0 1em;
+	margin: 0 .5em;
 	color: #1C8983;
 	font-size: 1em;
 }
 .v-icon-eye {
 	position: absolute;
-	color: #1C8983;
+	color: white;
 	font-size: 1em;
-	right: 10px;
-	top: .5em;
+	right: 20px;
+	top: 1.3em;
 	cursor: pointer;
+}
+.login-form-section {
+	position: relative;
+	/*min-height: 60vh;*/
+}
+.login-btn {
+	width: 90%;
+	justify-content: center;
+	text-align: center !important;
+	margin: 1.5em auto !important;
+}
+.login-btn .loader {
+	margin-left: 1em !important;
+}
+.back-home {
+	position: absolute !important;
+	margin: unset !important;
+	top: 1em;
+	right: 1em;
+}
+.v-icon-item {
+	margin: 0 1em;
+	color: white;
+	font-size: 1em;
 }
 .v-icon-count {
 	margin-right: 1em;
@@ -367,7 +425,7 @@ input:focus {
 }
 .v-icon-times {
 	margin: 0 10px;
-	color: #1C8983;
+	color: #4285f4;
 	font-size: 2em; 
 	cursor: pointer;
 }
@@ -457,6 +515,7 @@ input:focus {
 	outline: unset;
 }
 .register-body {
+	position: relative;
 	background: url('../assets/bk1.jpg');
 	background-size: cover;
 	background-position: 50%;
@@ -464,14 +523,21 @@ input:focus {
 }
 .login-body {
 	border-radius: 15px !important;
-	width: 70vw;
-	display: flex;
+	width: 30vw;
 	position: absolute;
 	z-index: 1;
-	left: 15vw;
-	top: 20vh;
+	left: 35vw;
+	top: 30vh;
 	text-align: left;
 	box-shadow: 0 0 15px black !important;
+}
+.login-body p {
+	color: white !important;
+	margin: .7em 0;
+}
+.login-body .md-form {
+	margin: .5em 0 !important;
+	width: 85%;
 }
 .email-image {
 	margin: auto;
@@ -515,17 +581,25 @@ input:focus {
 }
 .error {
 	color: red !important;
+	margin-left: 2em;
 }
-.input-card {
+.input-card-section {
 	position: relative;
-	border: 1px solid grey;
+	display: flex;
+	color: white !important;
+	align-items: center;
 	border-radius: 5px;
-	margin: .5em 0;
+	margin: .2em 0;
 }
-.input-card input {
+.input-card-section input {
 	padding: .3em !important;
-	width: 75%;
+	color: white !important;
 	border: none !important;
+	border-bottom: 1px solid white !important;
+	margin: unset !important;
+}
+.input-card-section label {
+	color: white !important;
 }
 .switch-section a {
 	color: #0098d6 !important;

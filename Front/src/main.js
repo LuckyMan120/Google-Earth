@@ -12,7 +12,8 @@ import '@babel/polyfill';
 
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'v-dropdown-menu/dist/v-dropdown-menu.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'mdbvue/lib/css/mdb.min.css';
 import store from './store';
 
 library.add(fas);

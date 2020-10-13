@@ -1,6 +1,6 @@
 <template>
-    <div class="top-bar">
-        <div class="left-top-bar">
+    <div :class="auth? 'top-bar' : 'non-top-bar'">
+        <div class="left-top-bar" v-if="auth">
             <div>
                 <span>Current Visitor</span>
                 <v-icon icon="user" class="v-icon" />
@@ -11,13 +11,13 @@
                 <v-icon icon="clock" class="v-icon" />
                 <span>{{ session }}</span>
             </div>
-            <div v-if="role === 1">
+            <div>
                 <span>Previous Visitor</span>
                 <v-icon icon="user" class="v-icon" />
                 <span>{{ preIP }}</span>
             </div>
         </div>
-        <div class="right-top-bar">
+        <div :class="auth? 'right-top-bar' : 'not-right-top-bar'">
             <!-- search map -->
             <div class="search-input">
                 <span>
@@ -32,19 +32,17 @@
             </div>
             
             <!-- Button for showing all details -->
-            <button v-if="role === 1" @click="showHistory" class="history-btn">
+            <mdb-btn v-if="auth" @click="showHistory" color="info">
                 Show History
                 <v-icon icon="history" class="v-icon-history" />
-            </button>
+            </mdb-btn>
 
             <!-- profile image -->
-            <div @click="showOutBtn" class="img-user" :style="{'background-image': 'url(' + userImg + ')'}">
-            </div>
-
-            <!-- sign out -->
-            <div v-if="outFlag" @click="signout" class="out-section">
-                <span>Sign out</span>
-            </div>
+            <mdb-btn @click="switchBtn" color="secondary">
+                {{ switchTitle }}
+                <v-icon v-if="auth" icon="sign-out-alt" class="v-icon-history" />
+                <v-icon v-else icon="sign-in-alt" class="v-icon-logout" />
+            </mdb-btn>
         </div>
         <Modal
             :showFlag="showFlag"
@@ -56,8 +54,10 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex';
+import { mdbBtn } from 'mdbvue';
 import Modal from '../components/Modal'
-import randomUser from '../static/img/user.jpg'
+import dialogs from '../services/dialogs.js'
+
 export default {
     name: 'Topbar',
     data () {
@@ -66,12 +66,12 @@ export default {
             options: {
                 componentRestrictions: { country: 'US' }
             },
-            outFlag: false,
-            userImg: ''
+            switchTitle: 'Log In'
         }
     },
     components: {
-        Modal
+        Modal,
+        mdbBtn
     },
     props: {
         visitor_IP: {
@@ -93,17 +93,12 @@ export default {
             type: String,
             required: false,
             default: ''
-        },
-        role: {
-            type: Number,
-            required: false,
-            default: 2
         }
     },
     computed: {
         ...mapGetters({
             opened: 'reverse/opened',
-            user: 'auth/getuser'
+            auth: 'auth/checkLogin'
         })
     },
     methods: {
@@ -111,9 +106,6 @@ export default {
             setFlag: 'reverse/setOpened',
             logout: 'auth/logout'
         }),
-        showOutBtn: function () {
-            this.outFlag = !this.outFlag
-        },
         setFromtownPlace: function (place) {
             this.$emit('search', place)
         },
@@ -127,19 +119,33 @@ export default {
         closeModal: function (flag) {
             this.showFlag = flag;
         },
-        signout: function () {
-            let r = window.confirm('You will sign out now?')
-            
-            if (r === true) {
-                this.logout()
+        switchBtn: function () {
+            if (this.auth) {
+                let r = window.confirm('You will sign out now?')
+                
+                if (r === true) {
+                    dialogs.message('Log out success!', { duration: 10, state: 'success' });
+                    this.logout()
+                }
+            } else {
+                this.$router.push({ name: 'Register' })
             }
         }
     },
     mounted () {
-        if (this.user.imageInfo === '') {
-            this.userImg = randomUser
+        if (this.auth) {
+            this.switchTitle = 'Log out'
         } else {
-            this.userImg = this.user.imageInfo
+            this.switchTitle = 'Log In'
+        }
+    },
+    watch: {
+        auth: function () {
+            if (this.auth) {
+                this.switchTitle = 'Log out'
+            } else {
+                this.switchTitle = 'Log In'
+            }
         }
     }
 }

@@ -25,6 +25,6 @@ export default [
     },
     {
         path: '/*',
-        redirect: '/register'
+        redirect: '/home'
     }
 ]

@@ -26,13 +26,6 @@
 				<p>Holding Period (Years)</p>
 				<input type="number" min="10" max="20" v-model="B4" placeholder="period" />
 			</div>
-			<!-- <div class="rate-price">
-				<p>Your State</p>
-				<select class="select-state">
-					<option>Select State</option>
-					<option v-for="(state, index) in states" :key="index" :value="state">{{ state }}</option>
-				</select>
-			</div> -->
 		</div>
 
 		<!-- second calculator -->
@@ -69,16 +62,18 @@
 			</div>
 		</div>
 		
+		<div class="btn-area">
+			<mdb-btn @click="statistics" color="info">
+				Statistics
+				<v-icon icon="chart-bar" class="v-icon-history" />
+			</mdb-btn>
 
-		<button @click="statistics">
-			Statistics
-			<v-icon icon="chart-bar" class="v-icon-history" />
-		</button>
-		<button class="about-btn" @click="showMore">
-			About more
-			<v-icon icon="info-circle" class="v-icon-history" />
-		</button>
-
+			<mdb-btn @click="showMore" color="info">
+				About more
+					<v-icon icon="info-circle" class="v-icon-history" />
+			</mdb-btn>
+		</div>
+			
 		<!-- price section -->
 		<div class="border-rate-price">
 			<div class="rate-price">
@@ -118,6 +113,7 @@ import stateJson from '../assets/state.json'
 import sectorJson from '../jsons/sector.json'
 import Disclaimer from './Disclaimer'
 import SwitchBtn from './SwitchBtn'
+import { mdbBtn } from 'mdbvue';
 export default {
 	name: 'Detail',
 	data () {
@@ -143,7 +139,8 @@ export default {
 	},
 	components: {
 		Disclaimer,
-		SwitchBtn
+		SwitchBtn,
+		mdbBtn
 	},
 	computed: {
 		...mapGetters({
@@ -201,9 +198,13 @@ export default {
 				dialogs.message('Statistics Completed.', { duration: 10, state: 'success' });
 				this.$emit('detail', statistics)
 			} else {
-				console.log(typeof (this.A3 - this.A2 - this.A1))
 				if (this.A1 === null || this.A2 === null || this.A3 === null) {
 					dialogs.message('You have to insert the values', { duration: 10, state: 'error' });
+					return;
+				}
+
+				if (this.A4 === null) {
+					dialogs.message('You have to insert the Employees.', { duration: 10, state: 'error' });
 					return;
 				}
 
@@ -231,14 +232,14 @@ export default {
 					second: this.A3 - this.A1- this.A2,
 					federal: (parseInt(this.A3 - this.A1- this.A2) * 0.5 / 3).toFixed(2),
 					state: this.state,
-					sector: this.sector
+					sector: this.sector,
+					employees: this.A4
 				}
 
 				this.OZ = this.A3 - this.A1- this.A2
 				this.notOZ = (this.A3 - this.A1- this.A2) * 0.75,
 				this.difference = this.OZ - this.notOZ
 
-				dialogs.message('Statistics Completed.', { duration: 10, state: 'success' });
 				this.$emit('detail', statistics)
 			}
 		},

@@ -27,13 +27,8 @@ router.beforeEach(async (to, from, next) => {
             store.dispatch('actionbar/setTitle', actionbar.header.title)
         }
     } else {
-        if (user) {
-            next()
-            store.dispatch('actionbar/setTitle', actionbar.header.title)
-        } else {
-            router.replace({ name: 'Register' })
-            store.dispatch('actionbar/setTitle', 'Registration')
-        }
+        next()
+        store.dispatch('actionbar/setTitle', actionbar.header.title)
     }
 })
 

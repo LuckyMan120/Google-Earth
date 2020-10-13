@@ -78,7 +78,7 @@ const actions = {
 
     logout: function (store) {
         store.commit(types.AUTH_LOGOUT);
-        router.replace({ name: 'Register' })
+        router.replace({ name: 'Home' })
     },
 
     updatePhoto: function (store, data) {

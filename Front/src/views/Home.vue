@@ -5,7 +5,6 @@
             :session="time"
             :history="historyData"
             :preIP="previousIP"
-            :role="role"
             @search="searchArea"
         />
         <div class="main-body">
@@ -17,11 +16,11 @@
                     <select class="select-state" @change="searchState($event)">
                         <option>Select State</option>
                         <option
-                            v-for="(state, num) in selectState"
+                            v-for="(state, num) in states"
                             :key="num"
-                            :value="state.name"
+                            :value="state"
                         >
-                            {{ state.name }}
+                            {{ state }}
                         </option>
                     </select>
                     <div class="img-icon">
@@ -306,8 +305,8 @@
 </template>
 <script type="module">
 import { api } from '../services/api'
+import dialogs from '../services/dialogs.js'
 import moment from 'moment'
-import { mapGetters } from 'vuex'
 
 // import jsons and files
 import schoolsJson from '../jsons/schools.json'
@@ -315,6 +314,7 @@ import companyJson from '../jsons/company.json'
 import loader from '../assets/loading.gif'
 import pinkIcon from '../assets/pink.png'
 import blueIcon from '../assets/blue.png'
+import stateJson from '../assets/state.json'
 
 // import components
 import Chart from '../components/Chart'
@@ -414,7 +414,7 @@ export default {
             companyCount: 0,
             selectedSchools: [],
             selectedCompanies: [],
-            role: 0
+            states: null
         }
     },
     components: {
@@ -422,18 +422,12 @@ export default {
         Detail,
         Topbar
     },
-    computed: {
-        ...mapGetters({
-            user: 'auth/getuser'
-        })
-    },
     created () {
         window.addEventListener('beforeunload', this.confirm_leaving)
         this.loading_img = loader
     },
     async mounted() {
         let details = await api.getAllData()
-        console.log('details', details)
         let data = {}
         data['counts'] = details.counts
         data['history'] = details.visitorData
@@ -527,10 +521,14 @@ export default {
         this.schoolStaticData = schoolsJson[0].schools
         this.companyStaticData = companyJson[0].company
         this.loading_flag = false
-        this.role = this.user.role
+        this.states = stateJson.states
     },
     methods: {
         searchArea: async function (place) {
+            this.schoolsData = null
+            this.companyData = null
+            this.schoolCount = 0
+            this.companyCount = 0
             this.marked = false
             this.window_open_second = false
             this.window_open_first = false
@@ -568,7 +566,7 @@ export default {
 
             this.center.lat = place.geometry.location.lat()
             this.center.lng = place.geometry.location.lng()
-            this.zoom = 6
+            this.zoom = 7.5
             this.marked = true
             let data = {
                 lat: place.geometry.location.lat(),
@@ -601,7 +599,6 @@ export default {
             console.log(doc)
         },
         showDetails: function (detail) {
-            console.log('detail', detail)
             if (!this.window_open_first && !this.window_open_second) {
                 this.firstInfowindow = {
                     lat: detail.path[0].lat,
@@ -723,7 +720,10 @@ export default {
                     sales: data.sales,
                     OZ: data.second,
                     notOZ: data.first,
-                    federal: data.federal
+                    federal: data.federal,
+                    state: data.state,
+                    sector: data.sector,
+                    employees: data.employees
                 }
 
                 this.businessData.push(business)
@@ -731,6 +731,10 @@ export default {
             this.statisData = data
         },
         searchState: function (event) {
+            this.schoolsData = null
+            this.companyData = null
+            this.schoolCount = 0
+            this.companyCount = 0
             this.marked = false
             this.window_open_second = false
             this.window_open_first = false
@@ -748,15 +752,10 @@ export default {
                 if (item.name === event.target.value) {
                     let data = {}
                     data['name'] = item.name
-                    console.log(data)
                     let polygons = await api.searchPolygon(data)
-                    console.log(polygons.length)
-                    polygons.forEach(poly => {
-                        console.log(typeof poly)
-                    })
                     this.paths = polygons
                     this.center = item.center
-                    this.zoom = 6
+                    this.zoom = 7.5
                     this.selectedStatePath = item.path
                     this.loading_flag = false
                 }
@@ -820,26 +819,62 @@ export default {
         },
         statisData: function () {
             if (this.statisData.status === 'second') {
-                // search company
-                let companies = []
-                this.companyStaticData.forEach(company => {
-                    if (company.State === this.statisData.state && company.Sector === this.statisData.sector) {
-                        companies.push(company)
+                this.schoolsData = null
+                this.companyData = null
+                this.schoolCount = 0
+                this.companyCount = 0
+                this.marked = false
+                this.window_open_second = false
+                this.window_open_first = false
+                this.open_school_pin = false
+                this.open_company_pin = false
+                this.loading_flag = true
+                this.paths = null
+                this.selectedStatePath = null
+                this.zoom = 4
+                this.center = {
+                    lat:  37.09024,
+                    lng: -95.712891
+                }
+
+                
+
+                // search state
+                this.selectState.forEach(async item => {
+                    if (item.name === this.statisData.state) {
+                        let data = {}
+                        data['name'] = item.name
+                        let polygons = await api.searchPolygon(data)
+                        this.paths = polygons
+                        this.center = item.center
+                        this.zoom = 7.5
+                        this.selectedStatePath = item.path
+
+                        // search company
+                        let companies = []
+                        this.companyStaticData.forEach(company => {
+                            if (company.State === this.statisData.state && company.Sector === this.statisData.sector) {
+                                companies.push(company)
+                            }
+                        })
+
+                        // search schools
+                        let schools = []
+                        this.schoolStaticData.forEach(school => {
+                            if (school.State === this.statisData.state) {
+                                schools.push(school)
+                            }
+                        })
+
+                        this.companyData = companies
+                        this.schoolsData = schools
+                        this.schoolCount = this.schoolsData.length
+                        this.companyCount = this.companyData.length
+
+                        dialogs.message('Statistics Completed.', { duration: 10, state: 'success' });
+                        this.loading_flag = false
                     }
                 })
-
-                // search schools
-                let schools = []
-                this.schoolStaticData.forEach(school => {
-                    if (school.State === this.statisData.state) {
-                        schools.push(school)
-                    }
-                })
-
-                this.companyData = companies
-                this.schoolsData = schools
-                this.schoolCount = this.schoolsData.length
-                this.companyCount = this.companyData.length
             }
         }
     }

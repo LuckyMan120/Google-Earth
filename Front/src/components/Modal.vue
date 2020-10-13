@@ -7,22 +7,22 @@
             </div>
             <div class="drop-down-menu">
                 <!-- drop down items -->
-                <dropdown-menu>
-                    <button slot="trigger">Download fields</button>
-                    <ul slot="body">
-                        <li v-for="(item, index) in itemJson" :key="index">
+                <mdb-dropdown>
+                    <mdb-dropdown-toggle color="primary" slot="toggle">Download fields</mdb-dropdown-toggle>
+                    <mdb-dropdown-menu color="primary">
+                        <mdb-dropdown-item v-for="(item, index) in itemJson" :key="index">
                             <downloadexcel
                                 :data="chooseData(item.item)"
                                 :fields="chooseField(item.item)"
                                 worksheet="My Worksheet"
                                 type="csv"
                                 :before-generate="startDownload"
-                                name="data.xls">
-                                <span>{{ item.item }}</span>
+                                :name="item.item + '.xls'">
+                                {{ item.item }}
                             </downloadexcel>
-                        </li>
-                    </ul>
-                </dropdown-menu>
+                        </mdb-dropdown-item>
+                    </mdb-dropdown-menu>
+                </mdb-dropdown>
                 <v-icon icon="times-circle" class="v-icon-times" @click="closeModal" />
             </div>
         </div>
@@ -157,6 +157,9 @@
                                             <th>OZ</th>
                                             <th>Without OZ</th>
                                             <th>Federal</th>
+                                            <th>State</th>
+                                            <th>Sector</th>
+                                            <th>Employees</th>
                                         </tr>
                                     </thead>
                                     <tbody v-if="item.businessInfo.length !== 0">
@@ -167,11 +170,14 @@
                                             <td>{{ business.OZ }}</td>
                                             <td>{{ business.notOZ }}</td>
                                             <td>{{ business.federal }}</td>
+                                            <td>{{ business.state }}</td>
+                                            <td>{{ business.sector }}</td>
+                                            <td>{{ business.employees }}</td>
                                         </tr>
                                     </tbody>
                                     <tbody v-else>
                                         <tr>
-                                            <td colspan="6">Never Selected</td>
+                                            <td colspan="9">Never Selected</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -234,7 +240,7 @@
 
 <script>
 import { mapActions } from 'vuex'
-import DropdownMenu from 'v-dropdown-menu'
+import { mdbDropdown, mdbDropdownItem, mdbDropdownMenu, mdbDropdownToggle } from 'mdbvue'
 import downloadexcel from "vue-json-excel"
 import itemJson from '../jsons/item.json'
 
@@ -272,7 +278,10 @@ export default {
         }
     },
     components: {
-        DropdownMenu,
+        mdbDropdown,
+        mdbDropdownItem,
+        mdbDropdownMenu,
+        mdbDropdownToggle,
         downloadexcel
     },
     methods: {
@@ -384,7 +393,10 @@ export default {
                                         federal: poly.federal,
                                         initial: poly.initial,
                                         notOZ: poly.notOZ,
-                                        sales: poly.sales
+                                        sales: poly.sales,
+                                        state: poly.state,
+                                        sector: poly.sector,
+                                        employees: poly.employees
                                     }
                                     data3.push(eachData)
                                 })
@@ -398,7 +410,10 @@ export default {
                                     federal: 'Never selected',
                                     initial: 'Never selected',
                                     notOZ: 'Never selected',
-                                    sales: 'Never selected'
+                                    sales: 'Never selected',
+                                    state: 'Never selected',
+                                    sector: 'Never selected',
+                                    employees: 'Never selected'
                                 }
                                 data3.push(eachData)
                             }
@@ -522,7 +537,10 @@ export default {
                             "OZ": "OZ",
                             "Without OZ": "notOZ",
                             "Federal": "federal",
-                            "Sales Price": "sales"
+                            "Sales Price": "sales",
+                            "State": "state",
+                            "Sector": "sector",
+                            "Employees": "employees"
                         }
                         
                         return data3
