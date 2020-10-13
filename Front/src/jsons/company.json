@@ -1639,12 +1639,12 @@
       "State": "Minnesota"
     },
     {
-      "Title": "Nordstrom",
+      "Title": "Nordstrom", 
       "Rank": 183,
       "Employees": 76000,
       "Sector": "Retailing",
-      "Latitude": 47.6062095,
-      "Longitude": -122.3320708,
+      "Latitude": 47.61237,
+      "Longitude": -122.3365,
       "State": "Washington"
     },
     {
