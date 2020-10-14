@@ -2,10 +2,11 @@
     <div class="register-body">
         <!-- back button -->
         <mdbBtn color="info" class="back-home" @click="back">
+            <v-icon icon="home" class="v-icon-back" />
             Back Home
         </mdbBtn>
 
-        <div class="login-body">
+        <div v-if="!forgetFlag" class="login-body">
             <!-- Material form login -->
             <form class="login-form-section">
                 <p class="h4 text-center mb-4">Sign in</p>
@@ -25,20 +26,56 @@
                 </div>
                 <span class="error" v-if="passwordError.state"> {{passwordError.message}} </span>
                 
+                <!-- password reset -->
+                <a @click="forgetPassword(true)">
+                    Forget password?
+                </a>
+
                 <mdbBtn color="success" class="login-btn" @click="login">
                     <span>Log In</span>
                     <Spinner v-if="loading" class="loading" />
                 </mdbBtn>
             </form>
         </div>
+
+        <!-- password forget field -->
+        <dir v-else class="login-body" style="padding: unset;">
+            <form v-if="!linkFlag" class="login-form-section">
+                <p class="h4 text-center mb-4">Forget password</p>
+                
+                <!-- email -->
+                <div class="input-card-section">
+                    <v-icon icon="envelope" class="v-icon-item" />
+                    <mdb-input label="Your email" type="text" v-model="resetEmail" />
+                </div>
+                <span class="error" v-if="resetEmailError.state"> {{resetEmailError.message}} </span>
+
+                <!-- back btn -->
+                <a @click="forgetPassword(false)">
+                    Back
+                </a>
+                <mdbBtn color="success" class="login-btn" @click="sendLink">
+                    <span>Send link</span>
+                    <Spinner v-if="loading" class="loading" />
+                </mdbBtn>
+            </form>
+
+            <!-- reset link sent -->
+            <form v-else class="reset-form">
+                <img :src="emailImage" class="email-image">
+                <span>Just sent password reset link to your email. Please check your mail box...</span>
+            </form>
+        </dir>
     </div>
 </template>
 
 <script>
 import { mapActions, mapGetters } from 'vuex';
 import { mdbInput, mdbBtn } from 'mdbvue';
+import firebase from 'firebase'
 import dialogs from '../services/dialogs.js'
 import Spinner from '../components/Spinner'
+import emailImg from '../assets/email.jpg'
 
 class Error {
     constructor (state = false, message = '') {
@@ -58,9 +95,14 @@ export default {
             password: '',
             emailError: new Error(),
             passwordError: new Error(),
+            resetEmailError: new Error(),
             loading: false,
             passwordEye: 'eye',
-            passwordTextType: 'password'
+            passwordTextType: 'password',
+            forgetFlag: false,
+            resetEmail: '',
+            emailImage: emailImg,
+            linkFlag: false
         }
     },
     components: {
@@ -71,32 +113,51 @@ export default {
     computed: {
         ...mapGetters({
             errMsg: 'auth/getErrMsg',
-            auth: 'auth/checkLogin'
+            auth: 'auth/checkLogin',
+            checkFlag: 'auth/getcheckFlag'
         })
     },
     methods: {
         ...mapActions({
-            doLogin: 'auth/login'
+            doLogin: 'auth/login',
+            checkUser: 'auth/checkUser',
+            saveResetEmail: 'auth/saveResetEmail'
         }),
         uploadFile: function () {
             this.$refs.file.show();
         },
         validate: function () {
             let globalError = false
-            if (!emailRegex.test(this.email)) {
-                this.emailError.state = true
-                this.emailError.message = 'You have to insert validated email!'
-                globalError = true
-            }
+            if (this.forgetFlag) {
+                if (this.resetEmail === '') {
+                    this.resetEmailError.state = true
+                    this.resetEmailError.message = 'You have to insert the email!'
+                    globalError = true
+                } else if (!emailRegex.test(this.resetEmail)) {
+                    this.resetEmailError.state = true
+                    this.resetEmailError.message = 'You have to insert validated email!'
+                    globalError = true
+                }
+            } else {
+                if (this.email === '') {
+                    this.emailError.state = true
+                    this.emailError.message = 'You have to insert the email!'
+                    globalError = true
+                } else if (!emailRegex.test(this.email)) {
+                    this.emailError.state = true
+                    this.emailError.message = 'You have to insert validated email!'
+                    globalError = true
+                }
 
-            if (this.password.length < 1) {
-                this.passwordError.state = true;
-                this.passwordError.message = 'You must insert password.';
-                globalError = true;
-            } else if (this.password.length < 8) {
-                this.passwordError.state = true;
-                this.passwordError.message = 'Your password must be at least 8 characters.';
-                globalError = true;
+                if (this.password.length < 1) {
+                    this.passwordError.state = true;
+                    this.passwordError.message = 'You must insert password.';
+                    globalError = true;
+                } else if (this.password.length < 8) {
+                    this.passwordError.state = true;
+                    this.passwordError.message = 'Your password must be at least 8 characters.';
+                    globalError = true;
+                }
             }
 
             return globalError;
@@ -126,10 +187,12 @@ export default {
                 .then(() => {
                     if (this.auth) {
                         this.loading = false
+                        
                         dialogs.message('Login success!', { duration: 10, state: 'success' });
                         this.$router.push({name: 'Home'})
                     } else {
                         this.loading = false
+                        
                         dialogs.message(this.errMsg, { duration: 10, state: 'error' });
                     }
                 })
@@ -137,6 +200,41 @@ export default {
         },
         back: function () {
             this.$router.push({ name: 'Home' })
+        },
+        forgetPassword: function (flag) {
+            this.forgetFlag = flag
+        },
+        sendLink: function () {
+            if (this.validate()) {
+                dialogs.message('You must insert your existing email to reset your password.', { duration: 10, state: 'error' });
+                return;
+            }
+            this.loading = true
+
+            this.checkUser({ email: this.resetEmail })
+                .then(() => {
+                    
+                    if (this.checkFlag) {
+                        const vm = this
+                        const auth = firebase.auth()
+                        auth.sendPasswordResetEmail(this.resetEmail)
+                            .then(() => {
+                                vm.saveResetEmail(vm.resetEmail)
+                                vm.loading = false
+                                vm.linkFlag = true
+
+                                dialogs.message('Just sent password reset link to your email. Please check your mail box!', { duration: 10, state: 'success' });
+                            })
+                            .catch(err => console.log(err))
+                    } else {
+                        this.resetEmailError.message = 'Wrong email';
+                        this.resetEmailError.state = true
+                        
+                        dialogs.message('Wrong email.', { duration: 10, state: 'error' });
+                        this.loading = false
+                    }
+                })
+                .catch(err => console.log(err))
         }
     },
     watch: {
@@ -145,6 +243,9 @@ export default {
         },
         password: function () {
             this.passwordError.state = false
+        },
+        resetEmail: function () {
+            this.resetEmailError.state = false
         }
     }
 }

@@ -24,6 +24,18 @@ export default [
         }
     },
     {
+        path: '/reset-password',
+        name: 'PasswordReset',
+        component: () => import('../views/PasswordReset'),
+        meta: {
+            actionbar: {
+                header: {
+                    title: 'Reset Password'
+                }
+            }
+        }
+    },
+    {
         path: '/*',
         redirect: '/home'
     }

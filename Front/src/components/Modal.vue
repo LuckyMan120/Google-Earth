@@ -213,6 +213,8 @@
                                             <th>Sector</th>
                                             <th>Rank</th>
                                             <th>Employees</th>
+                                            <th>Revenues</th>
+                                            <th>State</th>
                                         </tr>
                                     </thead>
                                     <tbody v-if="item.companyPins.length !== 0">
@@ -221,11 +223,13 @@
                                             <td>{{ company.sector }}</td>
                                             <td>{{ company.rank }}</td>
                                             <td>{{ company.employees }}</td>
+                                            <td>{{ company.revenues }}</td>
+                                            <td>{{ company.state }}</td>
                                         </tr>
                                     </tbody>
                                     <tbody v-else>
                                         <tr>
-                                            <td colspan="4">Never Selected</td>
+                                            <td colspan="6">Never Selected</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -461,7 +465,9 @@ export default {
                                         employees: poly.employees,
                                         rank: poly.rank,
                                         sector: poly.sector,
-                                        title: poly.title
+                                        title: poly.title,
+                                        revenues: poly.revenues,
+                                        state: poly.state
                                     }
                                     data5.push(eachData)
                                 })
@@ -473,7 +479,9 @@ export default {
                                     employees: 'Never selected',
                                     rank: 'Never selected',
                                     sector: 'Never selected',
-                                    title: 'Never selected'
+                                    title: 'Never selected',
+                                    revenues: 'Never selected',
+                                    state: 'Never selected'
                                 }
                                 data5.push(eachData)
                             }
@@ -564,7 +572,9 @@ export default {
                             "Title": "title",
                             "Sector": "sector",
                             "Rank": "rank",
-                            "Employees": "employees"
+                            "Employees": "employees",
+                            "State": "state",
+                            "Revenues": "revenues"
                         }
 
                         return data5

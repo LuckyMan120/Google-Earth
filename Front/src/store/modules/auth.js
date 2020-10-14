@@ -10,20 +10,32 @@ const state = {
     user: null,
     signup_text: '',
     login_err_message: '',
-    token: null
+    token: null,
+    checkFlag: false,
+    resetEmail: ''
 }
 
 const getters = {
     checkLogin: state => state.auth,
     getuser: state => state.user,
     getLocalStorage: state => state.token,
-    getErrMsg: state => state.login_err_message
+    getErrMsg: state => state.login_err_message,
+    getcheckFlag: state => state.checkFlag,
+    getResetEmail: state => state.resetEmail
 }
 
 const actions = {
     login: function (store, payload) {
         return api.login(payload).then((response) => {
             globalStore.dispatch('auth/confirmActive', response)
+        }, ({data}) => {
+            return Promise.reject(data)
+        })
+    },
+
+    checkUser: function (store, payload) {
+        return api.checkUser(payload).then((response) => {
+            store.commit(types.CHECK_USER, response)
         }, ({data}) => {
             return Promise.reject(data)
         })
@@ -89,6 +101,29 @@ const actions = {
         }, ({data}) => {
             return Promise.reject(data)
         })
+    },
+
+    saveResetEmail: function (store, email) {
+        cache.setItem(keys.RESET_KEY, email)
+    },
+
+    getEmail: function (store) {
+        let emailToken = cache.getItem(keys.RESET_KEY)
+        emailToken
+            .then(result => {
+                store.commit(types.SAVE_RESET_EMAIL, result)
+            })
+            .catch(err => console.log('err', err))
+    },
+
+    resetPassword: function (store, data) {
+        return api.resetPassword(data).then(() => {
+            console.log(store)
+            router.replace({ name: 'Register' })
+            return Promise.resolve()
+        }, ({data}) => {
+            return Promise.reject(data)
+        })
     }
 }
 
@@ -115,6 +150,14 @@ const mutations = {
         state.auth = null
         state.token = null
         cache.clear()
+    },
+
+    [types.CHECK_USER] (state, flag) {
+        state.checkFlag = flag
+    },
+
+    [types.SAVE_RESET_EMAIL] (state, email) {
+        state.resetEmail = email
     }
 }
 

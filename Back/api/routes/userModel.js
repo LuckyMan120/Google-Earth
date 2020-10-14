@@ -5,11 +5,9 @@ const jwt = require("jsonwebtoken");
 let db = require('../models');
 
 router.route('/login').post((req, res) => {
-	console.log(req.body)
 	db.userDB.find({ email: req.body.email })
 		.then(userData => {
 			if (!userData[0]) {
-				console.log("ok")
 				return res.json('User does not exist. Please try again!');
 			}
 
@@ -98,6 +96,46 @@ router.route('/register').post((req, res) => {
         		.catch(err => console.log(err));
     	});
     });
+})
+
+router.route('/checkUser').post((req, res) => {
+	db.userDB.find({ email: req.body.email })
+		.then(result => {
+			if (!result[0]) {
+				res.json(false)
+			} else {
+				res.json(true)
+			}
+		})
+		.catch(err => console.log(err))
+})
+
+router.route('/resetPassword').put((req, res) => {
+	db.userDB.find({ email: req.body.email })
+		.then(result => {
+			// Hash password before saving in database
+		    bcrypt.genSalt(10, (err, salt) => {
+		    	bcrypt.hash(req.body.password, salt, (err, hash) => {
+		        	if (err) throw err;
+		        	
+		        	db.userDB.updateOne(
+						{ _id: result[0]._id},
+						{
+						  $set: 
+						  	{
+						  		"password" : hash
+						  	}
+						}
+					).then(() => {
+						res.json(true)
+					})
+					.catch(err => console.log('err', err));
+		    	});
+		    });
+
+
+		})
+		.catch(err => console.log(err))
 })
 
 module.exports = router;

@@ -13,10 +13,10 @@ Vue.use(VueFlashMessage, {
 const vm = new Vue();
 // const earthURL = 'http://localhost:4000/earth';
 // const userURL = 'http://localhost:4000/user';
-const earthURL = 'https://oppzoneapp.azurewebsites.net/earth';
-const userURL = 'https://oppzoneapp.azurewebsites.net/user';
-// const earthURL = 'http://146.71.77.95:4000/earth';
-// const userURL = 'http://146.71.77.95:4000/user';
+// const earthURL = 'https://oppzoneapp.azurewebsites.net/earth';
+// const userURL = 'https://oppzoneapp.azurewebsites.net/user';
+const earthURL = 'http://146.71.77.95:4000/earth';
+const userURL = 'http://146.71.77.95:4000/user';
 
 const handleError = fn => (...params) =>
   fn(...params).catch(error => {
@@ -50,6 +50,14 @@ export const api = {
   }),
   updatePhoto: handleError(async payload => {
     const res = await axios.put(userURL + '/updatePhoto', payload);
+    return res.data;
+  }),
+  resetPassword: handleError(async payload => {
+    const res = await axios.put(userURL + '/resetPassword', payload);
+    return res.data;
+  }),
+  checkUser: handleError(async payload => {
+    const res = await axios.post(userURL + '/checkUser', payload);
     return res.data;
   })
 };

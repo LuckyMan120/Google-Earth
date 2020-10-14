@@ -286,6 +286,14 @@
                                 <td>Sector</td>
                                 <td>{{ companyPinData.sector }}</td>
                             </tr>
+                            <tr>
+                                <td>Revenues</td>
+                                <td>{{ companyPinData.revenues }}</td>
+                            </tr>
+                            <tr>
+                                <td>State</td>
+                                <td>{{ companyPinData.state }}</td>
+                            </tr>
                         </table>
                     </gmap-info-window>
                 </GmapMap>
@@ -372,7 +380,9 @@ export default {
                 title: '',
                 rank: '',
                 employers: '',
-                sector: ''
+                sector: '',
+                revenues: '',
+                state: ''
             },
             marked: false,
             markedPosition: null,
@@ -544,19 +554,18 @@ export default {
             }
 
             let nameIndex = 0
-            // get name index for searching polygons from DB
-            place.address_components.forEach((item, index) => {
-                if (item['long_name'] === "United States") {
-                    nameIndex = index - 1
-                }
-            })
-
             let searchData = {}
-            // get name for search
-            searchData['name'] = place.address_components[nameIndex].long_name
+            // get name for searching polygons from DB
+            place.address_components.forEach(item => {
+                this.states.forEach(state => {
+                    if (item['long_name'] === state) {
+                        searchData['name'] = state
+                        return;
+                    }
+                })
+            })
             let polygons = await api.searchPolygon(searchData)
             this.paths = polygons
-
             // get border of searched state
             this.selectState.forEach(async item => {
                 if (item.name === place.address_components[nameIndex].long_name) {
@@ -566,7 +575,7 @@ export default {
 
             this.center.lat = place.geometry.location.lat()
             this.center.lng = place.geometry.location.lng()
-            this.zoom = 7.5
+            this.zoom = 12
             this.marked = true
             let data = {
                 lat: place.geometry.location.lat(),
@@ -594,9 +603,6 @@ export default {
             const unsaved_changes_warning = "You have unsaved changes. Are you sure you wish to leave?";
             evt.returnValue = unsaved_changes_warning; 
             return unsaved_changes_warning;
-        },
-        useData: function (doc) {
-            console.log(doc)
         },
         showDetails: function (detail) {
             if (!this.window_open_first && !this.window_open_second) {
@@ -794,12 +800,16 @@ export default {
                 this.companyPinData.rank = pin['Rank']
                 this.companyPinData.employers = pin['Employees']
                 this.companyPinData.sector = pin['Sector']
+                this.companyPinData.revenues = pin['Revenues']
+                this.companyPinData.state = pin['State']
 
                 let companyPin = {
                     title: pin['Title'],
                     rank: pin['Rank'],
                     employees: pin['Employees'],
-                    sector: pin['Sector']
+                    sector: pin['Sector'],
+                    revenues: pin['Revenues'],
+                    state: pin['State']
                 }
 
                 this.selectedCompanies.push(companyPin)

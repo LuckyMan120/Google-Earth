@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Avenir&display=swap');
+body {
+	font-family: Avenir !important;
+}
 th, td, tr {
   border: 1px solid black;
   padding: 5px;
@@ -18,6 +21,7 @@ h3 {
 table {
   border-spacing: 15px;
   margin: 10px 0;
+  font-family: Avenir !important;
 }
 table td {
 	font-weight: bold;
@@ -27,18 +31,10 @@ input {
 	border-radius: 10px;
 	padding: 10px;
 }
-/*button {
-	background: #1C8983;
-	border: 1px solid #1C8983;
-	padding: 10px 15px;
-	border-radius: 10px !important;
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
-	margin: 10px 0 !important;
-	box-shadow: 0 0 5px lightgrey;
-	text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
-}*/
+a {
+	color: white !important;
+	display: block;
+}
 button {
 	display: flex !important;
 	align-items: center;
@@ -411,7 +407,16 @@ input:focus {
 	position: absolute !important;
 	margin: unset !important;
 	top: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	right: 1em;
+}
+.v-icon-back {
+	color: white;
+	font-size: 1.2em;
+	margin-bottom: .1em;
+	margin-right: .5em;
 }
 .v-icon-item {
 	margin: 0 1em;
@@ -521,6 +526,15 @@ input:focus {
 	background-position: 50%;
 	height: 100vh;
 }
+.reset-form {
+	padding: 1em;
+	display: flex;
+	align-items: center;
+}
+.reset-form span {
+	color: white;
+	font-weight: bold;
+}
 .login-body {
 	border-radius: 15px !important;
 	width: 30vw;
@@ -530,6 +544,7 @@ input:focus {
 	top: 30vh;
 	text-align: left;
 	box-shadow: 0 0 15px black !important;
+	text-align: center;
 }
 .login-body p {
 	color: white !important;
@@ -540,7 +555,7 @@ input:focus {
 	width: 85%;
 }
 .email-image {
-	margin: auto;
+	border-radius: 50%;
 }
 .verification-field {
 	display: grid;
@@ -580,8 +595,8 @@ input:focus {
 	width: 100% !important;
 }
 .error {
-	color: red !important;
-	margin-left: 2em;
+	color: #00ff37 !important;
+	margin: .2em 2em;
 }
 .input-card-section {
 	position: relative;
@@ -589,7 +604,7 @@ input:focus {
 	color: white !important;
 	align-items: center;
 	border-radius: 5px;
-	margin: .2em 0;
+	margin: .5em 0 !important;
 }
 .input-card-section input {
 	padding: .3em !important;
