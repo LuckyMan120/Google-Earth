@@ -27,9 +27,9 @@
                 <span class="error" v-if="passwordError.state"> {{passwordError.message}} </span>
                 
                 <!-- password reset -->
-                <a @click="forgetPassword(true)">
+                <!-- <a class="forget-a" @click="forgetPassword(true)">
                     Forget password?
-                </a>
+                </a> -->
 
                 <mdbBtn color="success" class="login-btn" @click="login">
                     <span>Log In</span>
@@ -51,7 +51,7 @@
                 <span class="error" v-if="resetEmailError.state"> {{resetEmailError.message}} </span>
 
                 <!-- back btn -->
-                <a @click="forgetPassword(false)">
+                <a class="forget-a" @click="forgetPassword(false)">
                     Back
                 </a>
                 <mdbBtn color="success" class="login-btn" @click="sendLink">

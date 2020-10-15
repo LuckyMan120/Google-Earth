@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from 'vuex'
+import { mapActions } from 'vuex'
 import dialogs from '../services/dialogs.js'
 import { mdbInput, mdbBtn } from 'mdbvue';
 import Spinner from '../components/Spinner'
@@ -66,20 +66,20 @@ export default {
         mdbInput,
         mdbBtn
     },
-    computed: {
-        ...mapGetters({
-            getResetEmail: 'auth/getResetEmail'
-        })
-    },
-    async mounted () {
-        if (Object.keys(this.$route.query).length !== 0) {
-            await this.getEmail()
-            this.resetEmail = this.getResetEmail
-        }
-    },
+    // computed: {
+    //     ...mapGetters({
+    //         getResetEmail: 'auth/getResetEmail'
+    //     })
+    // },
+    // async mounted () {
+    //     if (Object.keys(this.$route.query).length !== 0) {
+    //         await this.getEmail()
+    //         this.resetEmail = this.getResetEmail
+    //     }
+    // },
     methods: {
         ...mapActions({
-            getEmail: 'auth/getEmail',
+            // getEmail: 'auth/getEmail',
             resetPassword: 'auth/resetPassword'
         }),
         showPassword: function (type) {
