@@ -12,7 +12,6 @@ import '@babel/polyfill';
 
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'mdbvue/lib/css/mdb.min.css';
 import store from './store';
 

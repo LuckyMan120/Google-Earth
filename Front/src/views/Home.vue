@@ -41,9 +41,7 @@
                     map-type-id="roadmap"
                     style="width: 100%"
                     class="lg-gmap md-gmap"
-                    :options="{
-                        mapTypeControl: false
-                    }"
+                    :options="mayStyle"
                 >
                     <gmap-polyline
                         v-for="(path, index) in selectedStatePath"
@@ -333,6 +331,19 @@ export default {
     name: 'Home',
     data () {
         return {
+            mayStyle: {
+                mapTypeControl: false,
+                styles: [
+                    // {elementType: 'geometry', stylers: [{color: '#fb3'}]},
+                    // {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+                    // {elementType: 'labels.text.fill', stylers: [{color: '#242f3e'}]},
+                    {
+                        featureType: 'administrative.locality',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#fb3'}]
+                    }
+                ]
+            },
             center: { lat:  37.09024, lng: -95.712891 },
             zoom: 4,
             paths: null,
@@ -566,6 +577,7 @@ export default {
             })
             let polygons = await api.searchPolygon(searchData)
             this.paths = polygons
+           
             // get border of searched state
             this.selectState.forEach(async item => {
                 if (item.name === place.address_components[nameIndex].long_name) {
@@ -586,20 +598,20 @@ export default {
             this.loading_flag = false
         },
         confirm_leaving: function (evt) {
-            if (this.started) {
-                let visitorData = {}
+            // if (this.started) {
+            //     let visitorData = {}
                 
-                visitorData['IP'] = this.visiterIP
-                visitorData['session'] = this.time
-                visitorData['visit_at'] = this.visit_at
-                visitorData['polygons'] = this.selectedPolygons
-                visitorData['taxInfo'] = this.taxData
-                visitorData['businessInfo'] = this.businessData
-                visitorData['schools'] = this.selectedSchools
-                visitorData['companies'] = this.selectedCompanies
+            //     visitorData['IP'] = this.visiterIP
+            //     visitorData['session'] = this.time
+            //     visitorData['visit_at'] = this.visit_at
+            //     visitorData['polygons'] = this.selectedPolygons
+            //     visitorData['taxInfo'] = this.taxData
+            //     visitorData['businessInfo'] = this.businessData
+            //     visitorData['schools'] = this.selectedSchools
+            //     visitorData['companies'] = this.selectedCompanies
                 
-                api.saveData(visitorData)
-            }
+            //     api.saveData(visitorData)
+            // }
             const unsaved_changes_warning = "You have unsaved changes. Are you sure you wish to leave?";
             evt.returnValue = unsaved_changes_warning; 
             return unsaved_changes_warning;
@@ -759,6 +771,7 @@ export default {
                     let data = {}
                     data['name'] = item.name
                     let polygons = await api.searchPolygon(data)
+                    console.log(polygons)
                     this.paths = polygons
                     this.center = item.center
                     this.zoom = 7.5
@@ -846,8 +859,6 @@ export default {
                     lat:  37.09024,
                     lng: -95.712891
                 }
-
-                
 
                 // search state
                 this.selectState.forEach(async item => {

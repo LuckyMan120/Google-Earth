@@ -18,6 +18,7 @@ let rad = function (x) {
 };
 
 router.route('/all').get((req, res) =>{
+	console.log('ok')
 
 	xmlReader.readXML(fs.readFileSync(stateKmlFile), function(err, stateData) {
 		if (err) {
@@ -48,19 +49,19 @@ router.route('/all').get((req, res) =>{
 	});
 
 	// save display count
-	db.countDB.find()
-		.then(res => {
-			db.countDB.updateOne(
-				{ _id: res[0]._id},
-				{ $set: 
-					{
-						"display_count" : parseInt(res[0].display_count) + 1
-					}
-				}
-			).then(res => console.log("ok"))
-			.catch(err => console.log('err', err))
-		})
-		.catch(err => console.log(err));
+	// db.countDB.find()
+	// 	.then(res => {
+	// 		db.countDB.updateOne(
+	// 			{ _id: res[0]._id},
+	// 			{ $set: 
+	// 				{
+	// 					"display_count" : parseInt(res[0].display_count) + 1
+	// 				}
+	// 			}
+	// 		).then(res => console.log("ok"))
+	// 		.catch(err => console.log('err', err))
+	// 	})
+	// 	.catch(err => console.log(err));
 });
 
 router.route('/search').post((req, res) => {
@@ -73,7 +74,71 @@ router.route('/search').post((req, res) => {
 
 				res.json(polyData);
 			} else {
-				res.json(mapData[0].polygons)
+				let polyData = [...mapData[0].polygons];
+				let totalJson = [];
+				
+				polyData.map(async (each, index) => {
+					let geo = {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Polygon',
+                            'coordinates': [[]]
+                        },
+						properties: {
+							countyname: '',
+							degree: '',
+							degrees: '',
+							expand: '',
+							geoid: '',
+							house_count: '',
+							income: '',
+							job_growth_rate: '',
+							medium: '',
+							per_square_job: '',
+							population: '',
+							residents_count: '',
+							single: '',
+							statename: ''
+						}
+                    };
+
+					// save coordinates
+					each.path.map(co => {
+						let coord = [co.lng, co.lat];
+						geo.geometry.coordinates[0].push(coord)
+					});
+
+					geo.properties.countyname = each.countyname;
+					geo.properties.degree = each.degree;
+					geo.properties.degrees = each.degrees;
+					geo.properties.expand = each.expand;
+					geo.properties.geoid = each.geoid;
+					geo.properties.house_count = each.house_count;
+					geo.properties.income = each.income;
+					geo.properties.job_growth_rate = each.job_growth_rate;
+					geo.properties.medium = each.medium;
+					geo.properties.per_square_job = each.per_square_job;
+					geo.properties.population = each.population;
+					geo.properties.residents_count = each.residents_count;
+					geo.properties.single = each.single;
+					geo.properties.statename = each.statename;
+
+					
+					// totalJson.push(geoJson)
+					const newVisitor = new db.earthDB({
+				        polygons: geo
+				    });
+
+				    let result = await newVisitor.save()
+				        .then(success => {
+				        	console.log('ok1', index)
+				        })
+				        .catch(err => console.log('Error', err));
+					// totalJson.map(async (json, index) => {
+				// })
+				});
+				// res.json(mapData[0].polygons)
+				// res.json(totalJson);
 			}
 		})
 		.catch(err => console.log('Error', err));
