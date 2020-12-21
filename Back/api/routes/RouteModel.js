@@ -18,8 +18,6 @@ let rad = function (x) {
 };
 
 router.route('/all').get((req, res) =>{
-	console.log('ok')
-
 	xmlReader.readXML(fs.readFileSync(stateKmlFile), function(err, stateData) {
 		if (err) {
 	        console.error(err);
@@ -49,19 +47,19 @@ router.route('/all').get((req, res) =>{
 	});
 
 	// save display count
-	// db.countDB.find()
-	// 	.then(res => {
-	// 		db.countDB.updateOne(
-	// 			{ _id: res[0]._id},
-	// 			{ $set: 
-	// 				{
-	// 					"display_count" : parseInt(res[0].display_count) + 1
-	// 				}
-	// 			}
-	// 		).then(res => console.log("ok"))
-	// 		.catch(err => console.log('err', err))
-	// 	})
-	// 	.catch(err => console.log(err));
+	db.countDB.find()
+		.then(res => {
+			db.countDB.updateOne(
+				{ _id: res[0]._id},
+				{ $set: 
+					{
+						"display_count" : parseInt(res[0].display_count) + 1
+					}
+				}
+			).then(res => console.log("ok"))
+			.catch(err => console.log('err', err))
+		})
+		.catch(err => console.log(err));
 });
 
 router.route('/search').post((req, res) => {
